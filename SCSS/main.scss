@@ -1,0 +1,257 @@
+@import 'variables';
+@import 'components';
+
+h1{
+    @include h1;
+    color: $primary-color-blue;
+}
+
+h2{
+    @include h2;
+    color: $primary-color-blue;
+}
+
+body {
+    background-color: $neutral-color-grey;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height:20vh;
+    width: 100%;
+    position: absolute;
+
+    nav {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding : 32px 72px;
+
+        .nav-logo{
+            padding : 16px;
+        }
+
+        .nav-socmed-bar{
+            display: flex;
+            flex-direction: row;
+
+            li{
+                list-style: none;
+                padding: 16px;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+#hero {
+    height : 100vh;
+    overflow-x: hidden;
+}
+
+#content{
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.grid-container-6x12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap : 5px;
+}
+
+    .title{
+        grid-area: 3 / 1 / span 2 / span 7;
+        width: 100%;
+        position: relative;
+        top : 50px;
+        margin-left: 48px;
+        text-align: center;
+
+        .hero-mpkmb-text
+        {
+            font-weight: map-get($font-weights, "normal" );
+        }
+
+        .hero-ipb-text{
+            color: $primary-color-orange;
+        }
+
+        .hero-58-text{
+            color: $primary-color-red;
+        }
+
+        button{
+            @include paragraph;
+            padding : 16px 24px;
+            color : $neutral-color-grey;
+            background-color: $primary-color-red;
+            border-style: none;
+            border-radius: 50px;
+            margin-top : 16px;
+        }
+    }
+
+    .logo-ipb {
+        grid-area: 4 / 9 / span 3 / span 4; 
+        width: 100%;
+        margin-right : 60px;
+        place-self: end;
+    }
+
+    .logo-ipb img {
+        width: 100%;
+    }
+
+    .fore{
+        grid-area: 6 / 1 / span 2 / span 12;
+        margin-bottom : -100px;
+        place-self: end;
+        width: 100%;
+    }
+    .fore img {
+        width: 100%;
+        transform: scale(1.05);
+    }
+
+
+@media (max-width : 1600px) {
+
+    h1{
+        font-size: 60px;
+        line-height: 72px;
+    }
+
+    h2{
+        @include h2;
+    }
+
+    .title{
+        grid-area: 4 / 1 / span 2 / span 7;
+        width: 100%;
+        margin-left: 24px;
+        position: relative;
+        top : 10px;
+    }
+    
+    .logo-ipb {
+        grid-area: 4 / 9 / span 3 / span 4;
+        width: 100%;
+        margin-right : 60px;
+        margin-bottom: 10%;
+    }
+    
+    .logo-ipb img {
+        width: 100%;
+    }
+    
+    .fore{
+        grid-area: 6 / 1 / span 1 / span 12;
+        width: 100%;
+        place-self: end;
+        margin-bottom : -50px;
+        
+    }
+    
+    .fore img {
+        width: 100%;
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 1025px)
+{
+    h1{
+        font-size: 60px;
+        line-height: 72px;
+    }
+
+    .title{
+        grid-area: 4/ 1 / span 1 / span 12;
+        text-align: center;
+        margin-left: 24px;
+        position: relative;
+        top: -150px;
+    }
+
+    .logo-ipb {
+        grid-area: 5 / 5 / span 2 / span 6;
+        position: relative;
+        top: 80px;
+    }
+
+    
+    .fore{
+        grid-area: 6/ 1 / span 2 / span 12;
+    }
+}   
+
+@media (max-width : 769px) {
+    h1{
+        @include h2;
+    }
+
+    h2{
+        @include h4;
+    }
+
+    .title{
+        grid-area: 4/ 1 / span 1/ span 12;
+        text-align: center;
+        margin-left: 0px;
+        position: relative;
+        top: -100px;
+    }
+
+    .logo-ipb {
+        grid-area: 5 / 5 / span 2 / span 6;
+        position: relative;
+        top: 80px;
+    }
+}
+
+@media (max-width : 576px) {
+    h1{
+        @include h4;
+        line-height: 30px;
+    }
+
+    h2{
+        @include h5;
+        line-height: 1;
+    }
+    .title{
+        grid-area: 4/ 1 / span 1 / span 12;
+        text-align: center;
+        margin-left: 0px;
+        position: relative;
+        top:-50px;
+
+        button{
+            @include paragraph-mobile;
+            padding: 8px 16px;
+            margin-top: 8px;
+        }
+    }
+
+    .logo-ipb {
+        grid-area: 5 / 6 / span 2 / span 6;
+        position: relative;
+        top : 24px;
+    }
+
+    
+    .fore{
+        grid-area: 6/ 1 / span 2 / span 12;
+        position: relative;
+        bottom: 35px;
+    }
+}
