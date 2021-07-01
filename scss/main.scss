@@ -1,0 +1,97 @@
+@import 'copal';
+
+$theme-colors: (
+  "orange": $orange,
+  "red": $red,
+  "blue": $blue,
+  "grey": $grey,
+  "cream": $cream
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+*{
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+}
+
+
+// SECTION 1
+@media (min-width: 992px){
+
+    .navbar-expand-lg .navbar-collapse {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+
+    .ipb-58{
+        font-size: 3em;
+    }
+    
+}
+
+.logo{
+    width: 20px;
+}
+
+.hero{
+    height: 100vh;
+    position: relative;
+
+    .banner{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-150%);
+        width: 100vw;
+    }
+}
+
+.hero::after{
+    content: '';
+    z-index: 99;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 150px;
+    // background-color: $red;
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: bottom center;
+    background-image: url('../img/leaf.svg');
+}
+.hero::before{
+    content: '';
+    // z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 150px;
+    // background-color: $red;
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: bottom center;
+    background-image: url('../img/leaf.svg');
+    animation: blur 2s ease-in-out infinite alternate;
+}
+
+// END of SECTION 1
+
+
+
+
+.hover:hover{
+    opacity: .5;
+}
+
+
+
+@keyframes blur {
+    from {filter: blur(5px);}
+    to {filter: blur(20px);}
+  }
