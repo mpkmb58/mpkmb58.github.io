@@ -11148,7 +11148,7 @@ fieldset:disabled .btn {
             justify-content: flex-end;
   }
   .ipb-58 {
-    font-size: 3em;
+    font-size: calc(1vw + 3em);
   }
 }
 
@@ -11197,6 +11197,17 @@ fieldset:disabled .btn {
   background-image: url("../img/leaf.svg");
   -webkit-animation: blur 2s ease-in-out infinite alternate;
           animation: blur 2s ease-in-out infinite alternate;
+}
+
+.glow {
+  position: absolute;
+  width: 332px;
+  height: 332px;
+  left: -132px;
+  top: 288px;
+  opacity: 0.15;
+  -webkit-filter: blur(280px);
+          filter: blur(280px);
 }
 
 .hover:hover {

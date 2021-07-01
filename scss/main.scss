@@ -1,22 +1,20 @@
 @import 'copal';
 
-$theme-colors: (
-  "orange": $orange,
-  "red": $red,
-  "blue": $blue,
-  "grey": $grey,
-  "cream": $cream
-);
+$theme-colors: ("orange": $orange,
+    "red": $red,
+    "blue": $blue,
+    "grey": $grey,
+    "cream": $cream);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-*{
+* {
     font-family: 'poppins', Arial, Helvetica, sans-serif;
 }
 
 
 // SECTION 1
-@media (min-width: 992px){
+@media (min-width: 992px) {
 
     .navbar-expand-lg .navbar-collapse {
         display: -webkit-box !important;
@@ -26,31 +24,32 @@ $theme-colors: (
         flex-basis: auto;
         justify-content: flex-end;
     }
-// TULISAN MAHARDIKA CAKRABINAYA      
-    .ipb-58{
+
+    // TULISAN MAHARDIKA CAKRABINAYA      
+    .ipb-58 {
         font-size: 80px;
     }
-    
+
 }
 
-.logo{
+.logo {
     width: 20px;
 }
 
-.hero{
+.hero {
     height: 100vh;
     position: relative;
 
-    .banner{
+    .banner {
         position: relative;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-150%);
+        transform: translate(-50%, -150%);
         width: 100vw;
     }
 }
 
-.hero::after{
+.hero::after {
     content: '';
     z-index: 99;
     position: absolute;
@@ -64,7 +63,8 @@ $theme-colors: (
     background-position: bottom center;
     background-image: url('../img/leaf.svg');
 }
-.hero::before{
+
+.hero::before {
     content: '';
     // z-index: -1;
     position: absolute;
@@ -85,13 +85,18 @@ $theme-colors: (
 
 
 
-.hover:hover{
+.hover:hover {
     opacity: .5;
 }
 
 
 
 @keyframes blur {
-    from {filter: blur(5px);}
-    to {filter: blur(20px);}
-  }
+    from {
+        filter: blur(5px);
+    }
+
+    to {
+        filter: blur(20px);
+    }
+}
