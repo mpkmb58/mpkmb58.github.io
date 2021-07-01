@@ -1,58 +1,41 @@
 @import 'copal';
 
-$theme-colors: (
-  "orange": $orange,
-  "red": $red,
-  "blue": $blue,
-  "grey": $grey,
-  "cream": $cream
-);
+$theme-colors: ("orange": $orange,
+    "red": $red,
+    "blue": $blue,
+    "grey": $grey,
+    "cream": $cream);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-*{
+* {
     font-family: 'poppins', Arial, Helvetica, sans-serif;
 }
 
 
 // SECTION 1
-@media (min-width: 992px){
 
-    .navbar-expand-lg .navbar-collapse {
-        display: -webkit-box !important;
-        display: -ms-flexbox !important;
-        display: flex !important;
-        -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-        justify-content: flex-end;
-    }
-// TULISAN MAHARDIKA CAKRABINAYA      
-//     .ipb-58{
-//         font-size: 80px;
-//     }
-    
-}
 
-.logo{
+.logo {
     width: 20px;
 }
 
-.hero{
+.hero {
     height: 100vh;
     position: relative;
 
-    .banner{
+    .banner {
         position: relative;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-150%);
+        transform: translate(-50%, -150%);
         width: 100vw;
     }
 }
 
-.hero::after{
+.hero::after {
     content: '';
-    z-index: 99;
+    z-index: 1;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -64,7 +47,8 @@ $theme-colors: (
     background-position: bottom center;
     background-image: url('../img/leaf.svg');
 }
-.hero::before{
+
+.hero::before {
     content: '';
     // z-index: -1;
     position: absolute;
@@ -80,18 +64,115 @@ $theme-colors: (
     animation: blur 2s ease-in-out infinite alternate;
 }
 
+// HAMBURGER MENU
+.menu {
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    // background-color: black;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.box,
+.box::after,
+.box::before {
+    width: 40px;
+    height: 5px;
+    background-color: $blue;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.box::after,
+.box::before {
+    content: '';
+    position: absolute;
+}
+
+.box::after {
+    transform: translateY(10px);
+}
+
+.box::before {
+    transform: translateY(-10px);
+}
+
+.menu.open .box {
+    transform: rotate(45deg);
+    background: transparent;
+}
+
+.menu.open .box::before {
+    transform: rotate(0deg)
+}
+
+.menu.open .box::after {
+    transform: rotate(-90deg)
+}
+
+// END OF HAMBURGER MENU
+
+
+// overlay
+.overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.overlay {
+    transition: all .3s;
+}
+
+.overlay::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: .6;
+
+}
+
 // END of SECTION 1
 
 
 
 
-.hover:hover{
+.hover:hover {
     opacity: .5;
 }
 
+.shadoww {
+    box-shadow: 0px 0px 0px black;
+    transition: all .3s;
 
+}
+
+.shadoww:hover {
+    transform: scale(1.5);
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
 
 @keyframes blur {
-    from {filter: blur(5px);}
-    to {filter: blur(20px);}
-  }
+    from {
+        filter: blur(5px);
+    }
+
+    to {
+        filter: blur(20px);
+    }
+}
