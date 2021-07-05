@@ -1,65 +1,74 @@
 @import 'variables';
-@import 'components';
+
+*{
+    box-sizing: border-box;
+    padding : 0;
+    margin : 0;
+}
 
 h1{
-    @include h1;
+    font-size: map-get($font-sizes, "h1" );
+    font-weight: map-get($font-weights, "bold" );
+    line-height: map-get($line-heights, "h1" );
     color: $primary-color-blue;
 }
 
-h2{
-    @include h2;
-    color: $primary-color-blue;
+h2 {
+    font-size: 48px;   
+    font-weight: 700;     
+}
+
+h4{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: map-get($font-sizes, "h4" );
+    font-weight: map-get($font-weights, "bold" );
+    line-height: map-get($line-heights, "h4" );
+    color : #343F56;
+}
+
+p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+button {
+    padding : 16px 64px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+h2, p, button{
+    margin: 12px 0px;
+}
+
+.no-padding {
+    padding: 0px 0px;
+}
+
+section{
+    padding: 80px 0;
 }
 
 body {
+    overflow-x: hidden;
     background-color: $neutral-color-grey;
     font-family: 'Poppins', sans-serif;
 }
 
-header{
-    height:20vh;
+.container {
     width: 100%;
-    position: absolute;
-
-    nav {
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding : 32px 72px;
-
-        .nav-logo{
-            padding : 16px;
-        }
-
-        .nav-socmed-bar{
-            display: flex;
-            flex-direction: row;
-
-            li{
-                list-style: none;
-                padding: 16px;
-            }
-        }
-
-    }
 }
-
-
-
-
-
-#hero {
-    height : 100vh;
-    overflow-x: hidden;
-}
-
-#content{
-    height: 100vh;
-    overflow: hidden;
-}
-
 
 .grid-container-6x12 {
     display: grid;
@@ -68,190 +77,529 @@ header{
     gap : 5px;
 }
 
-    .title{
-        grid-area: 3 / 1 / span 2 / span 7;
+// Hero Start
+#hero {
+    overflow: hidden;
+    height : 100vh;
+    width: 100vw;
+
+    h1, h5 {
+        margin: 0px;
+    }
+
+    #content {
+        height: 100vh;
+    }
+
+    .grid-container-6x12 {
+
+        .title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            grid-area: 3 / 2 / span 3 / span 7;
+            width: 100%;
+        }
+
+        .logo-ipb {
+            grid-area: 4 / 9 / span 3 / span 4; 
+            width: 100%;
+            margin-right : 60px;
+            place-self: end;
+            z-index: -12;
+            position: relative;
+        }
+
+        .fore{
+            grid-area: 6 / 1 / span 1 / span 12;
+            width: 100%;
+            place-self: end;
+            z-index: -10;
+        }
+
+        @media (min-width : 1600px) {
+            .logo-ipb {
+                position: relative;
+                bottom: 30px;
+            }
+
+            .fore {
+                position: relative;
+                top: 72px;
+            }
+        }
+    }
+} 
+
+// Deskripsi MPKMB Start
+#deskripsi {
+
+    .grid-container-6x12 {
         width: 100%;
-        position: relative;
-        top : 50px;
-        margin-left: 48px;
+        position: absolute;
+        z-index: -100;
+        margin-top: -100px;
+
+        .fore-top {
+            grid-area: 1/1/span 2/ span 12;
+            
+            img{
+                transform: rotateX(180deg);
+            }
+    
+        }
+
+    }
+
+    
+
+    .container-fluid {
+       .box {
+           background-color: $primary-color-blue;
+           color: $neutral-color-grey;
+           min-height: 480px;
+           border-radius: 1rem;
+           padding : 60px;
+
+           .text-box{
+               display: flex;
+               flex-direction: column;
+
+                button {
+                        background-color: $neutral-color-grey;
+                        color: $primary-color-blue;
+                }
+           }
+
+           .photo-box{
+                .photo{
+                    aspect-ratio: 4/3;
+                    background-color: $neutral-color-grey;
+                }
+           }
+
+           
+
+       }
+    }
+}
+// deskripsi mpkmb end
+
+
+// sambutan mpkmb start
+#sambutan {
+    background-color: $primary-color-red;
+    color: $neutral-color-grey;
+
+    .container {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .main-vid{
+            width: 100%;
+            display: flex;  
+            align-items: center;
+            justify-content: space-between;
 
-        .hero-mpkmb-text
-        {
-            font-weight: map-get($font-weights, "normal" );
+            .col-sm-12{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .video{
+                    background-color: $neutral-color-grey;
+                    width: 90%;
+                    aspect-ratio: 16/9;
+                    border-radius: 10px;      
+                } 
+            }                  
         }
+    }
 
-        .hero-ipb-text{
-            color: $primary-color-orange;
+       
+}
+// sambutan mpkmb end
+
+#lini-masa{
+    .container{
+        min-height : 100vh;
+        background-color: pink;
+    }
+}
+
+// Agenda dan Penugasan MPKMB Start
+#penugasan {
+    background-color: $primary-color-orange;
+    color: $neutral-color-grey;
+    .container-fluid{
+        
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .photo{
+                background-color: $neutral-color-grey;
+                height: 400px;
+            }
+
+            .text-box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                button{
+                    background-color: $neutral-color-grey;
+                    color: $primary-color-orange;
+                }
+            }     
+    }           
+}
+// Agenda dan penugasan MPKMB end
+
+// Sponsorship start
+#sponsorship {
+
+    .fore-top {
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        z-index: -10;
+        img {
+            width: 100%;
+            transform: rotateX(180deg);
         }
-
-        .hero-58-text{
-            color: $primary-color-red;
-        }
-
-        button{
-            @include paragraph;
-            padding : 16px 24px;
-            color : $neutral-color-grey;
-            background-color: $primary-color-red;
-            border-style: none;
-            border-radius: 50px;
-            margin-top : 16px;
-        }
     }
 
-    .logo-ipb {
-        grid-area: 4 / 9 / span 3 / span 4; 
-        width: 100%;
-        margin-right : 60px;
-        place-self: end;
+    .container-fluid {
+       .box {
+           background-color: $primary-color-blue;
+           color: $neutral-color-grey;
+           min-height: 480px;
+           width: 100%;
+           border-radius: 10px;
+           padding : 60px;
+        
+
+           .text-box{
+               display: flex;
+               flex-direction: column;
+           }
+
+           .logo-box{
+                .logo{
+                    aspect-ratio: 4/3;
+                    background-color: $neutral-color-grey ;
+                }
+           }
+
+           
+
+       }
     }
 
-    .logo-ipb img {
-        width: 100%;
-    }
-
-    .fore{
-        grid-area: 6 / 1 / span 2 / span 12;
-        margin-bottom : -100px;
-        place-self: end;
-        width: 100%;
-    }
-    .fore img {
-        width: 100%;
-        transform: scale(1.05);
-    }
-
+}
 
 @media (max-width : 1600px) {
 
-    h1{
-        font-size: 60px;
-        line-height: 72px;
-    }
-
-    h2{
-        @include h2;
-    }
-
-    .title{
-        grid-area: 4 / 1 / span 2 / span 7;
-        width: 100%;
-        margin-left: 24px;
-        position: relative;
-        top : 10px;
+    #hero { 
+        h1{
+            font-size: 60px;
+            line-height: 72px;
+        }
+    
+        .grid-container-6x12 {
+            .title{
+                grid-area: 3 / 1 / span 2 / span 7;
+                width: 100%;
+                margin-left: 64px;
+            }
+            
+            .logo-ipb {
+                grid-area: 4 / 9 / span 3 / span 4;
+                width: 100%;
+                margin-bottom: 10%;
+            }
+            
+            .logo-ipb img {
+                width: 100%;
+            }
+            
+            .fore{
+                grid-area: 4 / 1 / span 3 / span 12;
+                width: 100%;
+                place-self: end;
+                margin-bottom : -50px;
+                
+            }
+            
+            .fore img {
+                width: 100%;
+                transform: scale(1.05);
+            }
+        }
     }
     
-    .logo-ipb {
-        grid-area: 4 / 9 / span 3 / span 4;
-        width: 100%;
-        margin-right : 60px;
-        margin-bottom: 10%;
-    }
-    
-    .logo-ipb img {
-        width: 100%;
-    }
-    
-    .fore{
-        grid-area: 6 / 1 / span 1 / span 12;
-        width: 100%;
-        place-self: end;
-        margin-bottom : -50px;
-        
-    }
-    
-    .fore img {
-        width: 100%;
-        transform: scale(1.05);
-    }
 }
 
-@media (max-width: 1025px)
+@media (max-width: 1024px)
 {
-    h1{
-        font-size: 60px;
-        line-height: 72px;
-    }
 
-    .title{
-        grid-area: 4/ 1 / span 1 / span 12;
-        text-align: center;
-        margin-left: 24px;
-        position: relative;
-        top: -150px;
-    }
-
-    .logo-ipb {
-        grid-area: 5 / 5 / span 2 / span 6;
-        position: relative;
-        top: 80px;
-    }
-
+    #hero {
+        h1{
+            font-size: 60px;
+            line-height: 72px;
+        }
     
-    .fore{
-        grid-area: 6/ 1 / span 2 / span 12;
+
+        .grid-container-6x12{
+            .title{
+                grid-area: 4/ 1 / span 1 / span 12;
+                text-align: center;
+                margin-left: 0px;
+                position: relative;
+                top: -150px;
+            }
+        
+            .logo-ipb {
+                grid-area: 5 / 5 / span 2 / span 5;
+                position: relative;
+                top: 80px;
+            }
+        
+            
+            .fore{
+                grid-area: 6/ 1 / span 2 / span 12;
+            }
+        }
     }
 }   
 
-@media (max-width : 769px) {
-    h1{
-        @include h2;
-    }
 
-    h2{
-        @include h4;
-    }
+// Tablet Size Start 
+@media (max-width : 992px) {
 
-    .title{
-        grid-area: 4/ 1 / span 1/ span 12;
-        text-align: center;
-        margin-left: 0px;
-        position: relative;
-        top: -100px;
-    }
-
-    .logo-ipb {
-        grid-area: 5 / 5 / span 2 / span 6;
-        position: relative;
-        top: 80px;
-    }
-}
-
-@media (max-width : 576px) {
-    h1{
-        @include h4;
-        line-height: 30px;
-    }
-
-    h2{
-        @include h5;
-        line-height: 1;
-    }
-    .title{
-        grid-area: 4/ 1 / span 1 / span 12;
-        text-align: center;
-        margin-left: 0px;
-        position: relative;
-        top:-50px;
-
-        button{
-            @include paragraph-mobile;
-            padding: 8px 16px;
-            margin-top: 8px;
+    #hero {
+        .grid-container-6x12{
+            .title{
+                grid-area: 4/ 1 / span 1 / span 12;
+                text-align: center;
+                margin-left: 0px;
+                position: relative;
+                top: -150px;
+            }
+        
+            .logo-ipb {
+                grid-area: 5 / 5 / span 2 / span 5;
+                position: relative;
+                top: 80px;
+            }
+        
+            
+            .fore{
+                grid-area: 6/ 1 / span 2 / span 12;
+            }
         }
     }
 
-    .logo-ipb {
-        grid-area: 5 / 6 / span 2 / span 6;
-        position: relative;
-        top : 24px;
+    .container {
+        width: 80%;
     }
 
-    
-    .fore{
-        grid-area: 6/ 1 / span 2 / span 12;
-        position: relative;
-        bottom: 35px;
+    .box {
+        padding : 60px 40px;
+    }
+
+    #deskripsi {
+        .container-fluid {
+            .box {
+                align-items: flex-start;
+                justify-content: start;
+            }            
+        }
+    }
+
+    #sambutan {
+        .container{
+            justify-content: flex-start;
+            .main-vid{
+                flex-direction: column-reverse;
+                .col-sm-12{     
+                    .video {
+                        width: 80%;
+                    }
+                }
+            }    
+        } 
+    }
+
+    #penugasan {
+        .photo-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .photo{
+                width: 80%;
+            }
+        } 
+    }
+
+    #sponsorship {
+        .container-fluid {
+            .box{
+                align-items: flex-start;
+                justify-content: start;
+            }            
+        }
     }
 }
+// Tablet Size End
+
+
+@media (max-width : 768px) {
+
+    #hero {
+        h1{
+            font-size: 48px;
+            line-height: 64px;
+        }
+        
+        h5
+        {
+            font-size: map-get($font-sizes, "h6" );
+            font-weight: map-get($font-weights, "bold" );
+            line-height: map-get($line-heights, "h6" );
+            color : #343F56;
+        }
+    
+        .grid-container-6x12 {
+            .title{
+                grid-area: 4/ 1 / span 1/ span 12;
+                text-align: center;
+                margin-left: 0px;
+                position: relative;
+                top: -100px;
+            }
+        
+            .logo-ipb {
+                grid-area: 5 / 5 / span 2 / span 6;
+                position: relative;
+                top: 80px;
+            }
+        }
+    } 
+}
+
+// Mobile Size Start
+@media (max-width : 576px) {
+    h2, p, button {
+        margin : 8px 0px;
+    } 
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    h4{
+        font-size: 16.8px;
+    }
+
+    p{
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    button{
+        padding : 8px 32px;   
+    }
+
+    #hero {
+
+        h1{
+            font-size: 24px;
+            line-height: 40px;
+        }
+
+        h5 {
+            font-size: map-get($font-sizes, "h6" );
+            font-weight: map-get($font-weights, "bold" );
+            line-height: map-get($line-heights, "h6" );
+        }
+
+        .grid-container-6x12 {
+            .title{
+                grid-area: 3/ 1 / span 2 / span 12;
+                text-align: center;
+                margin-left: 0px;
+                position: relative;
+                top:-50px;
+            }
+        
+            .logo-ipb {
+                grid-area: 5 / 6 / span 2 / span 6;
+                position: relative;
+                top : 24px;
+            }
+        
+            
+            .fore{
+                grid-area: 6/ 1 / span 2 / span 12;
+                position: relative;
+                bottom: 35px;
+            }
+        }
+    }
+
+    #deskripsi {
+        .container-fluid{
+            .box{
+                padding : 32px 8px; 
+                width: 100%; 
+            }
+        }
+    }
+
+    #sambutan {
+        .container{
+            justify-content: flex-start;
+
+            .main-vid {
+                flex-direction: column-reverse;
+                width: 100%;
+
+                .col-sm-12 {
+                    width: 100%;
+
+                    .video{
+                        width: 100%;
+                    }
+                }
+            }   
+        }
+    }
+
+    #penugasan {
+        
+        .photo-box{
+            .photo{
+                width: 100%;
+            }
+        }
+    }
+
+    #sponsorship {
+        .container-fluid{
+            .box{
+                padding : 32px 8px; 
+                width: 100%;  
+            }
+        }
+    }
+} 
+
+// Mobile Size End 
