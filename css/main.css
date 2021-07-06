@@ -11169,7 +11169,7 @@ fieldset:disabled .btn {
 
 .hero::after {
   content: '';
-  z-index: 99;
+  z-index: 1;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -11196,8 +11196,116 @@ fieldset:disabled .btn {
           animation: blur 2s ease-in-out infinite alternate;
 }
 
+.menu {
+  padding: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.box,
+.box::after,
+.box::before {
+  width: 40px;
+  height: 5px;
+  background-color: #343F56;
+  border-radius: 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box::after,
+.box::before {
+  content: '';
+  position: absolute;
+}
+
+.box::after {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.box::before {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.menu.open .box {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: transparent;
+}
+
+.menu.open .box::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.menu.open .box::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.overlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.overlay {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.overlay::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  opacity: .6;
+}
+
 .hover:hover {
   opacity: .5;
+}
+
+.shadoww {
+  -webkit-box-shadow: 0px 0px 0px black;
+          box-shadow: 0px 0px 0px black;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.shadoww:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+  cursor: pointer;
 }
 
 @-webkit-keyframes blur {

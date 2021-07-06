@@ -32,6 +32,8 @@ $theme-colors: ("orange": $orange,
 
 }
 
+
+
 .logo {
     width: 20px;
 }
@@ -51,7 +53,7 @@ $theme-colors: ("orange": $orange,
 
 .hero::after {
     content: '';
-    z-index: 99;
+    z-index: 1;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -80,6 +82,88 @@ $theme-colors: ("orange": $orange,
     animation: blur 2s ease-in-out infinite alternate;
 }
 
+// HAMBURGER MENU
+.menu {
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    // background-color: black;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.box,
+.box::after,
+.box::before {
+    width: 40px;
+    height: 5px;
+    background-color: $blue;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.box::after,
+.box::before {
+    content: '';
+    position: absolute;
+}
+
+.box::after {
+    transform: translateY(10px);
+}
+
+.box::before {
+    transform: translateY(-10px);
+}
+
+.menu.open .box {
+    transform: rotate(45deg);
+    background: transparent;
+}
+
+.menu.open .box::before {
+    transform: rotate(0deg)
+}
+
+.menu.open .box::after {
+    transform: rotate(-90deg)
+}
+
+// END OF HAMBURGER MENU
+
+
+// overlay
+.overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.overlay {
+    transition: all .3s;
+}
+
+.overlay::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: .6;
+
+}
+
 // END of SECTION 1
 
 
@@ -89,7 +173,17 @@ $theme-colors: ("orange": $orange,
     opacity: .5;
 }
 
+.shadoww {
+    box-shadow: 0px 0px 0px black;
+    transition: all .3s;
 
+}
+
+.shadoww:hover {
+    transform: scale(1.5);
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
 
 @keyframes blur {
     from {
