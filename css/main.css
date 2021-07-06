@@ -11149,8 +11149,8 @@ fieldset:disabled .btn {
   position: relative;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -130%);
-          transform: translate(-50%, -130%);
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
   width: 100vw;
 }
 
