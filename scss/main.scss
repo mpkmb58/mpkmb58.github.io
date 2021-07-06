@@ -14,25 +14,6 @@ $theme-colors: ("orange": $orange,
 
 
 // SECTION 1
-@media (min-width: 992px) {
-
-    .navbar-expand-lg .navbar-collapse {
-        display: -webkit-box !important;
-        display: -ms-flexbox !important;
-        display: flex !important;
-        -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-        justify-content: flex-end;
-    }
-
-    // TULISAN MAHARDIKA CAKRABINAYA      
-    //     .ipb-58{
-    //         font-size: 80px;
-    //     }
-
-}
-
-
 
 .logo {
     width: 20px;
@@ -46,7 +27,7 @@ $theme-colors: ("orange": $orange,
         position: relative;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -150%);
+        transform: translate(-50%, -130%);
         width: 100vw;
     }
 }

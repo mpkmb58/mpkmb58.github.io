@@ -11136,19 +11136,6 @@ fieldset:disabled .btn {
   font-family: 'poppins', Arial, Helvetica, sans-serif;
 }
 
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-}
-
 .logo {
   width: 20px;
 }
@@ -11162,8 +11149,8 @@ fieldset:disabled .btn {
   position: relative;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -150%);
-          transform: translate(-50%, -150%);
+  -webkit-transform: translate(-50%, -130%);
+          transform: translate(-50%, -130%);
   width: 100vw;
 }
 
