@@ -10649,6 +10649,20 @@ button {
 
 #lini-masa .swiper-container {
   width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#lini-masa .swiper-slide {
+  border-radius: 10px;
+  width: 24rem;
+  aspect-ratio: 3/4;
+  margin: 0px 32px;
+}
+
+#lini-masa .swiper-slide .photo {
+  background-color: #F8F8F8;
+  height: 60%;
 }
 
 @media (max-width: 992px) {

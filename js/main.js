@@ -1,4 +1,3 @@
-import Swiper from 'swiper';
 var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
         grabCursor: true,
@@ -7,11 +6,11 @@ var swiper = new Swiper(".mySwiper", {
         coverflowEffect: {
           rotate: 0,
           stretch: 0,
-          depth: 300,
+          depth: 200,
           modifier: 1,
           slideShadows: true,
         },
         pagination: {
           el: ".swiper-pagination",
         },
-});
+      });

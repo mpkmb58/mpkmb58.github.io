@@ -256,7 +256,21 @@ button {
     }
 
     .swiper-container {
-        width : 100%;
+        width: 100%;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .swiper-slide {
+        border-radius: 10px;
+        width : 24rem;
+        aspect-ratio: 3/4;
+        margin: 0px 32px;
+        
+        .photo {
+            background-color: map-get($theme-colors, "grey" );
+            height: 60%;
+        }
     }
 
     @media (max-width : 992px) {
