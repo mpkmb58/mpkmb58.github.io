@@ -1,141 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MPKMB 2021 | Landing Page</title>
-    <!-- Vendor CSS Files -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>MPKMB IPB 58 | Beranda</title>
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="screen" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"> 
-    <!-- Main CSS Files -->
-    <link rel="stylesheet" href="../dist/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../dist/css/style.css">
 </head>
+
 <body>
-    <!-- navigation bar -->
-    <nav class="">
-
-    </nav>
-    <!-- hero -->
-    <section id="hero" class="no-padding">
-        <div id="content" class="grid-container-6x12">
-            <!-- main-title -->
-            <div class="title">
-                <h1>Mahardika Cakrabinaya</h1> <span class="fw-lighter"></span>
-                <h5>Perjuangan <span class="fw-lighter">Merasionalisasi</span> Mimpi <span class="fw-lighter">untuk</span> Berkontribusi <span class="fw-lighter">bagi</span> Negeri</h5>
+    <!-- Navigation Bar -->
+    <header class="container-fluid">
+        <div class="menu row pt-3 mx-lg-4 mx-2 d-flex justify-content-end">
+            <div class="py-2 px-4 d-flex align-items-center text-grey rounded-pill"
+                style="width : fit-content; background-color: #3B4760;">
+                <h3 class="m-0 mr-3">MPKMB IPB 58</h3>
+                <div class="hamburger"></div>
             </div>
-            <div class="logo-ipb">
-                <img src="../Images/Frame.svg" alt="" srcset="">
-            </div>
-            <div class="fore">
-                <img src="../Images/Asset 1.svg" alt="" srcset="">
-            </div>  
+        </div>
+    </header>
+    <!-- Hero -->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+        <div class="dec-fore">
+            <img src="../images/Fore.svg" alt="" srcset="">
+        </div>
+        <div class="logo-ipb">
+            <img src="images/Ilustrasi-ipb.svg" alt="">
+        </div>
+        <div class="title container d-flex justify-content-center flex-column">
+            <h1 class="text-blue">Mahardika Cakrabinaya</h1>
+            <h5 class="text-blue"><span class="fw-bold">Perjuangan</span> Merasionalisasi <span
+                    class="fw-bold">Mimpi</span> untuk <span class="fw-bold">Berkontribusi</span> bagi <span
+                    class="fw-bold">Negeri</span></h5>
         </div>
     </section>
-    <!-- Deskripsi MPKMB -->
-    <section id ="deskripsi">
-        <div class="grid-container-6x12"> 
-            <div class="fore-top">
-                <img src="../Images/Asset 1.svg" alt="" srcset="">
-            </div>
+    <!-- Deskripsi -->
+    <section id="deskripsi">
+        <div class="dec-fore-top">
+            <img src="images/Fore.svg" alt="" srcset="">
         </div>
-        <div class="container-fluid d-flex align-items-center justify-content-center">
-            <div class="container box row d-flex align-items-center">
-                    <div class="text-box col-sm-12 col-md-12 col-lg-6 p-3">
-                        <h2>Apa itu MPKMB?</h2> 
-                        <p>MPKMB sebagai momentum penyambutan terbesar mahasiswa baru Institut Pertanian Bogor menjadi wadah pertama untuk mengembangkan harapan guna menyiapkan generasi muda di masa depan dengan inovasi dan resolusi budaya orientasi yang lebih bermartabat dan menginspirasi.</p>
-                        <div class="text-box-btn">
-                            <button>Telusuri</button>
-                        </div> 
-                    </div>  
-                    <div class="photo-box col-sm-12 col-md-12 col-lg-6 p-3">
-                        <div class="photo">
-
-                        </div>
-                    </div>   
-            </div>
-        </div>
-    </section>
-
-    <!-- Sambutan MPKMB -->
-    <section id="sambutan">
-        <div class="container p-3">
-            <h2 class="row">Selamat Datang!</h2>
-            <div class="main-vid row">
-                <div class="col-sm-12 col-md-12 col-lg-6 p-3">
-                    <div class="video">
-
-                    </div>
-                    <h4 class="text mt-4">
-                            Ketua MPKMB
-                    </h4>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-6 p-3">
-                    <div class="video">
-
-                    </div>
-                    <h4 class="text mt-4">
-                            Rektor IPB University
-                    </h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lini Masa MPKMB -->
-    <section id="lini-masa">
         <div class="container">
+            <div class="row box d-flex align-items-center bg-blue text-grey p-lg-5 p-3">
+                <div class="texture-1">
+                    <img src="images/texture.svg" alt="" srcset="">
+                </div>
+                <div class="texture-2">
+                    <img src="images/texture.svg" alt="" srcset="">
+                </div>
+                <div class="col-lg-6 px-lg-4 d-flex flex-column justify-content-center">
+                    <div class="text-box">
+                        <h2 class="my-4">Apa itu MPKMB?</h2>
+                        <p class="my-2">MPKMB sebagai momentum penyambutan terbesar mahasiswa baru Institut Pertanian
+                            Bogor dan menjadi
+                            wadah pertama untuk mengembangkan harapan guna mempersiapkan generasi muda di masa depan
+                            dengan
+                            inovasi dan resolusi budaya orientasi yang lebih bermartabat dan menginspirasi.</p>
+                        <div class="mt-lg-5 my-3">
+                            <button class="py-2 px-5 bg-grey text-blue">Telusuri</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-lg-4 photo-box d-flex align-items-center justify-content-center">
+                    <div class="photo bg-grey mb-lg-4 mb-2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sambutan -->
+    <section id="sambutan" class="bg-red">
+        <div class="texture-1">
+            <img src="images/texture.svg" alt="" srcset="">
+        </div>
+        <div class="texture-2">
+            <img src="images/texture.svg" alt="" srcset="">
+        </div>
+        <h1 class="tittle text-center text-grey">Selamat Datang</h1>
+        <div class="main-vid container mt-5 d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+                    <div class="video bg-grey">
+                        <div class="play-button">
+                            <img src="images/Play Button.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="text-grey mt-3 mb-5 mt-lg-4 text-center">
+                        <h3>Ketua Pelaksana MPKMB</h3>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+                    <div class="video bg-grey">
+                        <div class="play-button">
+                            <img src="images/Play Button.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="text-grey mt-3 mb-5 mt-lg-4">
+                        <h3>Rektor IPB University</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Lini Masa -->
+    <section id="lini-masa" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="dec-edge-left">
+            <img src="images/decoration-edge.svg" alt="" srcset="">
+        </div>
+        <div class="dec-edge-right">
+            <img src="images/decoration-edge.svg" alt="" srcset="">
+        </div>
+        <h1 class="text-blue text-center">Lini Masa</h1>
+        <div class="main-carousel container">
             
         </div>
     </section>
-
-    <!-- Penugasan -->
-    <section id="penugasan">
-        <div class="container-fluid">
-                <div class="row">
-                    <div class="photo-box col-md-12 col-lg-5 p-4">
-                        <div class="photo">
+    <!-- Agenda dan Penugasan -->
+    <section id="penugasan" class="bg-orange text-grey">
+        <div class="texture-1">
+            <img src="images/texture.svg" alt="" srcset="">
+        </div>
+        <div class="texture-2">
+            <img src="images/texture.svg" alt="" srcset="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="photo-box">
+                        <div class="photo bg-grey">
 
                         </div>
-                    </div>
-                    <div class="text-box col-md-12 col-lg-7 p-4">
-                        <h2>Agenda dan Penugasan</h2>
-                        <p><span class="fw-bolder">MPKMB IPB 2021</span> diselenggarakan secara daring mulai tanggal 9 Agustus 2021 sampai 14 Agustus 2021. Materi pembelajaran disampaikan selama 6 hari berturut-turut diikuti dengan penugasan mandiri yang dikumpulkan secara daring. Penugasan yang kami berikan diharapakan bisa membantu mahasiswa baru untuk mengembangkan diri dan mengenal lebih jauh tentang Institut Pertanian Bogor.</p>
-                        <div>
-                            <button class="button">Telusuri</button> 
-                        </div>   
                     </div>
                 </div>
-        </div>  
-    </section>
-
-    <!-- Sponsorship -->
-    <section id="sponsorship">
-            <div class="container-fluid d-flex align-items-center justify-content-center">
-                <!-- Box Penjelasan -->
-                <div class="container box row d-flex align-items-center">
-                    <!-- Deskrisi Text -->
-                    <div class="text-box col-sm-12 col-md-12 col-lg-5 p-3">
-                            <h2 class="fw-bold">Sponsorship dan Media Partner</h2>   
-                    </div>
-                    <div class="logo-box col-sm-12 col-md-12 col-lg-7 p-3">
-                        <div class="logo">
-                                
+                <div class="col-lg-7 d-flex align-items-center px-lg-4">
+                    <div class="text-box">
+                        <h2 class="my-4">Agenda dan Penugasan</h2>
+                        <p class="my-2">MPKMB IPB 2021 diselenggarakan secara daring mulai tanggal 9 Agustus 2021 sampai
+                            14 Agustus 2021. Materi pembelajaran disampaikan selama 6 hari berturut-turut diikuti dengan
+                            penugasan mandiri yang dikumpulkan secara daring. Penugasan yang kami berikan diharapakan
+                            bisa membantu mahasiswa baru untuk mengembangkan diri dan mengenal lebih jauh tentang
+                            Institut Pertanian Bogor.</p>
+                        <div class="mt-lg-5 my-3">
+                            <a href="agenda&penugasan.html">
+                                <button class="py-2 px-5 bg-grey text-orange">Telusuri</button>
+                            </a>    
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
-    
-    <!-- Vendor JS Files -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Main JS File -->
-    <script src="main.js"></script>
+    <!-- Sponsorship -->
+    <section id="sponsorship" class="container-fluid">
+        <div class="dec-fore-left">
+            <img src="images/Fore.svg" alt="" srcset="">
+        </div>
+        <div class="dec-right">
+            <div class="dec-fore-right">
+                <img src="images/Fore.svg" alt="" srcset="">
+            </div>
+        </div>
+        <!-- Sponsorship Logo's -->
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="row box d-flex align-items-center bg-blue text-grey p-lg-5 p-3">
+                <div class="texture-1">
+                    <img src="images/texture.svg" alt="" srcset="">
+                </div>
+                <div class="texture-2">
+                    <img src="images/texture.svg" alt="" srcset="">
+                </div>
+                <div class="col-lg-4 px-lg-4 d-flex flex-column justify-content-center">
+                    <div class="text-box">
+                        <h2 class="my-4">Sponsorship dan Media Partners</h2>
+                    </div>
+                </div>
+                <div class="col-lg-8 px-lg-4 photo-box d-flex align-items-center justify-content-center">
+                    <div class="photo bg-grey mb-lg-4 mb-2">
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section id="footer" class="bg-blue text-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 px-lg-5">
+                    <div class="text">
+                        <h3>Sekretariat MPKMB IPB</h3>
+                        <br>
+                        <p>Panitia Pusat MPKMB IPB<br>
+                            Subdit. Pembinaan Karakter<br>
+                            Direktorat Kemahasiswaan dan Pengembangan Karir<br>
+                            Institut Pertanian Bogor
+                        </p>
+                        <a href="">
+                            <p>Jalan Lingkar Kampus IPB Darmaga, Babakan, Dramaga, Babakan, Kec. Dramaga, Bogor, Jawa
+                                Barat 16680</p>
+                        </a>
+                        <p>Jam kerja pukul 08.00 - 16.00 WIB<br>
+                            <a href="">mpkmbipb@apps.ipb.ac.id</a>
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 px-lg-5">
+                    <div class="text">
+                        <h3 class="mt-2">Pusat Informasi:</h3>
+                        <br>
+                        <p>Help Desk MPKMB: <a href="http://">+62813-8201-8481</a></p>
+                        <p>Official Account MPKMB:</p>
+                        <div class="social-media d-flex">
+                            <div class="content-1 d-flex flex-column">
+                                <a href="http://" class="p-2 d-flex align-items-center">
+                                    <i class="fab fa-line fa-2x mr-2" aria-hidden="true"></i> Line
+                                </a>
+                                <a href="http://" class="p-2 d-flex align-items-center">
+                                    <i class="fa fa-youtube fa-2x mr-2" aria-hidden="true"></i> Youtube
+
+                                </a>
+                                <a href="http://" class="p-2 d-flex align-items-center">
+                                    <i class="fa fa-twitter fa-2x mr-2" aria-hidden="true"></i> Twitter
+
+                                </a>
+                            </div>
+                            <div class="content-2 d-flex flex-column">
+                                <a href="http://" class="p-2 d-flex align-items-center">
+                                    <i class="fa fa-instagram fa-2x mr-2" aria-hidden="true"></i> Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <h6 class="text-center"><i class="fa fa-copyright" aria-hidden="true"></i> 2021. Tim IT MPKMB IPB</h6>
+        </div>
+    </section>
+
+    <!-- Vendor JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/38ce6c8d5a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="venobox/venobox.min.js"></script>
+    <!-- Main Js -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
