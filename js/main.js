@@ -14,12 +14,14 @@ $('.menu').on('click', function(){
             ease: "elastic", 
             force3D: true
           });
+          
         toggle = false;
     }else{
         $(this).removeClass('open');
         $('.overlay').addClass('d-none');
         toggle = true;
       };
+
  });
 
 
