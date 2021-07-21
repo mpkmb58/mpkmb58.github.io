@@ -10,62 +10,12 @@ $theme-colors: ("orange": $orange,
 
 * {
     font-family: 'poppins', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-
-// SECTION 1
-
-.logo {
-    width: 20px;
-}
-
-.hero {
-    height: 100vh;
-    position: relative;
-
-    .banner {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -150%);
-        width: 100vw;
-    }
-}
-
-.hero::after {
-    content: '';
-    z-index: 1;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    min-height: 150px;
-    // background-color: $red;
-    background-repeat: repeat-x;
-    background-size: auto;
-    background-position: bottom center;
-    background-image: url('../img/leaf.svg');
-}
-
-.hero::before {
-    content: '';
-    // z-index: -1;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    min-height: 150px;
-    // background-color: $red;
-    background-repeat: repeat-x;
-    background-size: auto;
-    background-position: bottom center;
-    background-image: url('../img/leaf.svg');
-    animation: blur 2s ease-in-out infinite alternate;
-}
 
 // HAMBURGER MENU
 .menu {
-    padding: 10px;
     width: fit-content;
     height: fit-content;
     // background-color: black;
@@ -118,61 +68,101 @@ $theme-colors: ("orange": $orange,
 // END OF HAMBURGER MENU
 
 
-// overlay
-.overlay {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+.hero-banner{
+    font-family: 'Cinzel Decorative', cursive;
 }
 
-.overlay {
-    transition: all .3s;
+.blur{
+    filter: blur(2px)
 }
 
-.overlay::after {
+.banner{
+    position: relative;
+    background-image: url('/img/bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .hero{
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.banner::after{
     content: '';
     position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
+    background-image: url('/img/leaf.svg');
     bottom: 0;
+    left: 0;
     right: 0;
-    background-color: black;
-    opacity: .6;
-
+    min-height: 150px;
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: bottom center;
+    z-index: 3;
+    filter: blur(4px);
+    transform: translateY(20px);
+}
+.banner::before{
+    content: '';
+    position: absolute;
+    background-image: url('/img/coin-ipb.svg');
+    bottom: 0;
+    right: 5%;
+    width: 40vmax;
+    aspect-ratio: 1/1;
+    transform: translateY(20%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    z-index: 1;
 }
 
-// END of SECTION 1
-
-
-
-
-.hover:hover {
-    opacity: .5;
+.mahardika{
+    font-size: 2em;
 }
 
-// EFEK logo sosmed 
-.shadoww {
-    box-shadow: 0px 0px 0px black;
-    transition: all .3s;
-
+.cakrabinaya{
+    font-size: 4em;
 }
 
-.shadoww:hover {
-    transform: scale(1.5);
-    box-shadow: 0px 0px 10px black;
-    cursor: pointer;
-}
 
-@keyframes blur {
-    from {
-        filter: blur(5px);
+
+
+// BREAKPOINTS
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    
+    .mahardika{
+        font-size: 2.5em;
+    }
+    
+    .cakrabinaya{
+        font-size: 5.5em;
     }
 
-    to {
-        filter: blur(20px);
+    .banner::before{
+        content: '';
+        position: absolute;
+        background-image: url('/img/coin-ipb.svg');
+        bottom: 0;
+        right: 5%;
+        width: 30vmax;
+        aspect-ratio: 1/1;
+        transform: translateY(20%);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+        z-index: 1;
     }
 }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {  }
