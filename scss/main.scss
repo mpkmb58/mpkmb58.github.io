@@ -13,6 +13,41 @@ $theme-colors: ("orange": $orange,
     box-sizing: border-box;
 }
 
+// NAVIGATION
+.hover{position: relative; }
+.hover::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+}
+
+.hover:hover::after{
+    width: 100%;
+}
+.nav-collaps{
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 5;
+    // transform: translateY(100%)  ;
+    transition: .6s;
+    clip-path: circle(0% at 50% 200%);
+}
+.wrapper{transition: .3s;}
+.show{
+    // transform: translate(0%)  !important;    
+    clip-path: circle(100% at 50% 50%);
+}
+
+.small{
+    transform: translateY(20%) scale(0);
+}
 
 // HAMBURGER MENU
 .menu {
@@ -66,10 +101,10 @@ $theme-colors: ("orange": $orange,
 }
 
 // END OF HAMBURGER MENU
-
+// END OF NAVIGATION
 
 .hero-banner{
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Cinzel Decorative', poppins;
 }
 
 .blur{
@@ -86,7 +121,9 @@ $theme-colors: ("orange": $orange,
         z-index: 2;
     }
 }
-
+.active{
+    background-color: red;
+}
 .banner::after{
     content: '';
     position: absolute;
@@ -99,22 +136,24 @@ $theme-colors: ("orange": $orange,
     background-size: auto;
     background-position: bottom center;
     z-index: 3;
-    filter: blur(4px);
     transform: translateY(20px);
 }
-.banner::before{
-    content: '';
+.coin{
     position: absolute;
     background-image: url('/img/coin-ipb.svg');
     bottom: 0;
     right: 5%;
-    width: 40vmax;
+    width: 35vmax;
     aspect-ratio: 1/1;
-    transform: translateY(20%);
+    // transform: translateY(20%);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom center;
     z-index: 1;
+    // transition: .6s;
+}
+.banner.change::before{
+    transform: scale(0);
 }
 
 .mahardika{
@@ -124,6 +163,46 @@ $theme-colors: ("orange": $orange,
 .cakrabinaya{
     font-size: 4em;
 }
+
+
+.b{
+    position: relative;
+}
+.b::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 150px;
+    background-image: url('/img/leaf.svg');
+    background-repeat: repeat-x;
+    transform: rotate(180deg) translateY(40%);
+    filter: blur(20px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -142,19 +221,11 @@ $theme-colors: ("orange": $orange,
         font-size: 5.5em;
     }
 
-    .banner::before{
-        content: '';
-        position: absolute;
-        background-image: url('/img/coin-ipb.svg');
-        bottom: 0;
-        right: 5%;
+    .coin{
         width: 30vmax;
-        aspect-ratio: 1/1;
-        transform: translateY(20%);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: bottom center;
-        z-index: 1;
+    }
+    .b::after{
+        transform: translateY(0) rotate(180deg);
     }
 }
 

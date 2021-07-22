@@ -11138,6 +11138,53 @@ fieldset:disabled .btn {
           box-sizing: border-box;
 }
 
+.hover {
+  position: relative;
+}
+
+.hover::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.hover:hover::after {
+  width: 100%;
+}
+
+.nav-collaps {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  -webkit-transition: .6s;
+  transition: .6s;
+  -webkit-clip-path: circle(0% at 50% 200%);
+          clip-path: circle(0% at 50% 200%);
+}
+
+.wrapper {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.show {
+  -webkit-clip-path: circle(100% at 50% 50%);
+          clip-path: circle(100% at 50% 50%);
+}
+
+.small {
+  -webkit-transform: translateY(20%) scale(0);
+          transform: translateY(20%) scale(0);
+}
+
 .menu {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -11205,7 +11252,7 @@ fieldset:disabled .btn {
 }
 
 .hero-banner {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Cinzel Decorative', poppins;
 }
 
 .blur {
@@ -11225,6 +11272,10 @@ fieldset:disabled .btn {
   z-index: 2;
 }
 
+.active {
+  background-color: red;
+}
+
 .banner::after {
   content: '';
   position: absolute;
@@ -11237,26 +11288,26 @@ fieldset:disabled .btn {
   background-size: auto;
   background-position: bottom center;
   z-index: 3;
-  -webkit-filter: blur(4px);
-          filter: blur(4px);
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
 }
 
-.banner::before {
-  content: '';
+.coin {
   position: absolute;
   background-image: url("/img/coin-ipb.svg");
   bottom: 0;
   right: 5%;
-  width: 40vmax;
+  width: 35vmax;
   aspect-ratio: 1/1;
-  -webkit-transform: translateY(20%);
-          transform: translateY(20%);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
   z-index: 1;
+}
+
+.banner.change::before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .mahardika {
@@ -11267,6 +11318,25 @@ fieldset:disabled .btn {
   font-size: 4em;
 }
 
+.b {
+  position: relative;
+}
+
+.b::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 150px;
+  background-image: url("/img/leaf.svg");
+  background-repeat: repeat-x;
+  -webkit-transform: rotate(180deg) translateY(30%);
+          transform: rotate(180deg) translateY(30%);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+
 @media (min-width: 768px) {
   .mahardika {
     font-size: 2.5em;
@@ -11274,20 +11344,12 @@ fieldset:disabled .btn {
   .cakrabinaya {
     font-size: 5.5em;
   }
-  .banner::before {
-    content: '';
-    position: absolute;
-    background-image: url("/img/coin-ipb.svg");
-    bottom: 0;
-    right: 5%;
+  .coin {
     width: 30vmax;
-    aspect-ratio: 1/1;
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom center;
-    z-index: 1;
+  }
+  .b::after {
+    -webkit-transform: translateY(0) rotate(180deg);
+            transform: translateY(0) rotate(180deg);
   }
 }
 /*# sourceMappingURL=main.css.map */
