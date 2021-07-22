@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel();
 
   const test = () => $(".header").toggleClass('bg-grey');;
   gsap.to(".header", {
