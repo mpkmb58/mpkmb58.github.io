@@ -43,7 +43,7 @@ gsap.to(".hero-mahardika", {
 $('.menu').on('click', function () {
   $(this).toggleClass('open');
   $('.nav-collaps').toggleClass('show');
-  $('.wrapper').toggleClass('small');
+  $('.wrapper').toggleClass("hide");
 });
 
 

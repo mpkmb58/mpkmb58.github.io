@@ -47,8 +47,8 @@ $theme-colors: ("orange": $orange,
     clip-path: circle(100% at 50% 50%);
 }
 
-.small{
-    transform: translateY(20%) scale(0);
+.hide{
+    opacity: 0;
 }
 
 // HAMBURGER MENU
@@ -147,7 +147,7 @@ $theme-colors: ("orange": $orange,
     right: 5%;
     width: 35vmax;
     aspect-ratio: 1/1;
-    transform: translateY(20%);
+    transform: translateY(20%) translateX(-50%);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom center;
@@ -250,7 +250,11 @@ $theme-colors: ("orange": $orange,
 
 
 // BREAKPOINTS
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {  
+    .coin{
+        transform: translateY(20%) translateX(0);
+    }
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
