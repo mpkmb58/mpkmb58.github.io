@@ -11,6 +11,7 @@ $theme-colors: ("orange": $orange,
 * {
     font-family: 'poppins', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    color: $blue;
 }
 
 // NAVIGATION
@@ -22,7 +23,7 @@ $theme-colors: ("orange": $orange,
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: black;
+    background-color: $blue;
     bottom: 0;
     left: 0;
     transition: .3s;
@@ -37,13 +38,11 @@ $theme-colors: ("orange": $orange,
     left: 0; 
     right: 0; 
     z-index: 5;
-    // transform: translateY(100%)  ;
     transition: .6s;
     clip-path: circle(0% at 50% 200%);
 }
 .wrapper{transition: .3s;}
 .show{
-    // transform: translate(0%)  !important;    
     clip-path: circle(100% at 50% 50%);
 }
 
@@ -144,10 +143,10 @@ $theme-colors: ("orange": $orange,
     position: absolute;
     background-image: url('/img/coin-ipb.svg');
     bottom: 0;
-    right: 5%;
+    right: 30%;
     width: 35vmax;
     aspect-ratio: 1/1;
-    transform: translateY(20%) translateX(-50%);
+    transform: translateY(20%) translateX(50%);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom center;
@@ -252,7 +251,8 @@ $theme-colors: ("orange": $orange,
 // BREAKPOINTS
 @media (min-width: 576px) {  
     .coin{
-        transform: translateY(20%) translateX(0);
+        right: 5%;
+        transform: translateY(20%) translateX(0%);
     }
 }
 

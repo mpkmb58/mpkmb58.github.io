@@ -11136,6 +11136,7 @@ fieldset:disabled .btn {
   font-family: 'poppins', Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #343F56;
 }
 
 .hover {
@@ -11147,7 +11148,7 @@ fieldset:disabled .btn {
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: black;
+  background-color: #343F56;
   bottom: 0;
   left: 0;
   -webkit-transition: .3s;
@@ -11295,11 +11296,11 @@ fieldset:disabled .btn {
   position: absolute;
   background-image: url("/img/coin-ipb.svg");
   bottom: 0;
-  right: 5%;
+  right: 30%;
   width: 35vmax;
   aspect-ratio: 1/1;
-  -webkit-transform: translateY(20%) translateX(-50%);
-          transform: translateY(20%) translateX(-50%);
+  -webkit-transform: translateY(20%) translateX(50%);
+          transform: translateY(20%) translateX(50%);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
@@ -11460,8 +11461,9 @@ fieldset:disabled .btn {
 
 @media (min-width: 576px) {
   .coin {
-    -webkit-transform: translateY(20%) translateX(0);
-            transform: translateY(20%) translateX(0);
+    right: 5%;
+    -webkit-transform: translateY(20%) translateX(0%);
+            transform: translateY(20%) translateX(0%);
   }
 }
 
