@@ -2,423 +2,573 @@ $theme-colors : ("blue" : #343F56,
     "red" : #EC4445,
     "orange" : #FA9201,
     "cream" : #F5E4C6,
-    "grey" : #F8F8F8);
+    "grey" : #F8F8F8,
+    "maroon" : #D95567
+    );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-p {
-    font-size : 1rem;
-    line-height : 1.3em;
-}
-
-
 body {
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-}
-
-section {
-    padding: 5rem 0;
-    position: relative;
-    overflow: hidden;
+    font-family: 'Poppins',sans-serif;
+    overflow-x: hidden;
 }
 
 img {
     width: 100%;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+section {
+    position: relative;
+    z-index: 3;
+    padding: 80px 0px;
 }
 
-.hamburger,
-.hamburger::after,
-.hamburger::before {
-    height: 0.2rem;
-    width: 2rem;
-    background-color: #F8F8F8;
-}
-
-.hamburger::before {
-    content: '';
-    position: absolute;
-    transform: translateY(-225%);
-}
-
-.hamburger::after {
-    content: '';
-    position: absolute;
-    transform: translateY(225%);
-}
-
-.menu {
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    right: 0;
-    transform: translateX(-0%);
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
-    border-radius: 15px;
     border-style: none;
+    border-radius: 10px;
 }
 
-.bg-none {
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.breadcrumb {
     background-color: transparent;
 }
 
-#hero {
-    min-height: 100vh;
+.shadowed {
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+}
 
-    // h1 {
-    //     font-size: 3.5rem;
-    //     line-height: 1.2em;
-    //     font-weight: 700;
-    //     margin: 0;
-    // }
+#background {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 1;
 
-    // h5 {
-    //     font-size: 1rem;
-    //     line-height: 1.2em;
-    //     font-weight: 500;
-    // }
-
-    .dec-fore {
-        width: 100%;
-        position: absolute;
-        bottom: -0.5rem;
-        left: 0;
+    .bg-logo {
         z-index: 2;
+        margin: auto;
+
+        img {
+            transform: translateY(-10%) scale(1.5);
+            opacity: 0.15;
+            width: 20vmax;
+        }
     }
 
-    .logo-ipb {
-        width: 35%;
+    .light {
         position: absolute;
-        right: 0;
-        bottom: 0;
+        width: 25%;
+        aspect-ratio: 1/1;
+        opacity: 0.5;
+        filter: blur(15rem);
+        border-radius: 50%;
         z-index: 1;
-        transform: translate(-10%, -10%);
     }
 
-    .title {
-        z-index : 2;
-    }
-
-    @media (max-width : 1024px) {
-        .logo-ipb {
-            right: 30%;
-        }
-
-        .title {
-            text-align: center;
-            width: 100%;
-            left: 0;
-        }
-
-    }
-
-    @media (max-width : 576px) {
-        h1{
-            font-size: 1.5rem;
-        }
-        .logo-ipb {
-            width: 40%;
-            right: 25%;
-        }
-    }
-}
-
-#deskripsi {
-    .dec-fore-top {
-        width: 100%;
-        position: absolute;
-        top: -0.5rem;
-        left: 0;
-        z-index: -1;
-
-        img {
-            transform: rotateX(180deg);
-        }
-    }
-
-    .texture-1 {
-        position: absolute;
-        bottom : 0;
-        left : 0;
-        width: 25vmax;
-        transform: translate(-45%,45%);
-    }
-
-    .texture-2 {
-        position: absolute;
+    .one,
+    .two,
+    .three,
+    .four {
         top: 0;
-        right: 0;
-        width: 25vmax;
-        transform: translate(45%, -45%);
     }
 
-    .box {
-        overflow: hidden;
-        position: relative;
-        height: 70%;
-        border-radius: 10px;
-        
-        p {
-            text-align: justify;
-        }
-
-        .photo {
-            width : 100%;
-            aspect-ratio: 4/3;
-        }
-    }
-    // @media (max-width : 768px) {
-    //     .box {
-    //         width: 80%;
-    //     }
-    // }
-
-    // @media (max-width: 576px){
-    //     .box {
-    //         width: 100%;
-    //     }
-    // }
-
-}
-
-#sambutan {
-    position: relative;
-    overflow: hidden;
-
-    .texture-1 {
-        position: absolute;
-        top : 0;
-        left : 0;
-        width: 25vmax;
-        transform: translate(-45%, -45%);  
-    }
-
-    .texture-2 {
-        position: absolute;
-        bottom : 0;
-        right: 0;
-        width: 25vmax;
-        transform: translate(45%, 45%);
-    }
-
-    .video {
-        aspect-ratio: 16/9;
-        width: 90%;
-        border-radius: 10px;
-        position: relative;
-
-        .play-button {
-            display: absolute;
-            width : 10%;
-            top : 0;
-            left : 0;
-            transform : translate(450%, 225%);
-        }
-    }
-}
-
-#lini-masa {
-    position: relative;
-
-    .dec-edge-left{
-        width: 30%;
-        position: absolute;
+    .five,
+    .six,
+    .seven,
+    .eight {
         bottom: 0;
+    }
+
+    .one,
+    .five {
         left: 0;
-        transform: translate(-30%,20%);
-        z-index: -1;
-        img {
-            transform: rotateY(180deg);
-        }
     }
 
-    .dec-edge-right {
-        width: 30%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        transform: translate(30%,20%);
-        z-index: -1;
+    .two,
+    .six {
+        left: 25%;
     }
 
-    .swiper-container {
-        width: 100%;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+    .three,
+    .seven {
+        left: 50%;
     }
 
-    .swiper-slide {
-        border-radius: 10px;
-        width : 24rem;
-        aspect-ratio: 3/4;
-        margin: 0px 32px;
-        
-        .photo {
-            background-color: map-get($theme-colors, "grey" );
-            height: 60%;
-        }
-    }
-
-    @media (max-width : 992px) {
-        .dec-edge-left , .dec-edge-right {
-            width : 50%;
-        }
+    .four,
+    .eight {
+        left: 75%;
     }
 }
 
-#penugasan {
-    position: relative;
-    overflow: hidden;
 
-    .texture-1 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 25vmax;
-        transform: translate(-45%, 45%);
+#banner {
+    .container {
+        display : flex;
+        height: 100vh;
     }
-
-    .texture-2 {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 25vmax;
-        transform: translate(45%, -45%);
-    }
-
-    .photo {
-        width: 100%;
-        aspect-ratio: 4/3;
+    .banner {
+        margin: auto;
+        font-family: 'Cinzel Decorative',cursive;
     }
 }
 
-#sponsorship {
-    .dec-fore-left{
-        position : absolute;
-        min-width : 100%;
-        top: 40%;
-        left: 0;
-        transform: rotate(90deg) translateY(250%);
-        z-index: -1;
-    }
+// Home Start
+#home {
 
-    .dec-fore-right {
-        position: absolute;
-        min-width: 100%;
-        top: 40%;
-        right: 0;
-        transform: rotate(-90deg) translateY(250%);
-        z-index: -1;
-    }
-
-    h2 {
-        text-align: end;
-    }
-
-    .box {
-        position: relative;
-        overflow: hidden;
-        height: 70%;
+    .card{
+        min-height: 240px;
+        margin : 16px 0px;
         border-radius: 10px;
+    }
 
-        
+    // About-Card Start
+    .about{
+        h3 {
+            position: relative;
+            transition: transform 0.1s ease-in-out;
+        }
 
         .texture-1 {
             position: absolute;
+            width: 20vmax;
             top: 0;
             left: 0;
-            width: 25vmax;
-            transform: translate(-45%, -45%);
+            transform: translate(-50%,-50%);
         }
 
         .texture-2 {
             position: absolute;
+            width: 20vmax;
             bottom: 0;
             right: 0;
-            width: 25vmax;
-            transform: translate(45%, 45%);
+            transform: translate(50%, 50%);
         }
 
-        .photo {
-            width: 100%;
-            aspect-ratio: 4/3;
-        }
+        .texture-logo {
+            position : absolute;
+            z-index: 1;
+            width: 13%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            opacity: 0.1;
+            transition : transform 0.25s ease-in-out;
 
+            img {
+                transition : transform 5s ease-in-out;
+            }
+        }
     }
 
-    @media (max-width : 992px) {
-        .dec-fore-left , .dec-fore-right {
-            min-width: 100vmax;
-        }    
+    .about:hover {
+        .texture-logo {
+            transform :scale(1.15);
+            transition : transform 0.25s ease-in-out;
+
+            img {
+                transform : rotate(360deg);
+                transition : transform infinite ease-in-out;
+            }
+        }
+
+        h3 {
+            transform :scale(1.15);
+            transition : transform 0.25s ease-in-out;
+        }
+    }
+    // About-Card End
+
+    // Lini Masa Start
+    .lini-masa {
+        .item{
+            display: flex;
+        }
+
+        .owl-stage-outer{
+            margin-bottom: 24px;
+        }
+
+        .owl-dots{
+
+            .active {
+                span{
+                    background-color: #343F56;
+                }
+            }
+
+            button {
+                span { 
+                    border : 1px solid #343F56;
+                    background-color: transparent;
+                }
+            }
+        }
         
-        h2 {
-            text-align: center;
+        .box {
+            position: relative;
+            margin  : auto;
+            overflow: hidden;
+            width: 240px;
+            aspect-ratio : 1/1;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .texture-1 {
+                position: absolute;
+                transform: translateX(-50%);
+                top : 0;
+                left: 0;
+                width : 50%;
+            }
+
+            .texture-number {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                font-family: 'Open Sans',sans-serif;
+                font-size: 270px;
+                font-weight: 700;
+                transform: translateY(30%);
+                opacity: 0.1;
+            }
+
+            .date {
+                position: absolute;
+                bottom: 0;
+                right : 0;
+                text-align: end;
+
+                .fw-lighter {
+                    font-size : 14px;
+                    font-weight: 100;
+                }
+            }
+
+            .contentB{
+                position:absolute;
+                top:0;
+                left : 0; 
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+
+                .content {
+                    position: absolute;
+                    bottom : 0;
+                    z-index: 1;
+                    transition: 0.3s;
+                    transform: translateY(300px);
+                    transform-origin: top;
+
+                    a {
+                        background-color: transparent;
+                        border: 1px solid #f8f8f8;
+                        color : #f8f8f8;
+                        transition: transform 0.25s ease-in-out;
+                    }
+
+                    a:hover {
+                        background-color: #f8f8f8;
+                        color: #343F56;
+                        border: 1px solid #343F56;
+                        transform: scale(1.1);
+                        transition: transform 0.25s ease-in-out;
+                    }
+                }
+            }
+
+            .contentB::before {
+                content : '';
+                position:absolute;
+                top:0;
+                left : 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 39.31%, rgba(0, 0, 0, 0) 130.83%);
+                transform: scaleY(0);
+                transition : transform 0.25s ease-in-out;
+                transform-origin: bottom;
+
+            }
+        }
+
+        .box:hover {
+            .contentB:before {
+                transform: scaleY(1);
+                transition : transform 0.15s ease-in-out;
+                transform-origin: bottom;
+            }
+
+            .content{
+                transform:translateX(0);
+                transform-origin: bottom;
+            }
+        }
+    }
+    // Lini Masa End
+    
+
+    // Event-Card Start
+    .event {
+        .texture-1 {
+            position: absolute;
+            width: 20vmax;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .texture-2 {
+            position: absolute;
+            width: 20vmax;
+            bottom: 0;
+            right: 0;
+            transform: translate(50%, 50%);
+        }
+
+        .texture-logo {
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            opacity: 0.15;
+            width: 35%;
+            transform: rotate(35deg);
+        }
+    }
+    // Event-Card End
+
+    // FAQ-Card Start
+    .FAQ {
+        .texture-1 {
+            position: absolute;
+            width: 20vmax;
+            top: 0;
+            right: 0;
+            transform: translate(50%,-50%);
+        }
+
+        .texture-2 {
+            position: absolute;
+            width: 20vmax;
+            bottom: 0;
+            left: 0;
+            transform: translate(-50%, 50%);
+        }
+
+        .texture-logo {
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            opacity: 1;
+            width: 25%;
+        }
+    }
+    // FAQ-Card End
+
+    // Penugasan-Card Start
+    .penugasan {    
+        .texture-1 {
+            position: absolute;
+            width: 15vmax;
+            top: 0;
+            transform : translateY(-70%);
+        }
+
+        .texture-2 {
+            position: absolute;
+            width: 15vmax;
+            bottom: 0;
+            transform : translateY(70%);
+        }
+
+        .agenda-logo {
+            position: absolute;
+            bottom: 0; 
+            left:0;
+            width : 15vmax;
+            transform: rotate(30deg);
+            opacity: 0.15;
+        }
+
+        .penugasan-logo {
+            position: absolute;
+            top: 0;
+            right:0;
+            width : 10vmax;
+            transform: rotate(-45deg) translate(10%,-5%);
+            opacity: 0.15;
+        }
+    }
+    // Penugasan-Card End
+    
+    // Sponsor-Card Start
+    .sponsor{
+        .texture-1 {
+            position: absolute;
+            width: 20vmax;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .texture-2 {
+            position: absolute;
+            width: 20vmax;
+            bottom: 0;
+            right: 0;
+            transform: translate(50%, 50%);
+        }
+
+        .row {
+            width : 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:start;
+        }
+
+        .col-lg-4{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            text-align: end;
+        }
+        .v-line {
+            height: 200px;
+            width : 6px;
+        }
+
+        .h-line {
+            display: none;
+        }    
+    }
+    // Sponsor-Card End
+}
+
+
+#footer {
+    .copyright {
+        position: absolute;
+        bottom: 0;
+        left:0;
+        right : 0;
+        background-color: #223049;
+    }
+
+    .boxed {
+        width : 36px;
+        height : 36px;
+        border: 1px solid #f8f8f8;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items:center; 
+        padding : 6px;  
+    }
+
+    a {
+
+        img {
+        transition: transform 0.2s ease-in-out;
+        }
+    }   
+
+    a:hover{
+        img {
+        transform : scale(1.15);
+        transition: transform 0.1s ease-in-out;
         }
     }
 }
 
-#footer {
-    .copyright{
-        width: 100%;
+#acara , #agenda_penugasan, #agenda{
+    min-height: 100vh;
+
+    h3 {
+        position: relative;
+        z-index: 2;
+    }
+    .row {
+        margin : auto;
+    }
+
+    .card {
+        width : 100%;
+        aspect-ratio: 3/4;
+        margin : 16px 0px; 
+    }
+
+    .texture-logo{
         position: absolute;
         bottom: 0;
-        background-color: #223049;
+        right: 0;
+        width: 25vmax;
+        z-index: 1;
+        opacity: 0.15;
+        transform: translateX(25%);
     }
+
+    @media (max-width : 768px) {
+        .card {
+            aspect-ratio: 4/2;
+        }    
+    } 
 }
 
 #agenda {
-    min-height: 100vh;
+    .card {
+        aspect-ratio: 4/1;
+        min-height: 100px;
+    }
 
-    .box {
-        min-height: 6rem;
-        max-width : 100%;
-        aspect-ratio : 4/1;
-        border-radius: 10px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
+    .texture-logo {
+        bottom: 0;
+        right: 0;
+        width: 13vmax;
+        z-index: 1;
+        opacity: 0.15;
+        transform: translateY(10%);
     }
 }
 
-#event {
-    min-height: 100vh;
-    .box {
-        min-height: 6rem;
-        max-width: 100%;
-        aspect-ratio: 8/1;
-        border-radius: 10px;
-    }
-}
 
-#panduan {
-    min-height : 100vh;
 
-    .box {
-        width : 90%;
-        aspect-ratio: 16/9;
-    }
+@media (max-width : 992px) {
 
-    @media (max-width : 576px) {
-        .box {
-            width : 100%;
+#home .sponsor {
+        .col-lg-4 {
+            text-align: center;
         }
 
+        .v-line {
+            display: none;
+        }
+
+        .h-line {
+            display: block;
+            height: 4px;
+            width: 100%;
+        }
     }
 }
