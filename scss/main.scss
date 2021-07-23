@@ -15,8 +15,6 @@ $theme-colors: ("orange": $orange,
 }
 
 // NAVIGATION
-
-
 .hover{position: relative; }
 .hover::after{
     content: '';
@@ -46,9 +44,9 @@ $theme-colors: ("orange": $orange,
     clip-path: circle(100% at 50% 50%);
 }
 
-.hide{
-    opacity: 0;
-}
+// .hide{
+//     opacity: 0;
+// }
 
 // HAMBURGER MENU
 .menu {
@@ -140,16 +138,14 @@ $theme-colors: ("orange": $orange,
     transform: translateY(20px);
 }
 .coin{
-    position: absolute;
-    background-image: url('/img/coin-ipb.svg');
-    bottom: 0;
-    right: 30%;
     width: 35vmax;
-    aspect-ratio: 1/1;
-    transform: translateY(20%) translateX(50%);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom center;
+}
+.coin-wrapper{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
 .banner.change::before{
@@ -250,10 +246,7 @@ $theme-colors: ("orange": $orange,
 
 // BREAKPOINTS
 @media (min-width: 576px) {  
-    .coin{
-        right: 5%;
-        transform: translateY(20%) translateX(0%);
-    }
+
 }
 
 // Medium devices (tablets, 768px and up)
@@ -276,10 +269,10 @@ $theme-colors: ("orange": $orange,
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
+// @media (min-width: 992px) {  }
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }
+// @media (min-width: 1200px) {  }
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {  }
+// @media (min-width: 1400px) {  }

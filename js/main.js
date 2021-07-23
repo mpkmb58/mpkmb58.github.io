@@ -3,8 +3,6 @@ $(window).on("load", function () {
 });
 
 
-
-const test = () => $(".header").toggleClass('bg-grey');;
 gsap.to(".header", {
   scrollTrigger: {
     trigger: ".b",
@@ -43,7 +41,6 @@ gsap.to(".hero-mahardika", {
 $('.menu').on('click', function () {
   $(this).toggleClass('open');
   $('.nav-collaps').toggleClass('show');
-  $('.wrapper').toggleClass("hide");
 });
 
 
