@@ -11290,6 +11290,7 @@ fieldset:disabled .btn {
 
 .coin {
   width: 35vmax;
+  margin-bottom: -65px;
 }
 
 .coin-wrapper {
@@ -11335,9 +11336,8 @@ fieldset:disabled .btn {
 
 .loader-wrapper {
   position: absolute;
-  top: 0;
+  height: 100%;
   left: 0;
-  bottom: 0;
   right: 0;
   background-color: #242f3f;
   display: -webkit-box;
