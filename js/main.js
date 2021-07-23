@@ -9,7 +9,7 @@ gsap.to(".header", {
     start: "top center",
     scrub: true,
     end: "bottom top",
-    toggleClass: { targets: ".header", className: "bg-grey" }
+    toggleClass: { targets: ".header", className: "bg-nav" }
   }, // start the animation when ".box" enters the viewport (once)
   y: -20,
 });

@@ -43,7 +43,21 @@ $theme-colors: ("orange": $orange,
 .show{
     clip-path: circle(100% at 50% 50%);
 }
-
+.bg-nav{
+    position: fixed;
+}
+.bg-nav::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $grey;
+    opacity: .4;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
 // .hide{
 //     opacity: 0;
 // }

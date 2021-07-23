@@ -11181,6 +11181,24 @@ fieldset:disabled .btn {
           clip-path: circle(100% at 50% 50%);
 }
 
+.bg-nav {
+  position: fixed;
+}
+
+.bg-nav::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F8F8F8;
+  opacity: .4;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: -1;
+}
+
 .menu {
   width: -webkit-fit-content;
   width: -moz-fit-content;
