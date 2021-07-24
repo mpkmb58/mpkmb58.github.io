@@ -1,0 +1,108 @@
+.box {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 240px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : #f8f8f8;
+}
+
+img {
+    width: 100%;
+}
+
+.texture-box {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+
+.date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: end;
+}
+
+.texture-number {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 270px;
+    font-weight: 700;
+    transform: translateY(30%);
+    opacity: 0.1;
+}
+
+.fw-lighter
+{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.contentB {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contentB .content {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transition: 0.3s;
+    transform: translateY(300px);
+    transform-origin: top;
+}
+
+.anchor {
+    background-color: transparent;
+    border: 1px solid #f8f8f8;
+    color: #f8f8f8;
+    transition: transform 0.25s ease-in-out;
+}
+
+.anchor:hover {
+    background-color: #f8f8f8;
+    color: #343F56;
+    border: 1px solid #343F56;
+    transform: scale(1.1);
+    transition: transform 0.25s ease-in-out;
+}
+
+.contentB::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 39.31%, rgba(0, 0, 0, 0) 130.83%);
+        transform: scaleY(0);
+        transition: transform 0.25s ease-in-out;
+        transform-origin: bottom;
+
+    }
+
+.box:hover .contentB:before 
+{
+    transform: scaleY(1);
+    transition: transform 0.15s ease-in-out;
+    transform-origin: bottom;
+}
+.box:hover .content 
+{
+    transform: translateX(0);
+    transform-origin: bottom;
+} 

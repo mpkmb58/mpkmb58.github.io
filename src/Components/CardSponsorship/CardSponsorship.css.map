@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,QAAQ,CAAC;EACL,gBAAgB,EAAE,OAAO;CAC5B;;AAED,AAAA,OAAO,CAAC;EACJ,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,GAAG;CACb;;AAGD,MAAM,EAAE,SAAS,EAAE,KAAK;EACpB,AAAA,OAAO,CAAC;IACJ,OAAO,EAAE,IAAI;GAChB;EAED,AAAA,OAAO,CAAC;IACJ,MAAM,EAAE,GAAG;GACd",
+    "sources": [
+        "CardSponsorship.scss"
+    ],
+    "names": [],
+    "file": "CardSponsorship.css"
+}

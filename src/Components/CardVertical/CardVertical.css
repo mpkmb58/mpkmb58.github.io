@@ -1,0 +1,35 @@
+.card-vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  aspect-ratio: 3/4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.texture-bottom-big {
+  position: absolute;
+  width: 20vmax;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(15%, 15%);
+          transform: translate(15%, 15%);
+  opacity: 0.15;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .card-vertical {
+    aspect-ratio: 4/1;
+    min-height: 100px;
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=CardVertical.css.map */

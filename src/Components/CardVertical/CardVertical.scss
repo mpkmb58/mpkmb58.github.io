@@ -1,0 +1,27 @@
+.card-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    aspect-ratio: 3/4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.texture-bottom-big {
+    position: absolute;
+    width: 20vmax;
+    bottom: 0;
+    right: 0;
+    transform: translate(15%, 15%);
+    opacity: 0.15;
+    z-index: 1;
+}
+
+@media (max-width : 992px) {
+    .card-vertical {
+        aspect-ratio: 4/1;
+        min-height: 100px;
+        max-width: 100%;
+    }
+}

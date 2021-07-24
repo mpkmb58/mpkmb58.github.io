@@ -1,0 +1,33 @@
+.footer {
+  position: relative;
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #f8f8f8;
+}
+
+.boxed {
+  width: 36px;
+  height: 36px;
+  padding: 5px;
+  border: 1px solid #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/*# sourceMappingURL=Footer.css.map */

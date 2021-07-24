@@ -1,5 +1,8 @@
 .b{
     position: relative;
+    padding : 80px 0px;
+    z-index: 1;
+    font-family: 'Poppins', 'Sans-Serif';
 }
 .b::after{
     content: '';
@@ -13,6 +16,11 @@
     transform: rotate(180deg) translateY(40%);
     filter: blur(20px);
 
+}
+
+.container {
+    position: relative;
+    z-index: 2;
 }
 
 

@@ -1,0 +1,24 @@
+.texture-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  width: 20vmax;
+}
+
+.texture-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  width: 20vmax;
+}
+
+.texture-logo-center {
+  position: absolute;
+  width: 15vmax;
+  z-index: 1;
+}
+/*# sourceMappingURL=CardFAQ.css.map */

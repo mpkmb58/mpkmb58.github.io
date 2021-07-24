@@ -1,0 +1,51 @@
+.card-component {
+    overflow: hidden;
+    min-height: 240px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8f8f8;
+    border-radius: 10px;
+}
+
+h3 {
+    position: relative;
+    z-index: 2;
+}
+
+img {
+    width: 100%;
+}
+
+.texture-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 20vmax;
+}
+
+.texture-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+    width: 20vmax;
+}
+
+.texture-logo-about {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.texture-logo-about img {
+    width: 13%;
+}
+
+.texture-img {
+    opacity: 0.15;
+}
