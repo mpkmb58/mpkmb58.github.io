@@ -1,0 +1,94 @@
+.navbar-brand{
+    display: inline-block;
+    width: 30px;
+}
+.navbar{
+    z-index: 9999;
+}
+.brand-title{
+    font-family: 'Cinzel Decorative', poppins;
+}
+// HAMBURGER MENU
+.menu {
+    // background-color: black;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.box,
+.box::after,
+.box::before {
+    width: 1.5em;
+    height: .2em;
+    background-color: #343F56;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.box::after,
+.box::before {
+    content: '';
+    position: absolute;
+}
+
+.box::after {
+    transform: translateY(5px);
+}
+
+.box::before {
+    transform: translateY(-5px);
+}
+
+.menu.open .box {
+    transform: rotate(45deg);
+    background: transparent;
+}
+
+.menu.open .box::before {
+    transform: rotate(0deg)
+}
+
+.menu.open .box::after {
+    transform: rotate(-90deg)
+}
+
+// END OF HAMBURGER MENU
+
+// NAV-LINKS
+.nav-collaps{
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 5;
+    transition: .6s;
+    transform: translateY(100%);
+    // clip-path: circle(0% at 50% 50%);
+}
+
+.nav-collaps.show{
+    transform: translateY(0%);
+
+    // clip-path: circle(100% at 50% 50%);
+}
+
+.hover{position: relative; }
+.hover::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #343F56;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+}
+
+.hover:hover::after{
+    width: 100%;
+}

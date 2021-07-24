@@ -1,0 +1,110 @@
+.navbar-brand {
+  display: inline-block;
+  width: 30px;
+}
+
+.navbar {
+  z-index: 9999;
+}
+
+.brand-title {
+  font-family: 'Cinzel Decorative', poppins;
+}
+
+.menu {
+  position: relative;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.box,
+.box::after,
+.box::before {
+  width: 1.5em;
+  height: .2em;
+  background-color: #343F56;
+  border-radius: 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box::after,
+.box::before {
+  content: '';
+  position: absolute;
+}
+
+.box::after {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.box::before {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.menu.open .box {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: transparent;
+}
+
+.menu.open .box::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.menu.open .box::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.nav-collaps {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  -webkit-transition: .6s;
+  transition: .6s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.nav-collaps.show {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.hover {
+  position: relative;
+}
+
+.hover::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #343F56;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.hover:hover::after {
+  width: 100%;
+}
+/*# sourceMappingURL=NavbarComponent.css.map */
