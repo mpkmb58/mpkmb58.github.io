@@ -8,14 +8,16 @@ function NavbarComponents() {
 
     return (
         <Fragment>
-            <nav className="navbar fixed-top ">
-                <div className="container-lg d-flex justify-content-between align-items-center">
-                    <a className="navbar-brand text-red" href="/">
-                        <img width=" 100%" src={Logo} alt="" />
-                    </a>
-                    <div><h2 className="brand-title m-0">MPKMB IPB 58</h2></div>
+            <nav className="navbar fixed-top py-sm-4 py-2">
+                <div className="container-fluid d-flex justify-content-between align-items-center px-sm-5 px-2">
+                    <div class="nav-brand d-flex align-items-center">
+                        <a className="navbar-brand text-red" href="/">
+                            <img width=" 100%" src={Logo} alt="" />
+                        </a>
+                        <div><h4 className="brand-title m-0 fw-bold">MPKMB IPB 58</h4></div>
+                    </div>
                     <div onClick={() => setActive(!active)} className={active ? 'menu open px-2 py-3' : 'menu px-2 py-3'}>
-                        <div className="box"></div>
+                        <div className="hamburger"></div>
                     </div>
                 </div>
             </nav>

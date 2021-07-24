@@ -36,7 +36,7 @@
 }
 
 .coin {
-  width: 35vmax;
+  width: calc(10rem + 20vw);
 }
 
 .coin-wrapper {
@@ -49,11 +49,15 @@
 }
 
 .mahardika {
-  font-size: 1.5em;
+  font-size: calc(1.325rem + .9vw);
 }
 
 .cakrabinaya {
-  font-size: 3em;
+  font-size: calc(1.325rem + 4vmin);
+}
+
+.perjuangan {
+  font-size: calc(0rem + 3vmin);
 }
 
 @media (min-width: 768px) {
@@ -63,8 +67,17 @@
   .cakrabinaya {
     font-size: 5.5em;
   }
+}
+
+@media (max-height: 500px) {
   .coin {
-    width: 30vmax;
+    width: 50vmin;
+  }
+}
+
+@media (min-height: 1200px) {
+  .coin {
+    width: calc(10rem + 30vh);
   }
 }
 /*# sourceMappingURL=SectionA.css.map */
