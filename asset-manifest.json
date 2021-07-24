@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/mpkmb58.github.io/static/css/main.e89fc555.chunk.css",
-    "main.js": "/mpkmb58.github.io/static/js/main.cb41662a.chunk.js",
-    "main.js.map": "/mpkmb58.github.io/static/js/main.cb41662a.chunk.js.map",
-    "runtime-main.js": "/mpkmb58.github.io/static/js/runtime-main.6181f772.js",
-    "runtime-main.js.map": "/mpkmb58.github.io/static/js/runtime-main.6181f772.js.map",
-    "static/js/2.b1c2f2c8.chunk.js": "/mpkmb58.github.io/static/js/2.b1c2f2c8.chunk.js",
-    "static/js/2.b1c2f2c8.chunk.js.map": "/mpkmb58.github.io/static/js/2.b1c2f2c8.chunk.js.map",
-    "static/js/3.60ac3da3.chunk.js": "/mpkmb58.github.io/static/js/3.60ac3da3.chunk.js",
-    "static/js/3.60ac3da3.chunk.js.map": "/mpkmb58.github.io/static/js/3.60ac3da3.chunk.js.map",
-    "index.html": "/mpkmb58.github.io/index.html",
-    "static/css/main.e89fc555.chunk.css.map": "/mpkmb58.github.io/static/css/main.e89fc555.chunk.css.map",
-    "static/js/2.b1c2f2c8.chunk.js.LICENSE.txt": "/mpkmb58.github.io/static/js/2.b1c2f2c8.chunk.js.LICENSE.txt",
-    "static/media/SectionA.css": "/mpkmb58.github.io/static/media/bg.49176c8b.svg",
-    "static/media/coin-ipb.4f4620e1.svg": "/mpkmb58.github.io/static/media/coin-ipb.4f4620e1.svg",
-    "static/media/SectionB.css": "/mpkmb58.github.io/static/media/leaf.6dd03100.svg",
-    "static/media/logo_mahardika_cakrabinaya 1.85d8c851.svg": "/mpkmb58.github.io/static/media/logo_mahardika_cakrabinaya 1.85d8c851.svg"
+    "main.css": "/static/css/main.57ebfc62.chunk.css",
+    "main.js": "/static/js/main.cb41662a.chunk.js",
+    "main.js.map": "/static/js/main.cb41662a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.59d370db.js",
+    "runtime-main.js.map": "/static/js/runtime-main.59d370db.js.map",
+    "static/js/2.b1c2f2c8.chunk.js": "/static/js/2.b1c2f2c8.chunk.js",
+    "static/js/2.b1c2f2c8.chunk.js.map": "/static/js/2.b1c2f2c8.chunk.js.map",
+    "static/js/3.60ac3da3.chunk.js": "/static/js/3.60ac3da3.chunk.js",
+    "static/js/3.60ac3da3.chunk.js.map": "/static/js/3.60ac3da3.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.57ebfc62.chunk.css.map": "/static/css/main.57ebfc62.chunk.css.map",
+    "static/js/2.b1c2f2c8.chunk.js.LICENSE.txt": "/static/js/2.b1c2f2c8.chunk.js.LICENSE.txt",
+    "static/media/SectionA.css": "/static/media/bg.49176c8b.svg",
+    "static/media/coin-ipb.4f4620e1.svg": "/static/media/coin-ipb.4f4620e1.svg",
+    "static/media/SectionB.css": "/static/media/leaf.6dd03100.svg",
+    "static/media/logo_mahardika_cakrabinaya 1.85d8c851.svg": "/static/media/logo_mahardika_cakrabinaya 1.85d8c851.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6181f772.js",
+    "static/js/runtime-main.59d370db.js",
     "static/js/2.b1c2f2c8.chunk.js",
-    "static/css/main.e89fc555.chunk.css",
+    "static/css/main.57ebfc62.chunk.css",
     "static/js/main.cb41662a.chunk.js"
   ]
 }
