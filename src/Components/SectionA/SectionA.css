@@ -1,0 +1,70 @@
+.hero-banner {
+  font-family: 'Cinzel Decorative', poppins;
+}
+
+.blur {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.banner {
+  position: relative;
+  background-image: url("../../Assets/img/bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner .hero {
+  position: relative;
+  z-index: 2;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  background-image: url("../../Assets/img/leaf.svg");
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 150px;
+  background-repeat: repeat-x;
+  background-size: auto;
+  background-position: bottom center;
+  z-index: 3;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.coin {
+  width: 35vmax;
+}
+
+.coin-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mahardika {
+  font-size: 1.5em;
+}
+
+.cakrabinaya {
+  font-size: 3em;
+}
+
+@media (min-width: 768px) {
+  .mahardika {
+    font-size: 2.5em;
+  }
+  .cakrabinaya {
+    font-size: 5.5em;
+  }
+  .coin {
+    width: 30vmax;
+  }
+}
+/*# sourceMappingURL=SectionA.css.map */

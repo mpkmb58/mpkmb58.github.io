@@ -1,0 +1,31 @@
+// Color Pallete
+$blue: #343F56;
+$orange: #FA9201;
+$cream: #F5E4C6;
+$red: #EC4445;
+$grey: #F8F8F8;
+
+ $theme-colors: (
+    "orange": $orange,
+    "red": $red,
+    "blue": $blue,
+    "grey": $grey,
+    "cream": $cream
+);
+
+
+/* The following line can be included in a src/App.scss */
+
+
+// @import "~bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+section{
+    min-height: 100vh;
+}
+
+

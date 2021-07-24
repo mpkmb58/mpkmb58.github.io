@@ -1,0 +1,26 @@
+.b {
+  position: relative;
+}
+
+.b::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 150px;
+  background-image: url("../../Assets/img/leaf.svg");
+  background-repeat: repeat-x;
+  -webkit-transform: rotate(180deg) translateY(40%);
+          transform: rotate(180deg) translateY(40%);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+
+@media (min-width: 768px) {
+  .b::after {
+    -webkit-transform: translateY(0) rotate(180deg);
+            transform: translateY(0) rotate(180deg);
+  }
+}
+/*# sourceMappingURL=SectionB.css.map */
