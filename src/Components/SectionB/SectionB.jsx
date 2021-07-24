@@ -3,7 +3,7 @@ import './SectionB.css'
 
 function SectionB() {
     return (
-        <section class="bg-grey panel b" >
+        <section className="bg-grey panel b" >
 
         </section>
     )
