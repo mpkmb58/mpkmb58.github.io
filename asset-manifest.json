@@ -1,26 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.57ebfc62.chunk.css",
-    "main.js": "/static/js/main.cb41662a.chunk.js",
-    "main.js.map": "/static/js/main.cb41662a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.59d370db.js",
-    "runtime-main.js.map": "/static/js/runtime-main.59d370db.js.map",
-    "static/js/2.b1c2f2c8.chunk.js": "/static/js/2.b1c2f2c8.chunk.js",
-    "static/js/2.b1c2f2c8.chunk.js.map": "/static/js/2.b1c2f2c8.chunk.js.map",
-    "static/js/3.60ac3da3.chunk.js": "/static/js/3.60ac3da3.chunk.js",
-    "static/js/3.60ac3da3.chunk.js.map": "/static/js/3.60ac3da3.chunk.js.map",
+    "main.css": "/static/css/main.7a1ecb32.chunk.css",
+    "main.js": "/static/js/main.80cbf867.chunk.js",
+    "main.js.map": "/static/js/main.80cbf867.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.be3f0f83.js",
+    "runtime-main.js.map": "/static/js/runtime-main.be3f0f83.js.map",
+    "static/js/2.2c7e10f9.chunk.js": "/static/js/2.2c7e10f9.chunk.js",
+    "static/js/2.2c7e10f9.chunk.js.map": "/static/js/2.2c7e10f9.chunk.js.map",
+    "static/js/3.cc1ee718.chunk.js": "/static/js/3.cc1ee718.chunk.js",
+    "static/js/3.cc1ee718.chunk.js.map": "/static/js/3.cc1ee718.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.57ebfc62.chunk.css.map": "/static/css/main.57ebfc62.chunk.css.map",
-    "static/js/2.b1c2f2c8.chunk.js.LICENSE.txt": "/static/js/2.b1c2f2c8.chunk.js.LICENSE.txt",
+    "static/css/main.7a1ecb32.chunk.css.map": "/static/css/main.7a1ecb32.chunk.css.map",
+    "static/js/2.2c7e10f9.chunk.js.LICENSE.txt": "/static/js/2.2c7e10f9.chunk.js.LICENSE.txt",
+    "static/media/Logo_biru.302bf7b0.svg": "/static/media/Logo_biru.302bf7b0.svg",
+    "static/media/Logo_hijau.a0940807.svg": "/static/media/Logo_hijau.a0940807.svg",
+    "static/media/Logo_kuning.72a1b389.svg": "/static/media/Logo_kuning.72a1b389.svg",
+    "static/media/Logo_merah.bfe96b14.svg": "/static/media/Logo_merah.bfe96b14.svg",
+    "static/media/Logo_ungu.92e40e68.svg": "/static/media/Logo_ungu.92e40e68.svg",
     "static/media/SectionA.css": "/static/media/bg.49176c8b.svg",
     "static/media/coin-ipb.4f4620e1.svg": "/static/media/coin-ipb.4f4620e1.svg",
     "static/media/SectionB.css": "/static/media/leaf.6dd03100.svg",
-    "static/media/logo_mahardika_cakrabinaya 1.85d8c851.svg": "/static/media/logo_mahardika_cakrabinaya 1.85d8c851.svg"
+    "static/media/logo_mahardika_cakrabinaya 1.c3100494.svg": "/static/media/logo_mahardika_cakrabinaya 1.c3100494.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.59d370db.js",
-    "static/js/2.b1c2f2c8.chunk.js",
-    "static/css/main.57ebfc62.chunk.css",
-    "static/js/main.cb41662a.chunk.js"
+    "static/js/runtime-main.be3f0f83.js",
+    "static/js/2.2c7e10f9.chunk.js",
+    "static/css/main.7a1ecb32.chunk.css",
+    "static/js/main.80cbf867.chunk.js"
   ]
 }
