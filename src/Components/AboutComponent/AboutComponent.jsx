@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './AboutComponent.css'
 import $ from 'jquery';
 import logo from '../../Assets/img/logo_mahardika_cakrabinaya 1.svg';
