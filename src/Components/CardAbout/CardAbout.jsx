@@ -9,7 +9,7 @@ import './CardAbout.css'
 
 const CardAbout = () => {
     return (
-        <div className="card-component bg-blue p-lg-5 p-3 my-4">
+        <div className="card-component bg-blue p-lg-5 p-3">
             <div className="texture-top-left">
                 <img src={texture} alt="" srcset="" />
             </div>
@@ -23,7 +23,7 @@ const CardAbout = () => {
                 <img className="mx-3 texture-img" src={logo4} alt="" srcset="" />
                 <img className="mx-3 texture-img" src={logo5} alt="" srcset="" />
             </div>
-            <h3>About MPKMB</h3>
+            <h3 className="fw-bold">About MPKMB</h3>
         </div>
     )
 }

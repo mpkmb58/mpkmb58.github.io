@@ -15,7 +15,7 @@ function NavbarComponents() {
                     </a>
                     <div><h2 className="brand-title m-0">MPKMB IPB 58</h2></div>
                     <div onClick={() => setActive(!active)} className={active ? 'menu open px-2 py-3' : 'menu px-2 py-3'}>
-                        <div className="box"></div>
+                        <div className="box-hamburger"></div>
                     </div>
                 </div>
             </nav>

@@ -20,9 +20,9 @@
     transition: all .6s;
 }
 
-.box,
-.box::after,
-.box::before {
+.box-hamburger,
+.box-hamburger::after,
+.box-hamburger::before {
     width: 1.5em;
     height: .2em;
     background-color: #343F56;
@@ -30,30 +30,30 @@
     transition: all .5s;
 }
 
-.box::after,
-.box::before {
+.box-hamburger::after,
+.box-hamburger::before {
     content: '';
     position: absolute;
 }
 
-.box::after {
+.box-hamburger::after {
     transform: translateY(5px);
 }
 
-.box::before {
+.box-hamburger::before {
     transform: translateY(-5px);
 }
 
-.menu.open .box {
+.menu.open .box-hamburger {
     transform: rotate(45deg);
     background: transparent;
 }
 
-.menu.open .box::before {
+.menu.open .box-hamburger::before {
     transform: rotate(0deg)
 }
 
-.menu.open .box::after {
+.menu.open .box-hamburger::after {
     transform: rotate(-90deg)
 }
 

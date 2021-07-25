@@ -15,7 +15,7 @@ const CardEvent = () => {
             <div className="texture-logo-center texture-logo-center-rotateright">
                 <img className="texture-img" src={logoconsole} alt="" srcset="" />
             </div>
-            <h3 className="text-center">Event MPKMB</h3>
+            <h3 className="text-center fw-bold">Event MPKMB</h3>
         </div>
     )
 }

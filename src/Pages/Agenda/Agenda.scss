@@ -1,0 +1,11 @@
+.agenda {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .container {
+        padding : 80px 0px;
+    }
+}

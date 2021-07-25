@@ -20,7 +20,7 @@ const CardAgendaPenugasan = () => {
                 <img className="texture-img" src={logopenugasan} alt="" srcset="" />
             </div>
 
-            <h3 className="text-center">Agenda dan Penugasan</h3>
+            <h3 className="text-center fw-bold">Agenda dan Penugasan</h3>
         </div>
     )
 }

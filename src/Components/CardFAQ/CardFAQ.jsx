@@ -16,7 +16,7 @@ const CardFAQ = () => {
                 <div className="texture-logo-center">
                     <img  src={logofaq} alt="" srcset="" />
                 </div>
-                <h3 className="text-center">Event MPKMB</h3>
+                <h3 className="text-center fw-bold">FAQ</h3>
             </div>
         </div>
     )

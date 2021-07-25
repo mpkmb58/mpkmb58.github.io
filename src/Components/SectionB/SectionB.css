@@ -2,7 +2,20 @@
   position: relative;
   padding: 80px 0px;
   z-index: 1;
-  font-family: 'Poppins', 'Sans-Serif';
+  font-family: 'Poppins',sans-serif;
+}
+
+.b h3 {
+  font-weight: 500;
+}
+
+.b a {
+  text-decoration: none;
+}
+
+.b .container {
+  position: relative;
+  z-index: 2;
 }
 
 .b::after {
@@ -18,11 +31,6 @@
           transform: rotate(180deg) translateY(40%);
   -webkit-filter: blur(20px);
           filter: blur(20px);
-}
-
-.container {
-  position: relative;
-  z-index: 2;
 }
 
 @media (min-width: 768px) {
