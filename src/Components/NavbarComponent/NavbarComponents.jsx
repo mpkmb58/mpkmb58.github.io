@@ -16,12 +16,12 @@ function NavbarComponents() {
                         </a>
                         <div><h4 className="brand-title m-0 fw-bold">MPKMB IPB 58</h4></div>
                     </div>
-                    <div onClick={() => setActive(!active)} className={active ? 'menu open px-2 py-3' : 'menu px-2 py-3'}>
+                    <div onClick={() => setActive(!active)} className={`menu px-2 py-3 ${active ? `open` : ``}`}>
                         <div className="hamburger"></div>
                     </div>
                 </div>
             </nav>
-            <div className={active ? 'nav-collaps show position-fixed bg-grey d-flex align-items-center ' : 'nav-collaps  position-fixed bg-grey d-flex align-items-center '}>
+            <div className={`nav-collaps position-fixed bg-grey d-flex align-items-center ${active ? `show` : ``}`}>
                 <div className="container-lg d-flex justify-content-center flex-column align-items-center">
 
                     <div className="row mb-2 ">
