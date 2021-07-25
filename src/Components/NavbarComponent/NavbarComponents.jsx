@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react'
+
 import Logo from '../../Assets/img/logo_mahardika_cakrabinaya 1.svg'
 import './NavbarComponent.css'
 
@@ -11,7 +12,7 @@ function NavbarComponents() {
             <nav className="navbar fixed-top py-sm-4 py-2">
                 <div className="container-fluid d-flex justify-content-between align-items-center px-sm-5 px-2">
                     <div class="nav-brand d-flex align-items-center">
-                        <a className="navbar-brand text-red" href="/">
+                        <a className="navbar-brand text-red pb-3" href="/">
                             <img width=" 100%" src={Logo} alt="" />
                         </a>
                         <div><h4 className="brand-title m-0 fw-bold">MPKMB IPB 58</h4></div>
@@ -30,13 +31,13 @@ function NavbarComponents() {
                         </div>
                     </div>
                     <div className="row text-center">
-                        <a href="/" className="col-12 my-3 d-block text-decoration-none hover text-blue">
+                        <a href="/" className="col-12 hero-banner-link my-3 d-block text-decoration-none hover text-blue">
                             Home
                         </a>
-                        <a href="/About" className="col-12 my-3 d-block text-decoration-none hover text-blue">
+                        <a href="/About" className="col-12 hero-banner-link my-3 d-block text-decoration-none hover text-blue">
                             About
                         </a>
-                        <a href="/Product" className="col-12 my-3 d-block text-decoration-none hover text-blue">
+                        <a href="/Product" className="col-12 hero-banner-link my-3 d-block text-decoration-none hover text-blue">
                             Product
                         </a>
                     </div>

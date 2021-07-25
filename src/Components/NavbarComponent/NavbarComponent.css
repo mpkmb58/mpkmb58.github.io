@@ -8,7 +8,8 @@
 }
 
 .brand-title {
-  font-family: 'Cinzel Decorative', poppins;
+  font-family:  'poppins', arial;
+  font-size: calc(0.5rem + 2vmin) !important;
 }
 
 .menu {

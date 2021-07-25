@@ -1,24 +1,26 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavbarComponents from './Components/NavbarComponent/NavbarComponents';
 import About from './Pages/About/About';
 import Home from './Pages/Home/Home';
 import Product from './Pages/Product/Product';
+import PageNotFound from './Components/PageNotFound/PageNotFound';
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 
 
 const App = () => {
 
   return (
-    <BrowserRouter>
+    <Router>
       <NavbarComponents />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/About" component={About} />
         <Route path="/Product" component={Product} />
+        <Route component={PageNotFound} />
       </Switch>
-    </BrowserRouter>
+    </Router>
   );
 }
 

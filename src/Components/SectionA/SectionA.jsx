@@ -5,7 +5,7 @@ import Coin from '../../Assets/img/coin-ipb.svg'
 
 function SectionA() {
     return (
-        <section className="banner a panel bg-grey d-flex align-items-center overflow-hidden" >
+        <section className="banner bg-blur a panel bg-grey d-flex align-items-center overflow-hidden" >
             <div className="hero container-lg d-flex justify-content-lg-start justify-content-center align-items-center">
                 <div className="mx-2 hero-mahardika d-flex flex-column align-items-center">
                     <div>
