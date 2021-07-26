@@ -12,7 +12,7 @@ function CardLiniMasa() {
         margin: 32,
         responsiveClass: true,
         owldots : true,
-        smartSpeed: 2000,
+        smartSpeed: 1000,
         responsive: {
             0:{
             items:1
@@ -32,7 +32,7 @@ function CardLiniMasa() {
 
     return (
         <Fragment>
-            <div className="card-component bg-cream p-md-4 p-3 d-flex flex-column justify-content-center align-items-center">
+            <div className="card-lini-masa card-component p-md-4 p-3 d-flex flex-column justify-content-center align-items-center">
                 <h3 className="text-center text-blue fw-bold">LINI MASA</h3>
                 <OwlCarousel className="mt-3" {...options}>
                     <div className="item mx-3">

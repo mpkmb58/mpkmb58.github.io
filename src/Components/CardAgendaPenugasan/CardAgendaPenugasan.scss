@@ -1,54 +1,18 @@
-.card-component {
-    overflow: hidden;
-    min-height: 240px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #f8f8f8;
-    border-radius: 10px;
-}
+.agenda {
 
-img {
-    width: 100%;
-}
+    .texture-logo-agenda {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 18vmax;
+        transform: rotate(30deg) translate(20%, 25%);
+    }
 
-.bg-red {
-    background-color: #EC4445;
-}
-
-h3 {
-    position: relative;
-    z-index: 2;
-}
-
-
-.texture-top-center {
-    position: absolute;
-    top: 0;
-    transform: translateY(-70%);
-    width: 15vmax;
-}
-
-.texture-bottom-center {
-    position: absolute;
-    bottom: 0;
-    transform: translateY(70%);
-    width: 15vmax;
-}
-
-.texture-logo-agenda {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 18vmax;
-    transform: rotate(30deg) translate(20%, 25%);
-}
-
-.texture-logo-penugasan {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 12vmax;
-    transform: rotate(-30deg) translate(15%, 10%);
+    .texture-logo-penugasan {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 12vmax;
+        transform: rotate(-30deg) translate(15%, 10%);
+    }
 }
