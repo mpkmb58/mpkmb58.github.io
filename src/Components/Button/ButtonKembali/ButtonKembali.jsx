@@ -1,13 +1,11 @@
 import React from 'react'
-import './ButtonKembali.css'
+import { ButtonKembaliStyle } from './ButtonKembali.style'
 
 const ButtonKembali = () => {
     return (
-        <div >
-            <button className="back-btn bg-blue text-grey px-4 py-2">
-                Kembali
-            </button>
-        </div>  
+        <ButtonKembaliStyle>
+            Kembali
+        </ButtonKembaliStyle> 
     )
 }
 

@@ -13,9 +13,9 @@ const Box = (props) => {
             <p className="date text-grey me-2">{props.date}<br></br><span class="fw-lighter">{props.time}</span></p>
             <div className="contentB">
                 <div className="content p-3">
-                    <a href="/" className="anchor py-1 px-3 rounded-pill">
+                    <button href="/" className="anchor py-1 px-3 rounded-pill">
                         Selengkapnya
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>

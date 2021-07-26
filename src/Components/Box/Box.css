@@ -75,7 +75,7 @@
           transform-origin: top;
 }
 
-.box .contentB .content a {
+.box .contentB .content button {
   background-color: transparent;
   border: 1px solid #f8f8f8;
   color: #f8f8f8;
@@ -85,7 +85,7 @@
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 
-.box .contentB .content a:hover {
+.box .contentB .content button:hover {
   background-color: #f8f8f8;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);

@@ -57,14 +57,14 @@
             transform: translateY(300px);
             transform-origin: top;
 
-            a {
+            button {
                 background-color: transparent;
                 border: 1px solid #f8f8f8;
                 color: #f8f8f8;
                 transition: transform 0.25s ease-in-out;
             }
 
-            a:hover {
+            button:hover {
                 background-color: #f8f8f8;
                 transform: scale(1.1);
                 transition: transform 0.25s ease-in-out;
