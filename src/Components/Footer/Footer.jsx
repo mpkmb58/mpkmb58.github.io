@@ -37,7 +37,7 @@ const Footer = () => {
                             <br/>
                             <p>Narahubung MPKMB: <a href="http://">+62813-8201-8481</a></p>
                             <p>Official Account MPKMB:</p>
-                            <div className="social-media d-flex">
+                            <div className="social-media">
                                 <div className="socmed-col-1 d-flex flex-column">
                                     <a  href="https://page.line.me/731qklyo?openQrModal=true" target="_blank" className="p-2 d-flex align-items-center text-grey">
                                         <div className="boxed me-3">
