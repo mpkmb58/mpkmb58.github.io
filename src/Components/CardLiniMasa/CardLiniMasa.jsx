@@ -12,6 +12,7 @@ function CardLiniMasa() {
         margin: 32,
         responsiveClass: true,
         owldots : true,
+        nav: true,
         smartSpeed: 1000,
         responsive: {
             0:{
