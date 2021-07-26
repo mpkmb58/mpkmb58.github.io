@@ -14,22 +14,30 @@ function SectionB() {
         <div>
             <section className="bg-grey panel b" >
                 <div className="container">
+                    <div className="card-batch my-3">
                     <CardAbout/>
+                    </div>
+                    <div className="card-batch my-3">
                     <CardLiniMasa/>
-                    <div className="row">
-                        <div className="col-md-6 py-0">
-                            <a href="/Event MPKMB">
+                    </div>
+                    <div className="row my-3">
+                        <div className="col-md-6">
+                            <a href="/Event MPKMB" className="card-batch">
                                 <CardEvent/>
                             </a>
                         </div>
-                        <div className="col-md-6 py-0">
+                        <div className="col-md-6">
+                            <div className="card-batch">
                             <CardFAQ/>
+                            </div>
                         </div>
                     </div>
-                    <a href="/Agenda dan Penugasan">
+                    <a href="/Agenda dan Penugasan" className="card-batch my-3">
                         <CardAgendaPenugasan/>
                     </a>
+                    <div className="card-batch my-3">
                     <CardSponsorship/>
+                    </div>
                 </div>
             </section>
             <Footer/>
