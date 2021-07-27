@@ -17,7 +17,7 @@ function SectionA() {
                     </div>
                     <div className="text-center">
 
-                        <h5 className="perjuangan">Perjuangan Merasionalisasi Mimpi untuk <br />
+                        <h5 >Perjuangan Merasionalisasi Mimpi untuk <br className="d-md-block d-none" />
                             Berkontribusi bagi Negeri
                         </h5>
                     </div>

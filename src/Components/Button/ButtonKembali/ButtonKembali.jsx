@@ -5,7 +5,7 @@ const ButtonKembali = () => {
     return (
         <ButtonKembaliStyle>
             Kembali
-        </ButtonKembaliStyle> 
+        </ButtonKembaliStyle>
     )
 }
 
