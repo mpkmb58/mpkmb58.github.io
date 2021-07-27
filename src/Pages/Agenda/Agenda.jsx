@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import CardSmall from '../../Components/CardSmall/CardSmall'
 import ButtonKembali from '../../Components/Button/ButtonKembali/ButtonKembali'
 import Footer from '../../Components/Footer/Footer'
@@ -6,9 +6,8 @@ import './Agenda.css'
 
 function Agenda() {
     return (
-
-        <div className="">
-        <section className="agenda">            
+        <Fragment>
+        <section className="three-card-page">            
             <div className="container">
                     <a href="/">
                         <ButtonKembali/>
@@ -33,7 +32,7 @@ function Agenda() {
             </div>
         </section>
         <Footer/>
-        </div>
+        </Fragment>
     )
 }
 

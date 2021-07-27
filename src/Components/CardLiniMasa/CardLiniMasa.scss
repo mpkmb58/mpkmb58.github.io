@@ -4,6 +4,14 @@
         padding : 0rem 0.5rem;
     }
 
+    
+
+    .owl-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .owl-nav {
         .owl-prev {
             color: #343F56 !important;

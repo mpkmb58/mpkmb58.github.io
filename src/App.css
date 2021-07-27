@@ -11143,6 +11143,27 @@ section {
   min-height: 100vh;
 }
 
+.three-card-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 0;
+}
+
+.three-card-page .row {
+  margin: auto;
+}
+
 .card-component {
   overflow: hidden;
   min-height: 240px;
@@ -11163,6 +11184,7 @@ section {
 h3, .h3 {
   position: relative;
   z-index: 2;
+  font-weight: 700;
 }
 
 img {
@@ -11223,7 +11245,7 @@ img {
 
 .texture-logo-center {
   position: absolute;
-  width: 15vmax;
+  width: 35%;
   z-index: 1;
 }
 

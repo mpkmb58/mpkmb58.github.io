@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "AgendaDanPenugasan.scss"
+        "Events.scss"
     ],
     "names": [],
-    "file": "AgendaDanPenugasan.css"
+    "file": "Events.css"
 }

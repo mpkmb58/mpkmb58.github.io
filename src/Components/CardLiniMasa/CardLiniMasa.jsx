@@ -9,7 +9,7 @@ import './CardLiniMasa.css'
 function CardLiniMasa() {
 
     const options = {
-        margin: 32,
+        margin: 16,
         responsiveClass: true,
         owldots : true,
         nav: true,

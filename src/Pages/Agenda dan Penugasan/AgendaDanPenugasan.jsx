@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 import CardPanduan from '../../Components/CardVertical/CardPanduan';
 import CardAgenda from '../../Components/CardVertical/CardAgenda';
 import CardPenugasan from '../../Components/CardVertical/CardPenugasan'
@@ -9,8 +9,8 @@ import './AgendaDanPenugasan.css'
 
 function AgendaDanPenugasan() {
         return ( 
-            <section>
-            <div className="agenda-penugasan">
+            <Fragment>
+            <section className="three-card-page agenda-penugasan">
                 <div className="container">
                     <a href="/">
                         <ButtonKembali/>
@@ -29,9 +29,9 @@ function AgendaDanPenugasan() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <Footer/>
             </section>
+            <Footer/>
+            </Fragment>
          );
 }
 

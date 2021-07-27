@@ -28,6 +28,18 @@ section{
     min-height: 100vh;
 }
 
+.three-card-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+
+    .row {
+        margin : auto;
+    }
+}
+
 .card-component {
     overflow: hidden;
     min-height: 240px;
@@ -42,6 +54,7 @@ section{
 h3 {
     position: relative;
     z-index: 2;
+    font-weight : 700;
 }
 
 img {
@@ -97,7 +110,7 @@ img {
 
 .texture-logo-center {
     position: absolute;
-    width: 15vmax;
+    width: 35%;
     z-index: 1;
 }
 

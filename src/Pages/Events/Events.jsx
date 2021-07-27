@@ -1,17 +1,16 @@
-import React  from 'react'
+import React, {Fragment}  from 'react'
 import CardGame from '../../Components/CardVertical/CardGame';
 import Card360 from '../../Components/CardVertical/Card360';
 import CardVirEx from '../../Components/CardVertical/CardVirEx';
 import ButtonKembali from '../../Components/Button/ButtonKembali/ButtonKembali';
 import Footer from '../../Components/Footer/Footer';
-import './Events.css'
-
+import './Events.css';
 
 
 function Events() {
         return ( 
-            <div>
-            <div className="events d-flex justify-content-center align-items-center">
+            <Fragment>
+            <section className="three-card-page events d-flex justify-content-center align-items-center">
                 <div className="container">
                     <a href="/">
                         <ButtonKembali/>
@@ -28,9 +27,9 @@ function Events() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <Footer/>
-            </div>
+            </Fragment>
          );
 }
  

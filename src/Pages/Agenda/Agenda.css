@@ -13,9 +13,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.agenda .container {
-  padding: 80px 0px;
+  padding: 5rem 0;
 }
 /*# sourceMappingURL=Agenda.css.map */

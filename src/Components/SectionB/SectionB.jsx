@@ -6,21 +6,23 @@ import CardEvent from '../CardEvent/CardEvent'
 import CardFAQ from '../CardFAQ/CardFAQ'
 import CardLiniMasa from '../CardLiniMasa/CardLiniMasa'
 import CardSponsorship from '../CardSponsorship/CardSponsorship'
+import ModalLiniMasa from '../ModalLiniMasa/ModalLiniMasa'
 import Footer from '../Footer/Footer'
 import './SectionB.css'
 
 function SectionB() {
     return (
-        <div>
+        <Fragment>
             <section className="bg-grey panel b" >
+
                 <div className="container">
-                    <div className="card-batch my-3">
+                    <div className="card-batch my-3 my-lg-4">
                     <CardAbout/>
                     </div>
-                    <div className="card-batch my-3">
+                    <div className="card-batch my-3 my-lg-4">
                     <CardLiniMasa/>
                     </div>
-                    <div className="row my-3">
+                    <div className="row my-3 my-lg-4">
                         <div className="col-md-6">
                             <a href="/Event MPKMB" className="card-batch">
                                 <CardEvent/>
@@ -32,16 +34,16 @@ function SectionB() {
                             </div>
                         </div>
                     </div>
-                    <a href="/Agenda dan Penugasan" className="card-batch my-3">
+                    <a href="/Agenda dan Penugasan" className="card-batch my-3 my-lg-4">
                         <CardAgendaPenugasan/>
                     </a>
-                    <div className="card-batch my-3">
+                    <div className="card-batch my-3 my-lg-4">
                     <CardSponsorship/>
                     </div>
                 </div>
             </section>
             <Footer/>
-        </div>
+        </Fragment>
     )
 }
 
