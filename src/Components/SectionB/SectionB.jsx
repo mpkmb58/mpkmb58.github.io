@@ -13,6 +13,13 @@ import './SectionB.css'
 function SectionB() {
     return (
         <Fragment>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    
+                </div>
+            </div>
+            </div>
             <section className="bg-grey panel bg-blur" >
                 <div className="container">
                     <div className="card-batch my-3 my-lg-4">
