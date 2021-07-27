@@ -1,0 +1,17 @@
+.card-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    aspect-ratio: 4/3;
+    background-color: grey;
+    border : 2px solid #f8f8f8;
+    border-radius: 1rem;
+
+
+    @media screen and (max-width : 768px) {
+        width: 90vmin;
+        aspect-ratio: 3/4;
+    }
+}

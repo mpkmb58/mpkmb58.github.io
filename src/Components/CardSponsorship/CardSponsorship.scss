@@ -1,0 +1,27 @@
+
+.card-sponsor{
+    .sponsor-content {
+        width: 100%;
+    }
+
+    .bg-grey {
+        background-color: #f8f8f8;
+    }
+
+    .v-line {
+        height: 200px;
+        width: 5px;
+    }
+
+
+    @media (max-width : 768px) {
+        .v-line {
+            display: none;
+        }
+
+        .h-line {
+            height: 5px;
+        }
+    }
+
+}

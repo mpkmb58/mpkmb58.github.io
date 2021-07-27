@@ -1,0 +1,23 @@
+.card-small {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 4/1;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 10rem;
+    max-width: 100%;
+
+    @media  screen and (max-width : 768px) {
+        max-width: 100%;
+        min-height: 10rem;
+    }
+
+    .texture-bottom-big {
+        width : 30%;
+        transform : translate(-5%, 10%)
+    }
+
+
+}

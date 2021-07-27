@@ -11142,4 +11142,119 @@ fieldset:disabled .btn {
 section {
   min-height: 100vh;
 }
+
+.three-card-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 0;
+}
+
+.three-card-page .row {
+  margin: auto;
+}
+
+.card-component {
+  overflow: hidden;
+  min-height: 240px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f8f8f8;
+  border-radius: 10px;
+}
+
+h3, .h3 {
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
+
+.texture-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20vmax;
+}
+
+.texture-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  width: 20vmax;
+}
+
+.texture-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  width: 20vmax;
+}
+
+.texture-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  width: 20vmax;
+}
+
+.texture-top-center {
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+  width: 15vmax;
+}
+
+.texture-bottom-center {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(70%);
+          transform: translateY(70%);
+  width: 15vmax;
+}
+
+.texture-logo-center {
+  position: absolute;
+  width: 35%;
+  z-index: 1;
+}
+
+.texture-logo-center-rotateright {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+
+.texture-img {
+  opacity: 0.15;
+}
 /*# sourceMappingURL=App.css.map */

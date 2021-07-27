@@ -5,6 +5,7 @@ import Coin from '../../Assets/img/coin-ipb.svg'
 
 function SectionA() {
     return (
+
         <section className="banner bg-blur a panel bg-grey d-flex align-items-center overflow-hidden" >
             <div className="hero container-lg d-flex justify-content-lg-start justify-content-center align-items-center">
                 <div className="mx-2 hero-mahardika d-flex flex-column align-items-center">
@@ -15,6 +16,7 @@ function SectionA() {
                         <h1 className="hero-banner fw-bold text-blue cakrabinaya">Cakrabinaya</h1>
                     </div>
                     <div className="text-center">
+
                         <h5 className="perjuangan">Perjuangan Merasionalisasi Mimpi untuk <br />
                             Berkontribusi bagi Negeri
                         </h5>
@@ -22,8 +24,10 @@ function SectionA() {
                 </div>
             </div>
 
+
             <div className="coin-wrapper container d-flex justify-content-lg-end justify-content-center align-items-end">
                 <img src={Coin} className="coin" alt="Illustrasi Coin IPB" />
+
             </div>
 
         </section>
