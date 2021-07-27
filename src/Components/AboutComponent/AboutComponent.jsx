@@ -10,7 +10,6 @@ import logoBiru from '../../Assets/img/Logo_biru.svg';
 
 
 function AboutComponent() {
-    // let [active, setActive] = useState(false)
     let [head, setHead] = useState(`DEFINISI MPKMB`)
     let [content, setcontent] = useState(<p><b>Masa Pengenalan Kampus Mahasiswa Baru (MPKMB)</b> sebagai momentum penyambutan terbesar mahasiswa baru Institut Pertanian Bogor menjadi wadah pertama untuk mengembangkan harapan guna menyiapkan generasi muda di masa depan dengan inovasi dan resolusi budaya orientasi yang lebih bermartabat dan menginspirasi. MPKMB mengenalkan tujuh nilai budaya korporat IPB yaitu keunggulan akademik, spiritualisme, gigih, senang bekerja sama, empati/peduli, tanggung jawab, dan komitmen. Mengusung tema “Perjuangan Merasionalisasi Mimpi untuk Berkontribusi Bagi Negeri” dengan menanamkan tiga nilai utama MPKMB IPB 58 pembelajar, pemimpi, dan penggerak.</p>)
 
@@ -37,7 +36,7 @@ function AboutComponent() {
                 <img src={logo} alt="" />
             </div>
             <p><b>Mahardika Cakrabinaya</b> digambarkan dalam wujud <b>Rusa Terbang</b>. <b>Rusa</b> mencerminkan sosok elegan yang mampu mengatasi berbagai masalah dengan kemurnian hatinya. Kepala rusa yang senantiasa selalu <b>menunduk ke arah kanan</b> menunjukkan keluhuran budi. <b>Bentangan sayap</b> yang dimiliki Rusa ini mencerminkan bentangan cakrawala ilmu pengetahuan. Sesuai dengan harapan dari nama Mahardika Cakrabinaya yaitu insan berkualitas yang berilmu dan berbudi yang luhur.</p></div>
-        setcontent(content)
+        setcontent(content);
         setHead(head);
     }
 
@@ -45,27 +44,28 @@ function AboutComponent() {
 
         head = '';
         content = <div className="row justify-content-center">
-            <div class="col-4 mb-3 text-center">
+            <div class="col-sm-4 mb-3 text-center">
                 <img src={logoBiru} alt="Logo Mahardika Nawesana" />
             </div>
-            <div class="col-4 mb-3 text-center">
+            <div class="col-sm-4 mb-3 text-center">
                 <img src={logoHijau} alt="Logo Mahardika Reswara" />
             </div>
-            <div class="col-4 mb-3  text-center">
+            <div class="col-sm-4 mb-3  text-center">
                 <img src={logoUngu} alt="Logo Mahardika Arunakara" />
             </div>
-            <div class="col-4 mb-3  text-center">
+            <div class="col-sm-4 mb-3  text-center">
                 <img src={logoMerah} alt="Logo Mahardika Wirakarsa" />
             </div>
-            <div class="col-4 mb-3  text-center">
+            <div class="col-sm-4 mb-3  text-center">
                 <img src={logoKuning} alt="Logo Mahardika Kalawa" />
             </div>
-        </div>
-        setcontent(content)
+        </div>;
+        setcontent(content);
         setHead(head);
     }
 
-    $('.hash').on('click', function () {
+    $('.hash').on('click', function (e) {
+        e.preventDefault();
         $(this).addClass('btn-blue').siblings().removeClass('btn-blue')
     })
 
@@ -81,13 +81,10 @@ function AboutComponent() {
                         <div onClick={showNama} className='shadow-md hash btn rounded-pill my-2 py-1'><h5 className="m-0"> NAMA</h5></div>
                         <div onClick={showLogo} className='shadow-md hash btn rounded-pill my-2 py-1'><h5 className="m-0"> LOGO</h5></div>
                         <div onClick={showKelompok} className='shadow-md hash btn rounded-pill my-2 py-1'><h5 className="m-0"> KELOMPOK</h5></div>
-
-
-
                     </div>
                     <div className="content col-lg-9 bg-grey about-nav-wrapper p-5 my-4 my-lg-0">
                         <h2 className="text-center mb-3"><b>{head}</b> </h2>
-                        <div className="content d-flex justify-content-center">{content}</div>
+                        <div className="content d-flex justify-content-center overflow-scroll-y">{content}</div>
                     </div>
                 </div>
 
