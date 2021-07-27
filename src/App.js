@@ -7,7 +7,7 @@ import Home from './Pages/Home/Home';
 import Events from './Pages/Events/Events'
 import AgendaDanPenugasan from './Pages/Agenda dan Penugasan/AgendaDanPenugasan'
 import Agenda from './Pages/Agenda/Agenda';
-
+import Panduan from './Pages/Panduan/Panduan';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
 
 // import logo from './logo.svg';
@@ -25,7 +25,7 @@ const App = () => {
         <Route path="/Event MPKMB" component={Events}/>
         <Route path="/Agenda dan Penugasan" component={AgendaDanPenugasan}/>
         <Route path="/Agenda" component={Agenda}/>
-
+        <Route path="/Panduan" component={Panduan}/>
         <Route component={PageNotFound} />
 
       </Switch>

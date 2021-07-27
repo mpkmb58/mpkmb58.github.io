@@ -28,7 +28,6 @@
   transition: all .6s;
 }
 
-
 .hamburger,
 .hamburger::after,
 .hamburger::before {
@@ -46,7 +45,6 @@
   position: absolute;
 }
 
-
 .hamburger::after {
   -webkit-transform: translateY(7px);
           transform: translateY(7px);
@@ -62,7 +60,6 @@
           transform: rotate(45deg);
   background: transparent;
 }
-
 
 .menu.open .hamburger::before {
   -webkit-transform: rotate(0deg);
