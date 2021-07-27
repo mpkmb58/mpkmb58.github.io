@@ -32,8 +32,10 @@ function AboutComponent() {
     const showLogo = (e) => {
         head = 'LOGO ANGKATAN';
         content = <div>
-            <div className="text-center my-3">
-                <img src={logo} alt="" />
+            <div className="text-center my-3 ">
+                <div className="logo-akt d-inline-block">
+                    <img src={logo} alt="" />
+                </div>
             </div>
             <p><b>Mahardika Cakrabinaya</b> digambarkan dalam wujud <b>Rusa Terbang</b>. <b>Rusa</b> mencerminkan sosok elegan yang mampu mengatasi berbagai masalah dengan kemurnian hatinya. Kepala rusa yang senantiasa selalu <b>menunduk ke arah kanan</b> menunjukkan keluhuran budi. <b>Bentangan sayap</b> yang dimiliki Rusa ini mencerminkan bentangan cakrawala ilmu pengetahuan. Sesuai dengan harapan dari nama Mahardika Cakrabinaya yaitu insan berkualitas yang berilmu dan berbudi yang luhur.</p></div>
         setcontent(content);
@@ -45,19 +47,30 @@ function AboutComponent() {
         head = '';
         content = <div className="row justify-content-center">
             <div class="col-sm-4 mb-3 text-center">
-                <img src={logoBiru} alt="Logo Mahardika Nawesana" />
+                <div className="logo-kelompok d-inline-block">
+                    <img src={logoBiru} alt="Logo Mahardika Nawesana" />
+                </div>
             </div>
             <div class="col-sm-4 mb-3 text-center">
-                <img src={logoHijau} alt="Logo Mahardika Reswara" />
+                <div className="logo-kelompok d-inline-block">
+                    <img src={logoHijau} alt="Logo Mahardika Reswara" />
+                </div>
             </div>
             <div class="col-sm-4 mb-3  text-center">
-                <img src={logoUngu} alt="Logo Mahardika Arunakara" />
+                <div className="logo-kelompok d-inline-block">
+                    <img src={logoUngu} alt="Logo Mahardika Arunakara" />
+                </div>
+            </div>
+            <div class="col-sm-4 mb-3 text-center">
+                <div className="logo-kelompok d-inline-block">
+                    <img src={logoMerah} alt="Logo Mahardika Wirakarsa" />
+                </div>
             </div>
             <div class="col-sm-4 mb-3  text-center">
-                <img src={logoMerah} alt="Logo Mahardika Wirakarsa" />
-            </div>
-            <div class="col-sm-4 mb-3  text-center">
-                <img src={logoKuning} alt="Logo Mahardika Kalawa" />
+                <div className="logo-kelompok d-inline-block">
+
+                    <img src={logoKuning} alt="Logo Mahardika Kalawa" />
+                </div>
             </div>
         </div>;
         setcontent(content);

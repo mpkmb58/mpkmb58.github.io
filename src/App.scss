@@ -49,7 +49,9 @@ section{
     color: #f8f8f8;
     border-radius: 10px;
 }
-
+a{
+    text-decoration: none !important;
+}
 h3 {
     position: relative;
     z-index: 2;

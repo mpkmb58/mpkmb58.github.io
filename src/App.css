@@ -11181,6 +11181,10 @@ section {
   border-radius: 10px;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 h3, .h3 {
   position: relative;
   z-index: 2;
@@ -11256,5 +11260,38 @@ img {
 
 .texture-img {
   opacity: 0.15;
+}
+
+.card-clickable {
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.card-clickable h3, .card-clickable .h3 {
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.card-clickable:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.card-clickable:hover h3, .card-clickable:hover .h3 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  color: #F5F5F5;
 }
 /*# sourceMappingURL=App.css.map */

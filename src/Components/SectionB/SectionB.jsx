@@ -13,35 +13,35 @@ import './SectionB.css'
 function SectionB() {
     return (
         <Fragment>
-            <section className="bg-grey panel b" >
+            <section className="bg-grey panel bg-blur" >
                 <div className="container">
                     <div className="card-batch my-3 my-lg-4">
-                    <CardAbout/>
+                        <CardAbout />
                     </div>
                     <div className="card-batch my-3 my-lg-4">
-                    <CardLiniMasa/>
+                        <CardLiniMasa />
                     </div>
                     <div className="row my-3 my-lg-4">
                         <div className="col-md-6">
                             <a href="/Event MPKMB" className="card-batch">
-                                <CardEvent/>
+                                <CardEvent />
                             </a>
                         </div>
                         <div className="col-md-6">
                             <div className="card-batch">
-                            <CardFAQ/>
+                                <CardFAQ />
                             </div>
                         </div>
                     </div>
                     <a href="/Agenda dan Penugasan" className="card-batch my-3 my-lg-4">
-                        <CardAgendaPenugasan/>
+                        <CardAgendaPenugasan />
                     </a>
-                    <div className="card-batch my-3 my-lg-4">
-                    <CardSponsorship/>
+                    <div className="card-batch mt-3 mt-lg-4 pb-3">
+                        <CardSponsorship />
                     </div>
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </Fragment>
 
     )
