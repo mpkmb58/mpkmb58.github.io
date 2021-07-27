@@ -22,7 +22,7 @@ function NavbarComponents() {
                     </div>
                 </div>
             </nav>
-            <div className={`nav-collaps position-fixed bg-grey d-flex align-items-center ${active ? `show` : ``}`}>
+            <div className={`nav-collaps position-fixed bg-grey d-flex bg-blur align-items-center ${active ? `show` : ``}`}>
                 <div className="container-lg d-flex justify-content-center flex-column align-items-center">
 
                     <div className="row mb-2 ">

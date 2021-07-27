@@ -64,14 +64,7 @@
                 transition: transform 0.25s ease-in-out;
             }
 
-            button:hover {
-                background-color: #f8f8f8;
-                transform: scale(1.1);
-                transition: transform 0.25s ease-in-out;
-                color: #343F56;
-                border: 1px solid #343F56;
-                
-            }
+           
         }
     }
 
@@ -87,18 +80,5 @@
         transition: transform 0.25s ease-in-out;
         transform-origin: bottom;
 
-    }
-}
-
-.box:hover {
-    .contentB:before {
-        transform: scaleY(1);
-        transition: transform 0.15s ease-in-out;
-        transform-origin: bottom;
-    }
-
-    .content {
-        transform: translateX(0);
-        transform-origin: bottom;
     }
 }

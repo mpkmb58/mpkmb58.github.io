@@ -85,18 +85,6 @@
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 
-.box .contentB .content button:hover {
-  background-color: #f8f8f8;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out;
-  transition: -webkit-transform 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
-  color: #343F56;
-  border: 1px solid #343F56;
-}
-
 .box .contentB::before {
   content: '';
   position: absolute;
@@ -112,24 +100,6 @@
   transition: -webkit-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-}
-
-.box:hover .contentB:before {
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-  -webkit-transition: -webkit-transform 0.15s ease-in-out;
-  transition: -webkit-transform 0.15s ease-in-out;
-  transition: transform 0.15s ease-in-out;
-  transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-}
-
-.box:hover .content {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }

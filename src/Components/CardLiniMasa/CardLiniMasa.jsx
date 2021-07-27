@@ -1,5 +1,5 @@
-import React, {Fragment} from 'react'
-import $ from 'jquery';
+import React, { Fragment } from 'react'
+// import $ from 'jquery';
 import Box from '../Box/Box'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -8,24 +8,24 @@ import './CardLiniMasa.css'
 
 function CardLiniMasa() {
 
-    const options = {
+    let options = {
         margin: 16,
         responsiveClass: true,
-        owldots : true,
-        nav: true,
+        // owldots: true,
+        nav: false,
         smartSpeed: 1000,
         responsive: {
-            0:{
-            items:1
+            0: {
+                items: 1
             },
-            540:{
-                items:2
+            540: {
+                items: 2
             },
             992: {
-            items: 3
+                items: 3
             },
             1200: {
-            items: 4
+                items: 4
             }
         },
     };
@@ -37,46 +37,46 @@ function CardLiniMasa() {
                 <h3 className="text-center text-blue fw-bold">LINI MASA</h3>
                 <OwlCarousel className="mt-3" {...options}>
                     <div className="item mx-3">
-                        <Box color="bg-blue" 
-                        number="1" 
-                        title="Mentoring MPKMB" 
-                        date ="23 Juli 2021" 
-                        time="08.00 WIB - 17.00 WIB"/>
+                        <Box color="bg-blue"
+                            number="1"
+                            title="Mentoring MPKMB"
+                            date="23 Juli 2021"
+                            time="08.00 WIB - 17.00 WIB" />
                     </div>
                     <div className="item mx-3">
-                        <Box color="bg-red" 
-                        number="2" 
-                        title="Panduan MPKMB" 
-                        date ="29 Juli 2021" 
-                        time="08.00 WIB - 17.00 WIB"/>
+                        <Box color="bg-red"
+                            number="2"
+                            title="Panduan MPKMB"
+                            date="29 Juli 2021"
+                            time="08.00 WIB - 17.00 WIB" />
                     </div>
                     <div className="item mx-3">
                         <Box color="bg-orange"
-                         number="3" 
-                         title="Surat Keputusan Rektor" 
-                         date ="30 Juli 2021" 
-                         time="08.00 WIB - 17.00 WIB"/>
+                            number="3"
+                            title="Surat Keputusan Rektor"
+                            date="30 Juli 2021"
+                            time="08.00 WIB - 17.00 WIB" />
                     </div>
                     <div className="item mx-3">
-                        <Box color="bg-blue" 
-                            number="4" 
-                            title="Upacara Pembukaan MPKMB" 
-                            date ="9 Agustus 2021" 
-                            time="08.00 WIB - 17.00 WIB"/>
+                        <Box color="bg-blue"
+                            number="4"
+                            title="Upacara Pembukaan MPKMB"
+                            date="9 Agustus 2021"
+                            time="08.00 WIB - 17.00 WIB" />
                     </div>
                     <div className="item mx-3">
-                        <Box color="bg-red" 
-                        number="5" 
-                        title="Narasi Besar" 
-                        date ="9 Agustus 2021" 
-                        time="08.00 WIB - 17.00 WIB"/>
+                        <Box color="bg-red"
+                            number="5"
+                            title="Narasi Besar"
+                            date="9 Agustus 2021"
+                            time="08.00 WIB - 17.00 WIB" />
                     </div>
                     <div className="item mx-3">
-                        <Box color="bg-orange" 
-                        number="6" 
-                        title="Upacara Penutupan MPKMB" 
-                        date ="23 Agustus 2022" 
-                        time="08.00 WIB - 17.00 WIB"/>
+                        <Box color="bg-orange"
+                            number="6"
+                            title="Upacara Penutupan MPKMB"
+                            date="23 Agustus 2022"
+                            time="08.00 WIB - 17.00 WIB" />
                     </div>
                 </OwlCarousel>
             </div>

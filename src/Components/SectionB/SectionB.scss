@@ -1,21 +1,5 @@
 .b{
     position: relative;
-    padding : 80px 0px;
-    z-index: 1;
-    font-family: 'Poppins',sans-serif;
-
-    h3 {
-        font-weight: 500;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .container {
-        position: relative;
-        z-index: 2;
-    }
 }
 
 .b::after{
@@ -29,7 +13,11 @@
     background-repeat: repeat-x;
     transform: rotate(180deg) translateY(40%);
     filter: blur(20px);
+    z-index: 1;
+}
 
+.section-b-wrapper{
+    z-index: 2;
 }
 
 

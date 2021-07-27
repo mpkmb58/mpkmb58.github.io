@@ -7,13 +7,13 @@ const CardEvent = () => {
     return (
         <div className="card-component card-clickable bg-orange p-lg-5 p-3 mb-md-0 mb-3">
             <div className="texture-top-left">
-                <img src={texture} alt="" srcset="" />
+                <img src={texture} alt="" />
             </div>
             <div className="texture-bottom-right">
-                <img src={texture} alt="" srcset="" />
+                <img src={texture} alt="" />
             </div>
             <div className="texture-logo-center texture-logo-center-rotateright">
-                <img className="texture-img" src={logoconsole} alt="" srcset="" />
+                <img className="texture-img" src={logoconsole} alt="" />
             </div>
             <h3 className="text-center fw-bold">Event MPKMB</h3>
         </div>

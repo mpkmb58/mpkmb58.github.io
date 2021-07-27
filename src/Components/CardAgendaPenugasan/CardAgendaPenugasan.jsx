@@ -7,17 +7,17 @@ import logopenugasan from '../../Assets/img/VectorPenugasan.svg'
 const CardAgendaPenugasan = () => {
     return (
         <div className="agenda card-component card-clickable bg-red p-lg-5 p-3">
-            <div className="texture-top-center">
-                <img src={texture} alt="" srcset="" />
+            <div className="texture-top-center anime">
+                <img src={texture} alt="Illsutrasi" />
             </div>
             <div className="texture-bottom-center">
-                <img src={texture} alt="" srcset="" />
+                <img src={texture} alt="Illsutrasi" />
             </div>
             <div className="texture-logo-agenda">
-                <img className="texture-img" src={logoagenda} alt="" srcset="" />
+                <img className="texture-img" src={logoagenda} alt="Illsutrasi" />
             </div>
             <div className="texture-logo-penugasan">
-                <img className="texture-img" src={logopenugasan} alt="" srcset="" />
+                <img className="texture-img" src={logopenugasan} alt="Illsutrasi" />
             </div>
 
             <h3 className="text-center fw-bold">Agenda dan Penugasan</h3>
