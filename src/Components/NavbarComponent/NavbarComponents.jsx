@@ -37,7 +37,9 @@ function NavbarComponents() {
                         <a href="/About" className="col-12 hero-banner-link my-3 d-block text-decoration-none hover text-blue">
                             About
                         </a>
-
+                        <a href="/Event" className="col-12 hero-banner-link my-3 d-block text-decoration-none hover text-blue">
+                            Event
+                        </a>
                     </div>
                 </div>
             </div>

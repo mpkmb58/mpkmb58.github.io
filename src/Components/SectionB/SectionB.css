@@ -15,6 +15,36 @@
           transform: rotate(180deg) translateY(40%);
   -webkit-filter: blur(20px);
           filter: blur(20px);
+  z-index: 0;
+}
+
+.about-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.logo-console-wrapper {
+  width: 200px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.agenda-logo-wrapper {
+  width: 200px;
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.penugasan-logo-wrapper {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 @media (min-width: 768px) {
