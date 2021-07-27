@@ -5,7 +5,7 @@ import './CardEvent.css'
 
 const CardEvent = () => {
     return (
-        <div className="card-component bg-orange p-lg-5 p-3 mb-md-0 mb-3">
+        <div className="card-component card-clickable bg-orange p-lg-5 p-3 mb-md-0 mb-3">
             <div className="texture-top-left">
                 <img src={texture} alt="" srcset="" />
             </div>

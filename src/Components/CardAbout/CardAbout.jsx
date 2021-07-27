@@ -9,7 +9,7 @@ import './CardAbout.css'
 
 const CardAbout = () => {
     return (
-        <div className="about card-component bg-blue p-lg-5 p-3">
+        <div className="about card-component card-clickable bg-blue p-lg-5 p-3">
             <div className="texture-top-left">
                 <img src={texture} alt="" srcset="" />
             </div>

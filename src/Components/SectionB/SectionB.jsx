@@ -14,7 +14,6 @@ function SectionB() {
     return (
         <Fragment>
             <section className="bg-grey panel b" >
-
                 <div className="container">
                     <div className="card-batch my-3 my-lg-4">
                     <CardAbout/>

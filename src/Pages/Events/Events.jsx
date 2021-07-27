@@ -4,6 +4,7 @@ import Card360 from '../../Components/CardVertical/Card360';
 import CardVirEx from '../../Components/CardVertical/CardVirEx';
 import ButtonKembali from '../../Components/Button/ButtonKembali/ButtonKembali';
 import Footer from '../../Components/Footer/Footer';
+import CardHover from '../../Components/CardVertical/CardHover';
 import './Events.css';
 
 

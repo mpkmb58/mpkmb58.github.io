@@ -6,7 +6,7 @@ import './CardFAQ.css'
 const CardFAQ = () => {
     return (
         <div>
-            <div className="card-component bg-orange p-lg-5 p-3">
+            <div className="card-component card-clickable bg-orange p-lg-5 p-3">
                 <div className="texture-top-right">
                     <img src={texture} alt="" srcset="" />
                 </div>

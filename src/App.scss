@@ -122,3 +122,23 @@ img {
     opacity: 0.15;
 }
 
+.card-clickable {
+    transition : transform 0.25s ease-in-out;
+
+    h3 {
+        transition : transform 0.25s ease-in-out;
+    }
+}
+
+.card-clickable:hover {
+    transform: scale(1.025);
+    transition : transform 0.25s ease-in-out;
+    
+    h3 {
+        transform: scale(1.2);
+        transition : transform 0.25s ease-in-out;
+        color : #F5F5F5;
+    }
+}
+
+

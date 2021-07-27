@@ -6,7 +6,7 @@ import logopenugasan from '../../Assets/img/VectorPenugasan.svg'
 
 const CardAgendaPenugasan = () => {
     return (
-        <div className="agenda card-component bg-red p-lg-5 p-3">
+        <div className="agenda card-component card-clickable bg-red p-lg-5 p-3">
             <div className="texture-top-center">
                 <img src={texture} alt="" srcset="" />
             </div>
