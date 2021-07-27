@@ -1,10 +1,12 @@
 import React from 'react'
+import AboutComponent from '../../Components/AboutComponent/AboutComponent'
+// import './About.css'
 
 function About() {
     return (
-        <div className="pt-5">
-            <h1>INI ABOUT</h1>
-        </div>
+        <section className="bg-blur pt-5" >
+            <AboutComponent />
+        </section>
     )
 }
 

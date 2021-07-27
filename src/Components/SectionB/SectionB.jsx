@@ -43,6 +43,7 @@ function SectionB() {
             </section>
             <Footer/>
         </Fragment>
+
     )
 }
 

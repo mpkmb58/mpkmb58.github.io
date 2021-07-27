@@ -8,7 +8,7 @@
 }
 
 .brand-title {
-  font-family: 'Cinzel Decorative', poppins;
+  font-family: 'poppins', Arial;
 }
 
 .menu {
@@ -28,9 +28,10 @@
   transition: all .6s;
 }
 
-.box-hamburger,
-.box-hamburger::after,
-.box-hamburger::before {
+
+.hamburger,
+.hamburger::after,
+.hamburger::before {
   width: 1.5em;
   height: .2em;
   background-color: #343F56;
@@ -39,34 +40,36 @@
   transition: all .5s;
 }
 
-.box-hamburger::after,
-.box-hamburger::before {
+.hamburger::after,
+.hamburger::before {
   content: '';
   position: absolute;
 }
 
-.box-hamburger::after {
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
+
+.hamburger::after {
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
 }
 
-.box-hamburger::before {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+.hamburger::before {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 
-.menu.open .box-hamburger {
+.menu.open .hamburger {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background: transparent;
 }
 
-.menu.open .box-hamburger::before {
+
+.menu.open .hamburger::before {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
 
-.menu.open .box-hamburger::after {
+.menu.open .hamburger::after {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
