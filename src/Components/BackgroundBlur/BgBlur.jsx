@@ -1,39 +1,20 @@
-import React, {Fragment}from 'react'
+import React, { Fragment } from 'react'
 import styled from 'styled-components'
-
-const Light = styled.div`
-    position: absolute;
-    width: 25%;
-    aspect-ratio: 1/1;
-    /* opacity: 0.5;
-    filter: blur(15rem); */
-    border-radius: 50%;
-    z-index: 1;
-`
-
-const BgWrapper = styled.div`
-    position: fixed;
-    display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    z-index: 1;
-`
+import './BgBlur.css'
 
 function BgBlur() {
     return (
         <Fragment>
-            <BgWrapper>
-                <Light class="bg-red one"></Light>
-                <Light class="bg-blue two"></Light>
-                <Light class="bg-orange three"></Light>
-                <Light class="bg-blue four"></Light>
-                <Light class="bg-blue five"></Light>
-                <Light class="bg-orange six"></Light>
-                <Light class="bg-blue seven"></Light>
-                <Light class="bg-red eight"></Light>
-            </BgWrapper>
+            <div className="bg-wrapper">
+                <div className="bg-red light one"></div>
+                <div className="bg-blue light two"></div>
+                <div className="bg-orange light three"></div>
+                <div className="bg-blue light four"></div>
+                <div className="bg-blue light five"></div>
+                <div className="bg-orange  light six"></div>
+                <div className="bg-blue light seven"></div>
+                <div className="bg-red light eight"></div>
+            </div>
         </Fragment>
     )
 }

@@ -94,7 +94,7 @@ function SectionB() {
                 content={<p className="text-center text-blue">Upacara pembukaan Masa Pengenalan Kampus Mahasiswa Baru atau <span className="fw-bold">Opening Ceremony MPKMB</span> merupakan momentum peresmian pembukaan rangkaian acara MPKMB yang akan dilaksanakan pada tanggal <span className="fw-bold">9 Agustus 2021.</span></p>}
                 size="modal-lg"
             />
-            <section className="bg-grey b py-4" >
+            <section className="b py-4" >
                 <div className="container">
                     <div className="row">
                         <div className="col-12 about-wrapper">

@@ -47,7 +47,7 @@ function Agenda() {
         }
     ]
     return (
-        <section className="bg-blur py-5">
+        <section className=" py-5">
             <div class="container pt-5">
                 <div class="row mt-5 justify-content-center">
                     {

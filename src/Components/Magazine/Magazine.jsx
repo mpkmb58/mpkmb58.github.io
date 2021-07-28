@@ -9,9 +9,9 @@ function Magazine(props) {
 
 
     return (
-        <section className="bg-blur py-5">
-            <div className="container pt-5">
-                <div className="row mb-4 justify-content-between d-lg-flex d-none">
+        <section className="py-5 position-relative z-index-2">
+            <div className="container pt-5 ">
+                <div className="row mb-4 justify-content-between">
                     <div class="col-lg-2 bg-grey about-nav-wrapper p-5 d-flex flex-row flex-lg-column justify-content-center justify-content-lg-start align-items-center overflow-hidden">
                         {
                             props.contentWrapper.map(e =>

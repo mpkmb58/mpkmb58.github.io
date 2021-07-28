@@ -31,7 +31,7 @@ function AgendaPenugasan() {
         }
     ]
     return (
-        <section className="bg-blur py-5">
+        <section className=" py-5">
             <div class="container pt-5">
                 <div className="row justify-content-center">
                     <h2 className="fw-bold text-center text-blue">Agenda dan Penugasan</h2>

@@ -32,6 +32,50 @@
   left: 75%;
 }
 
+.bg-wrapper {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background-color: #f8f8f8;
+}
+
+.light {
+  width: calc(10.5rem + 10vw);
+  position: absolute;
+  aspect-ratio: 1/1;
+  opacity: 0.5;
+  -webkit-filter: blur(30rem);
+          filter: blur(30rem);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+@-webkit-keyframes blur {
+  from {
+    -webkit-filter: blur(30rem);
+            filter: blur(30rem);
+  }
+  to {
+    -webkit-filter: blur(10rem);
+            filter: blur(10rem);
+  }
+}
+
+@keyframes blur {
+  from {
+    -webkit-filter: blur(30rem);
+            filter: blur(30rem);
+  }
+  to {
+    -webkit-filter: blur(10rem);
+            filter: blur(10rem);
+  }
+}
+
 /* .bg-logo {
         z-index: 2;
         margin: auto;

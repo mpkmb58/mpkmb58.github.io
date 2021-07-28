@@ -66,7 +66,7 @@ function About() {
     ]
 
     return (
-        <section className="bg-blur pt-5" >
+        <section className=" pt-5 position-relative z-index-2" >
             <Magazine contentWrapper={contentView} />
         </section>
     )

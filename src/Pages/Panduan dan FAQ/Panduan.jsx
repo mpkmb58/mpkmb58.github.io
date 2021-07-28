@@ -6,7 +6,7 @@ import { ContentWrapper, DownloadButton, PDFBox } from './Panduan.style'
 function Panduan() {
     return (
         <Fragment>
-            <section className="bg-blur pt-5">
+            <section className="pt-5">
                 <AboutComponent
                     defaultHash="GUIDE BOOK"
                     defaultTitle="GUIDE BOOK MPKMB"

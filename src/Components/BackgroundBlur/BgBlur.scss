@@ -2,36 +2,70 @@
 .two,
 .three,
 .four {
-    top: 0;
+    top: 0 ;
 }
 
 .five,
 .six,
 .seven,
 .eight {
-    bottom: 0;
+    bottom: 0 ;
 }
 
 .one,
 .five {
-    left: 0;
+    left: 0 ;
+    
 }
 
 .two,
 .six {
-    left: 25%;
+    left: 25% ;
 }
 
 .three,
 .seven {
-    left: 50%;
+    left: 50% ;
 }
+// .three, .six{
+//     // animation: blur 3s alternate infinite;
+// }
 
 .four,
 .eight {
-    left: 75%;
+    left: 75% ;
 }
 
+.bg-wrapper{
+    position: fixed  ;
+    display: flex  ;
+    width: 100vw   ;
+    height: 100vh  ;
+    z-index: 0     ;
+    background-color: #f8f8f8;
+}
+
+.light{
+    width: calc(10.5rem + 10vw);
+    position: absolute ;
+    aspect-ratio: 1/1 ;
+    opacity: 0.5;
+    filter: blur(30rem); 
+    border-radius: 50% ;
+    z-index: 0 ;
+}
+
+@keyframes blur {
+    from{
+        // opacity: .5;
+        filter: blur(30rem);
+    }
+    to{
+        // opacity: .75;
+        filter: blur(10rem);
+
+    }
+}
 /* .bg-logo {
         z-index: 2;
         margin: auto;

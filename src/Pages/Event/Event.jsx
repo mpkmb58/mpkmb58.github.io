@@ -33,7 +33,7 @@ function Event() {
     ]
 
     return (
-        <section className="bg-blur py-5">
+        <section className="py-5 position-relative z-index-3">
             <div className="container pt-5">
                 <div className="row justify-content-center">
                     <h2 className="fw-bold text-center text-blue">Event MPKMB</h2>
@@ -46,7 +46,7 @@ function Event() {
                                     directTo={e.directTo}
                                     title={e.title}
                                     color={e.bgColors}
-                                    backgorund={e.bgImages}
+                                    background={e.bgImages}
                                     customSize='card-event-size'
                                 />
                             </div>
