@@ -8,23 +8,23 @@ function Panduan() {
         <Fragment>
             <section className ="bg-blur pt-5">
                  <AboutComponent
-                    defaultHash = "KETENTUAN"
-                    defaultTitle = "KETENTUAN MPKMB"
+                    defaultHash = "GUIDE BOOK"
+                    defaultTitle = "GUIDE BOOK MPKMB"
                     default = {
                         <ContentWrapper >
-                            <PDFBox allow="fullscreen" src="https://docs.google.com/document/d/1T_coyGU4ow_m0p4Qrlm0-EUdVuau46F32YgFE2IHKKo/edit"/>
+                            <PDFBox src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"/>
                             <div className="d-flex justify-content-center align-items-center">
                                 <DownloadButton className="download-button px-3 py-1">Download PDF</DownloadButton>
                             </div> 
                         </ContentWrapper>
                     }
                     
-                    content1Hash = "KETENTUAN"
-                    content1Title = "KETENTUAN MPKMB"
+                    content1Hash = "GUIDE BOOK"
+                    content1Title = "GUIDE BOOK MPKMB"
                     content1 = 
                     {
                         <div className="d-flex flex-column justify-content-center align-items-center">
-                            <PDFBox/>
+                            <PDFBox src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"/>
                             <div className="d-flex justify-content-center align-items-center">
                                 <DownloadButton className="download-button px-3 py-1">Download PDF</DownloadButton>
                             </div> 
@@ -35,7 +35,7 @@ function Panduan() {
                     content2Title = "PANDUAN PENUGASAN MPKMB"
                     content2 = 
                     {   <div className="d-flex flex-column justify-content-center align-items-center">
-                            <PDFBox/>
+                            <PDFBox src="https://drive.google.com/file/d/1-RZBgCa5csmfwGGEMSuMje2JkFSXV9c0/preview" allow="autoplay"/>
                             <div className="d-flex justify-content-center align-items-center">
                                 <DownloadButton className="download-button px-3 py-1">Download PDF</DownloadButton>
                             </div> 
@@ -47,7 +47,7 @@ function Panduan() {
                     content3 = 
                     {
                         <div className="d-flex flex-column justify-content-center align-items-center">
-                            <PDFBox/>
+                            <PDFBox src="https://drive.google.com/file/d/1wW4NGT8-ZS2LhZhZlMHddA26oCU5OoIy/preview" width="640" height="480" allow="autoplay"/>
                        <div className="d-flex justify-content-center align-items-center">
                             <DownloadButton className="download-button mx-2 px-3 py-1">Course IPB</DownloadButton>
                             <DownloadButton className="download-button mx-2 px-3 py-1">Download PDF</DownloadButton>
