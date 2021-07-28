@@ -34,3 +34,11 @@ export const ContentWrapper= styled.div`
     align-items: center;
     justify-content: center;
 `
+
+export const QuestionWrapper = styled.div`
+    align-items: center;
+    justify-content: center;
+    width : 100%;
+    aspect-ratio : 16/9;
+    margin-bottom: 1.5rem;
+`

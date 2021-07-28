@@ -6,11 +6,12 @@ import Home from './Pages/Home/Home';
 // import Events from './Pages/Events/Events'
 // import AgendaDanPenugasan from './Pages/Agenda dan Penugasan/AgendaDanPenugasan'
 import AgendaHari from './Pages/AgendaHari/AgendaHari';
-import Panduan from './Pages/Panduan/Panduan';
+import Panduan from './Pages/Panduan dan FAQ/Panduan';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
 import Footer from './Components/Footer/Footer';
 import Event from './Pages/Event/Event';
 import AgendaPenugasan from './Pages/Agenda dan Penugasan/AgendaPenugasan';
+import FAQ from './Pages/Panduan dan FAQ/FAQ';
 import Agenda from './Pages/Agenda dan Penugasan/Agenda/Agenda';
 // import logo from './logo.svg';
 // import './App.css';
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/About" component={About} />
         <Route path="/Panduan" component={Panduan}/>
         <Route path="/Event" component={Event} />
+        <Route path="/FAQ" component={FAQ} />
         <Route path="/AgendaPenugasan" component={AgendaPenugasan} />
         {/* <Route path="/Agenda" component={Agenda} /> */}
         <Route path="/Agenda" component={AgendaHari} />

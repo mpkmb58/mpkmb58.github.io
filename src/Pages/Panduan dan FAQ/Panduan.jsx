@@ -49,7 +49,7 @@ function Panduan() {
                         <div className="d-flex flex-column justify-content-center align-items-center">
                             <PDFBox src="https://drive.google.com/file/d/1wW4NGT8-ZS2LhZhZlMHddA26oCU5OoIy/preview" width="640" height="480" allow="autoplay"/>
                        <div className="d-flex justify-content-center align-items-center">
-                            <DownloadButton className="download-button mx-2 px-3 py-1">Course IPB</DownloadButton>
+                            <DownloadButton href="" className="download-button mx-2 px-3 py-1">Course IPB</DownloadButton>
                             <DownloadButton className="download-button mx-2 px-3 py-1">Download PDF</DownloadButton>
                         </div> 
                         </div>

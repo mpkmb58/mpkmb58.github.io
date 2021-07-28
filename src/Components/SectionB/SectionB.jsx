@@ -40,7 +40,7 @@ function SectionB() {
                 <img className="mx-3 bg-logo" src={logoPenugasan} alt="logo-bg" width="100%" />
             </div>
         </div>
-
+        
 
     return (
         <Fragment>
@@ -82,9 +82,6 @@ function SectionB() {
                 size ="modal-lg"
             />
         <section className="bg-grey b py-4" >
-
-            
-
             <div class="container">
                 <div class="row">
                     <div class="col-12 about-wrapper">
@@ -138,6 +135,19 @@ function SectionB() {
                             texture={true}
                             bgPositionTop='texture-top-center'
                             bgPositionBottom='texture-bottom-center'
+                        />
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 about-wrapper">
+                        <Card
+                            directTo=""
+                            title="Sponsorship"
+                            color="bg-blue"
+                            backgorund=""
+                            texture={true}
+                            bgPositionTop='texture-top-left'
+                            bgPositionBottom='texture-bottom-right'
                         />
                     </div>
                 </div>

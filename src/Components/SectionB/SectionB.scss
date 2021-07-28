@@ -52,7 +52,6 @@ iframe {
     bottom: -20%;
     left: 0;
     transform: rotate(45deg);
-
 }
 .penugasan-logo-wrapper{
     width: 100px;
@@ -60,6 +59,27 @@ iframe {
     top: 0;
     right: 0;
     transform: rotate(-45deg);
+}
+
+.sponsor {
+    position : relative;
+    z-index : 3;
+    .v-line {
+       height : 200px;
+       width : 0.25rem; 
+    }
+
+    .h-line {
+        display : none;
+    }
+
+    @media screen and (max-width : 768px) {
+        .h-line {
+            display: block;
+            height : 0.25rem;
+            width : 100%;
+        }
+    }
 }
 
 @media (min-width: 768px) {

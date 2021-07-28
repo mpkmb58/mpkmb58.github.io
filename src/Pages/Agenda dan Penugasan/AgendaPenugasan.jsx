@@ -18,7 +18,7 @@ function AgendaPenugasan() {
             bgImages: bgEvent(bgAgenda)
         },
         {
-            directTo: '/',
+            directTo: '/Panduan',
             title: "Panduan",
             bgColors: "bg-red",
             bgImages: bgEvent(bgPanduan)

@@ -68,6 +68,16 @@ iframe {
           transform: rotate(-45deg);
 }
 
+.sponsor {
+  position: relative;
+  z-index: 3;
+}
+
+.sponsor .v-line {
+  height: 200px;
+  width: 0.25rem;
+}
+
 @media (min-width: 768px) {
   .b::after {
     -webkit-transform: translateY(0) rotate(180deg);

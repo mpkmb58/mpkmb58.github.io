@@ -27,18 +27,6 @@ section{
     min-height: 100vh;
 }
 
-.three-card-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 6rem 0;
-
-    .row {
-        margin : auto;
-    }
-}
-
 .card-component {
     overflow: hidden;
     min-height: 240px;
@@ -52,6 +40,7 @@ section{
 a{
     text-decoration: none !important;
 }
+
 h3 {
     position: relative;
     z-index: 2;
@@ -62,85 +51,6 @@ img {
     width: 100%;
 }
 
-.texture-top-left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    width: 20vmax;
-}
-
-.texture-top-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(50%, -50%);
-    width: 20vmax;
-}
-
-
-.texture-bottom-left {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(-50%, 50%);
-    width: 20vmax;
-}
-
-.texture-bottom-right {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: translate(50%, 50%);
-    width: 20vmax;
-}
-
-.texture-top-center {
-    position: absolute;
-    top: 0;
-    transform: translateY(-70%);
-    width: 15vmax;
-}
-
-.texture-bottom-center {
-    position: absolute;
-    bottom: 0;
-    transform: translateY(70%);
-    width: 15vmax;
-}
-
-.texture-logo-center {
-    position: absolute;
-    width: 35%;
-    z-index: 1;
-}
-
-.texture-logo-center-rotateright {
-    transform: rotate(35deg);
-}
-
-.texture-img {
-    opacity: 0.15;
-}
-
-.card-clickable {
-    transition : transform 0.25s ease-in-out;
-
-    h3 {
-        transition : transform 0.25s ease-in-out;
-    }
-}
-
-.card-clickable:hover {
-    transform: scale(1.025);
-    transition : transform 0.25s ease-in-out;
-    
-    h3 {
-        transform: scale(1.2);
-        transition : transform 0.25s ease-in-out;
-        color : #F5F5F5;
-    }
-}
 
 
 
