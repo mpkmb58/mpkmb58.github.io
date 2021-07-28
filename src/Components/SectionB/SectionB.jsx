@@ -14,7 +14,7 @@ import logofaq from '../../Assets/img/VectorFAQ.svg'
 import './SectionB.css'
 
 function SectionB() {
-    const logoLogo = <div className="element-bg d-flex scale-up">
+    const logoLogo = <div className="element-bg d-flex">
         <img className="mx-3 bg-logo" src={logo1} alt="logo-bg" width="100%" />
         <img className="mx-3 bg-logo" src={logo2} alt="logo-bg" width="100%" />
         <img className="mx-3 bg-logo" src={logo3} alt="logo-bg" width="100%" />
@@ -22,18 +22,18 @@ function SectionB() {
         <img className="mx-3 bg-logo" src={logo5} alt="logo-bg" width="100%" />
     </div>
 
-    const logoConsole = <div className="logo-console-wrapper scale-up">
+    const logoConsole = <div className="logo-console-wrapper element-bg">
         <img className="bg-logo" src={logoconsole} alt="logo-bg" width="100%" />
     </div>
 
-    const logoFAQ = <div className="element-bg scale-up"><img className="mx-3 bg-logo" src={logofaq} alt="logo-bg" width="100%" /> </div>
+    const logoFAQ = <div className="element-bg"><img className="mx-3 bg-logo" src={logofaq} alt="logo-bg" width="100%" /> </div>
 
     const penugasan =
         <div className="wrapper position-absolute d-flex">
-            <div className="scale-up agenda-logo-wrapper">
+            <div className="scale-up agenda-logo-wrapper element-bg">
                 <img className="mx-3 bg-logo" src={logoAgenda} alt="logo-bg" width="100%" />
             </div>
-            <div className="scale-up penugasan-logo-wrapper">
+            <div className="scale-up penugasan-logo-wrapper element-bg">
                 <img className="mx-3 bg-logo" src={logoPenugasan} alt="logo-bg" width="100%" />
             </div>
         </div>
@@ -49,8 +49,10 @@ function SectionB() {
                             title="About MPKMB"
                             color="bg-blue"
                             backgorund={logoLogo}
-                            bgPosition=""
-                            animate={true} />
+                            texture={true}
+                            bgPositionTop='texture-top-left'
+                            bgPositionBottom='texture-bottom-right'
+                            animateBottom={true} />
                     </div>
                 </div>
                 <div class="row mt-3">
@@ -60,8 +62,10 @@ function SectionB() {
                             title="Event MPKMB"
                             color="bg-orange"
                             backgorund={logoConsole}
-                            bgPosition=""
-                            animate={true} />
+                            texture={true}
+                            bgPositionTop='texture-top-left'
+                            bgPositionBottom='texture-bottom-right'
+                        />
                     </div>
                     <div class="col-md-6 mt-3 mt-md-0">
                         <Card
@@ -69,8 +73,10 @@ function SectionB() {
                             title="FAQ"
                             color="bg-orange"
                             backgorund={logoFAQ}
-                            bgPosition=""
-                            animate={true} />
+                            texture={true}
+                            bgPositionTop='texture-top-right'
+                            bgPositionBottom='texture-bottom-left'
+                            animateTop={true} />
                     </div>
                 </div>
                 <div class="row mt-3">
@@ -80,8 +86,10 @@ function SectionB() {
                             title="Agenda dan Penugasan"
                             color="bg-red"
                             backgorund={penugasan}
-                            bgPosition=""
-                            animate={true} />
+                            texture={true}
+                            bgPositionTop='texture-top-center'
+                            bgPositionBottom='texture-bottom-center'
+                        />
                     </div>
                 </div>
             </div>
