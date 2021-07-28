@@ -9,20 +9,20 @@ function NavbarComponents() {
 
     return (
         <Fragment>
-            <nav className="navbar fixed-top py-sm-4 py-2">
+            <nav className="navbar bg-navbar fixed-top ">
                 <div className="container-fluid d-flex justify-content-between align-items-center px-sm-5 px-2">
-                    <div class="nav-brand d-flex align-items-center">
+                    <div class="nav-brand d-flex align-items-center ">
                         <a className="navbar-brand text-red pb-3" href="/">
                             <img width=" 100%" src={Logo} alt="" />
                         </a>
-                        <div><h4 className="brand-title m-0 fw-bold">MPKMB IPB 58</h4></div>
+                        <div><h4 className="brand-title m-0 fw-bold text-blue">MPKMB IPB 58</h4></div>
                     </div>
                     <div onClick={() => setActive(!active)} className={`menu px-2 py-3 ${active ? `open` : ``}`}>
                         <div className="hamburger"></div>
                     </div>
                 </div>
             </nav>
-            <div className={`nav-collaps position-fixed bg-grey d-flex bg-blur align-items-center ${active ? `show` : ``}`}>
+            <div className={`nav-collaps position-fixed bg-grey d-flex align-items-center ${active ? `show` : ``}`}>
                 <div className="container-lg d-flex justify-content-center flex-column align-items-center">
 
                     <div className="row mb-2 ">
@@ -30,14 +30,20 @@ function NavbarComponents() {
                             <h2 className="fw-bold hero-banner text-blue" style={{ fontFamily: 'Cinzel Decorative' }}>Menu</h2>
                         </div>
                     </div>
-                    <div className="row text-center">
-                        <a href="/" className="col-12 hero-banner-link my-3 d-block text-decoration-none hover text-blue">
-                            Home
+                    <div className="row text-center flex-column">
+                        <a href="/" className="col  my-3 d-inline-block text-decoration-none  text-blue">
+                            <span className="d-inline-block hover"> Home</span>
                         </a>
-                        <a href="/About" className="col-12 hero-banner-link my-3 d-block text-decoration-none hover text-blue">
-                            About
+                        <a href="/About" className="col  my-3 d-inline-block text-decoration-none  text-blue">
+                            <span className="d-inline-block hover">About</span>
                         </a>
+                        <a href="/Event" className="col  my-3 d-inline-block text-decoration-none  text-blue">
+                            <span className="d-inline-block hover">Event</span>
 
+                        </a>
+                        <a href="/AgendaPenugasan" className="col  my-3 d-inline-block text-decoration-none  text-blue">
+                            <span className="d-inline-block hover">Agenda dan Penugasan</span>
+                        </a>
                     </div>
                 </div>
             </div>

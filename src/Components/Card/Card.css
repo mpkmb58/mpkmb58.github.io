@@ -1,0 +1,113 @@
+.card-hover:hover .element-bg {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.element-bg {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.card-title {
+  z-index: 1;
+}
+
+.card-element {
+  z-index: 0;
+  opacity: .1;
+}
+
+.card-rounded {
+  border-radius: 1rem;
+}
+
+.texture-top-left, .texture-bottom-right, .texture-bottom-center, .texture-bottom-left, .texture-top-center, .texture-top-right {
+  width: calc(1.5rem + 9vw);
+}
+
+.texture-top-left {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.texture-bottom-right {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.texture-bottom-left {
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+.texture-top-right {
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.texture-top-center {
+  top: 0;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.texture-bottom-center {
+  bottom: 0;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.wrapper {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.card-wrapper-default {
+  min-height: 240px;
+}
+
+.anime-flip {
+  -webkit-animation: flip 5s linear forwards infinite;
+          animation: flip 5s linear forwards infinite;
+}
+
+@-webkit-keyframes flip {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes flip {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=Card.css.map */

@@ -1,0 +1,5 @@
+.back-btn {
+    border-style: none;
+    border-radius: 10px;
+    transition: transform 0.25s ease-in-out;
+}

@@ -1,14 +1,1 @@
-.anime {
-  cursor: pointer;
-}
-
-.anime-logo {
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.anime:hover .anime-logo {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
-/*# sourceMappingURL=Events.css.map */
+/* No CSS *//*# sourceMappingURL=Events.css.map */

@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react'
 import './CardSmall.css'
 import logonasionalisme from '../../Assets/img/g12logo-harian.svg'
-import logoterompet from '../../Assets/img/Vectorlogo-harian-1.svg'
+import logoterompet from '../../Assets/img/VectorLogo-harian-1.svg'
 import logotoga from '../../Assets/img/Vectorlogo-harian.svg'
 import logodadah from '../../Assets/img/Group 120logo-harian.svg'
 import logomekanik from '../../Assets/img/Group 152logo-harian.svg'

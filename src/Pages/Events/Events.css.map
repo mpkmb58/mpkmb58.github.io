@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,MAAM,EAAE,OAAO;CAClB;;AAED,AAAA,WAAW,CAAA;EACP,UAAU,EAAE,GAAG;CAClB;;AAED,AAAA,MAAM,AAAA,MAAM,CAAC,WAAW,CAAA;EACpB,SAAS,EAAE,UAAU;CACxB",
+    "mappings": "",
     "sources": [
         "Events.scss"
     ],

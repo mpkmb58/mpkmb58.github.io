@@ -9,14 +9,22 @@
     min-height: 10rem;
     max-width: 100%;
 
-    @media  screen and (max-width : 768px) {
-        max-width: 100%;
-        min-height: 10rem;
-    }
-
     .texture-bottom-big {
         width : 30%;
-        transform : translate(-5%, 10%)
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform : translate(-5%, 10%);
+        opacity: 0.15;
+    }
+
+    @media screen and (max-width : 768px) {
+        max-width: 100%;
+        min-height: 7rem;
+
+        .texture-bottom-big {
+            width: 20vmax;
+        }
     }
 
 

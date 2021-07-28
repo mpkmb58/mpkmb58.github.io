@@ -7,6 +7,10 @@
   text-decoration: none;
   font-weight: 500;
   color: #f8f8f8;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 
 .footer .boxed {
@@ -43,5 +47,14 @@
   bottom: 0;
   width: 100%;
   background-color: #223049;
+}
+
+.footer a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 /*# sourceMappingURL=Footer.css.map */

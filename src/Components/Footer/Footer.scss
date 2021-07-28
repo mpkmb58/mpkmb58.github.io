@@ -6,6 +6,7 @@
         text-decoration: none;
         font-weight: 500;
         color: #f8f8f8;
+        transition: transform 0.25s ease-in-out;
     }
 
     .boxed {
@@ -36,5 +37,10 @@
         background-color: #223049;
     }
 
+
+    a:hover {
+        transform: scale(1.05);
+        transition: transform 0.25s ease-in-out;
+    }
 }
 
