@@ -1,12 +1,6 @@
 import React, { useState } from 'react'
 import './AboutComponent.css'
 import $ from 'jquery';
-import logo from '../../Assets/img/logo_mahardika_cakrabinaya 1.svg';
-import logoKuning from '../../Assets/img/Logo_kuning.svg';
-import logoUngu from '../../Assets/img/Logo_ungu.svg';
-import logoMerah from '../../Assets/img/Logo_merah.svg';
-import logoHijau from '../../Assets/img/Logo_hijau.svg';
-import logoBiru from '../../Assets/img/Logo_biru.svg';
 
 
 function AboutComponent(props) {

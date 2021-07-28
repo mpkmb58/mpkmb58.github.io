@@ -41,41 +41,38 @@ function CardLiniMasa() {
                         number="1" 
                         title="Mentoring MPKMB" 
                         date ="23 Juli 2021" 
-                        time="08.00 WIB - 17.00 WIB"/>
+                        time="08.00 WIB - 17.00 WIB"
+                        modalID ="mentoring"/>
                     </div>
                     <div className="item mx-3">
                         <Box color="bg-red" 
                         number="2" 
                         title="Panduan MPKMB" 
                         date ="29 Juli 2021" 
-                        time="08.00 WIB - 17.00 WIB"/>
+                        time="08.00 WIB - 17.00 WIB"
+                        modalID="panduan"/>
                     </div>
                     <div className="item mx-3">
                         <Box color="bg-orange"
                          number="3" 
                          title="Surat Keputusan Rektor" 
                          date ="30 Juli 2021" 
-                         time="08.00 WIB - 17.00 WIB"/>
+                         time="08.00 WIB - 17.00 WIB"
+                         modalID="sk"/>
                     </div>
                     <div className="item mx-3">
                         <Box color="bg-blue" 
                             number="4" 
                             title="Upacara Pembukaan MPKMB" 
                             date ="9 Agustus 2021" 
-                            time="08.00 WIB - 17.00 WIB"/>
+                            time="08.00 WIB - 17.00 WIB"
+                            modalID="opening"/>
                     </div>
                     <div className="item mx-3">
                         <Box color="bg-red" 
                         number="5" 
                         title="Narasi Besar" 
                         date ="9 Agustus 2021" 
-                        time="08.00 WIB - 17.00 WIB"/>
-                    </div>
-                    <div className="item mx-3">
-                        <Box color="bg-orange" 
-                        number="6" 
-                        title="Upacara Penutupan MPKMB" 
-                        date ="23 Agustus 2022" 
                         time="08.00 WIB - 17.00 WIB"/>
                     </div>
                 </OwlCarousel>

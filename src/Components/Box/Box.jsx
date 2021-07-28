@@ -13,7 +13,7 @@ const Box = (props) => {
             <p className="date text-grey me-2 fw-bold">{props.date}<br></br><span class="fw-lighter">{props.time}</span></p>
             <div className="contentB">
                 <div className="content p-3">
-                    <button href="/" className="anchor py-1 px-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button href="/" className="anchor py-1 px-3 rounded-pill" data-bs-toggle="modal" data-bs-target={`#${props.modalID}`}>
                         Selengkapnya
                     </button>
                 </div>
