@@ -101,6 +101,19 @@
           transform: translateY(100%);
 }
 
+.nav-collaps::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  right: 0;
+  background-image: url("../../Assets/img/texture-blue.svg");
+  background-size: auto;
+  background-repeat: repeat-x;
+  height: 100px;
+}
+
 .nav-collaps.show {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);

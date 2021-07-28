@@ -69,11 +69,7 @@ function AboutComponent() {
     ]
 
     let [content, setContent] = useState(contentView[0].isi);
-    let [active, setActive] = useState(contentView[0].linkStatus)
 
-    // $('.hash').on('click', function () {
-    //     $(this).addClass('btn-blue').siblings().removeClass('btn-blue')
-    // })
 
     return (
         <section className="bg-blur py-5">

@@ -7,20 +7,27 @@ import { Fragment } from 'react';
 function Card(props) {
     return (
         <Fragment>
-            <a href={props.directTo}>
-                <div onH className={`${props.customSize} card-hover position-relative card-rounded overflow-hidden ${props.color}`}>
-                    <div class="card-title position-absolute wrapper d-flex justify-content-center align-items-center">
+            <a href={props.directTo} className="text-decoration-none">
+                <div className={`${props.customSize} card-hover position-relative card-rounded overflow-hidden ${props.color}`}>
+
+                    <div className="card-title position-absolute wrapper d-flex justify-content-center align-items-center">
                         <h3 className="fw-bold text-grey m-0 d-inline-block">{props.title}</h3>
                     </div>
-                    <div class="card-element wrapper d-flex justify-content-center align-items-center position-absolute">
+
+                    {
+                        props.viewSponsor ? props.viewSponsor : (<div></div>)
+                    }
+
+                    <div className="card-element wrapper d-flex justify-content-center align-items-center position-absolute">
                         {props.backgorund}
                     </div>
+
                     {props.texture && (
                         <Fragment>
-                            <div class={`position-absolute ${props.bgPositionTop}`}>
+                            <div className={`position-absolute ${props.bgPositionTop}`}>
                                 <img src={texture} alt="texture" className={props.animateTop && (`anime-flip`)} width="100%" />
                             </div>
-                            <div class={`position-absolute ${props.bgPositionBottom}`}>
+                            <div className={`position-absolute ${props.bgPositionBottom}`}>
                                 <img src={texture} alt="texture" className={props.animateBottom && (`anime-flip`)} width="100%" />
                             </div>
                         </Fragment>

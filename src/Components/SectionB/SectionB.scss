@@ -31,6 +31,19 @@
     transform: rotate(45deg);
 
 }
+.borders-V{
+    width: 0.25rem;
+    height: 200px;
+    z-index: 3;
+}
+.borders-H{
+    height: 0.25rem;
+    width: 90%;
+    z-index: 3;
+}
+
+
+
 .penugasan-logo-wrapper{
     width: 100px;
     position: absolute;
@@ -44,5 +57,6 @@
     .b::after{
         transform: translateY(0) rotate(180deg);
     }
+
     
 }

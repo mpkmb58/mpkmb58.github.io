@@ -84,11 +84,24 @@
     transform: translateY(100%);
     // clip-path: circle(0% at 50% 50%);
 }
+.nav-collaps::after{
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    z-index: 1;
+    right: 0;
+    background-image: url('../../Assets/img/texture-blue.svg');
+    background-size: auto;
+    background-repeat: repeat-x;
+    height: 100px;
+    // animation: flip 5s linear forwards infinite ;
+
+}
+
 
 .nav-collaps.show{
     transform: translateY(0%);
-
-    // clip-path: circle(100% at 50% 50%);
 }
 
 

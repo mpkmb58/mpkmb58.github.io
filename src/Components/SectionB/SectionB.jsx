@@ -38,12 +38,25 @@ function SectionB() {
             </div>
         </div>
 
+    const sponsor = <div className="wrapper position-abolute container pt-3">
+        <div className="row ">
+            <div className="col-md-4 pe-4 d-flex flex-column flex-md-row align-items-center">
+                <h3 className="mb-1 mb-md-0 fw-bold text-grey text-end me-lg-1">Sponsor dan Media Partner</h3>
+                <div className="borders-V ms-1 bg-grey d-none d-md-block"></div>
+                <div className="borders-H mt-1 bg-grey d-md-none d-block"></div>
+            </div>
+            <div className="col-md-8">
+
+            </div>
+        </div>
+    </div>
+
 
     return (
         <section className="bg-grey b py-4" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 about-wrapper">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12 about-wrapper">
                         <Card
                             directTo="/About"
                             title="About MPKMB"
@@ -55,8 +68,8 @@ function SectionB() {
                             animateBottom={true} />
                     </div>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-md-6">
+                <div className="row mt-3">
+                    <div className="col-md-6">
                         <Card
                             directTo="/Event"
                             title="Event MPKMB"
@@ -67,7 +80,7 @@ function SectionB() {
                             bgPositionBottom='texture-bottom-right'
                         />
                     </div>
-                    <div class="col-md-6 mt-3 mt-md-0">
+                    <div className="col-md-6 mt-3 mt-md-0">
                         <Card
                             directTo="/FAQ"
                             title="FAQ"
@@ -79,8 +92,8 @@ function SectionB() {
                             animateTop={true} />
                     </div>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-12 about-wrapper">
+                <div className="row mt-3">
+                    <div className="col-12 about-wrapper">
                         <Card
                             directTo="/AgendaPenugasan"
                             title="Agenda dan Penugasan"
@@ -89,6 +102,20 @@ function SectionB() {
                             texture={true}
                             bgPositionTop='texture-top-center'
                             bgPositionBottom='texture-bottom-center'
+                        />
+                    </div>
+                </div>
+                <div className="row mt-3">
+                    <div className="col-12 about-wrapper">
+                        <Card
+                            directTo=""
+                            title=''
+                            viewSponsor={sponsor}
+                            color="bg-blue"
+                            backgorund=''
+                            texture={true}
+                            bgPositionTop='texture-top-left'
+                            bgPositionBottom='texture-bottom-right'
                         />
                     </div>
                 </div>
