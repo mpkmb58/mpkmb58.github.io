@@ -8,9 +8,9 @@ function Card(props) {
     return (
         <Fragment>
             <a href={props.directTo}>
-                <div onH className={`${props.customSize} position-relative  rounded overflow-hidden ${props.color}`}>
+                <div onH className={`${props.customSize} card-hover position-relative card-rounded overflow-hidden ${props.color}`}>
                     <div class="card-title position-absolute wrapper d-flex justify-content-center align-items-center">
-                        <h2 className="fw-bold text-grey">{props.title}</h2>
+                        <h3 className="fw-bold text-grey m-0 d-inline-block">{props.title}</h3>
                     </div>
                     <div class="card-element wrapper d-flex justify-content-center align-items-center position-absolute">
                         {props.backgorund}
@@ -31,7 +31,7 @@ function Card(props) {
     )
 }
 
-const pos = ['texture-top-left', 'texture-bottom-right', 'texture-top-right', 'texture-bottom-left', 'texture-top-center', 'texture-bottom-center']
+
 
 Card.defaultProps = {
     direcTo: './',
