@@ -4,6 +4,17 @@
 }
 .navbar{
     z-index: 9999;
+    backdrop-filter: blur(10px);
+}
+.navbar::after{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    background-color: #F8F8F8;
+    opacity: .5;
 }
 .brand-title{
     font-family: 'poppins', Arial;
@@ -62,7 +73,10 @@
 
     transform: rotate(-90deg)
 }
-
+.nav-brand{
+    position: relative;
+    z-index: 10;
+}
 // END OF HAMBURGER MENU
 
 // NAV-LINKS
@@ -83,18 +97,25 @@
     // clip-path: circle(100% at 50% 50%);
 }
 
+
+
 .hover{position: relative; }
 .hover::after{
     content: '';
     position: absolute;
-    width: 0%;
-    height: 2px;
+    width: 20px;
+    height: 20px;
     background-color: #343F56;
-    bottom: 0;
-    left: 0;
+    // background-image: url('../../Assets/img/texture.svg');
+    bottom: 50%;
+    left: -50px;
+    opacity: 0;
+    transform: rotate(0deg) translateX(-20%) ;
     transition: .3s;
 }
 
 .hover:hover::after{
-    width: 100%;
+    
+    opacity: 1;
+    transform: rotate(270deg) translateX(0%) ;
 }
