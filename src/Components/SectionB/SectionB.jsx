@@ -24,7 +24,7 @@ function SectionB() {
                 title = "Panduan MPKMB"
                 content = 
                 {
-                    <iframe src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" width="640" height="600" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" width="640" height="350" allow="autoplay"></iframe>
                 }
                 size ="modal-lg"
             />
@@ -34,7 +34,7 @@ function SectionB() {
                 title = "Surat Keputusan Rektor"
                 content = 
                 {
-                    <iframe src="https://drive.google.com/file/d/1j7YX38amioVZ70wvJgo76BqY6jzXfGDV/preview" width="640" height="600" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1j7YX38amioVZ70wvJgo76BqY6jzXfGDV/preview" width="640" height="350" allow="autoplay"></iframe>
                 }
                 size ="modal-lg"
             />
