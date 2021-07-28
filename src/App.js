@@ -5,7 +5,7 @@ import About from './Pages/About/About';
 import Home from './Pages/Home/Home';
 // import Events from './Pages/Events/Events'
 // import AgendaDanPenugasan from './Pages/Agenda dan Penugasan/AgendaDanPenugasan'
-// import Agenda from './Pages/Agenda/Agenda';
+import AgendaHari from './Pages/AgendaHari/AgendaHari';
 import Panduan from './Pages/Panduan/Panduan';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
 import Footer from './Components/Footer/Footer';
@@ -26,7 +26,8 @@ const App = () => {
         <Route path="/Panduan" component={Panduan}/>
         <Route path="/Event" component={Event} />
         <Route path="/AgendaPenugasan" component={AgendaPenugasan} />
-        <Route path="/Agenda" component={Agenda} />
+        {/* <Route path="/Agenda" component={Agenda} /> */}
+        <Route path="/Agenda" component={AgendaHari} />
         <Route component={PageNotFound} />
       </Switch>
       <Footer />

@@ -42,7 +42,7 @@
 }
 
 .card-lini-masa .owl-dots {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,7 +55,7 @@
 }
 
 .card-lini-masa .owl-dots .owl-dot {
-  width: 0.65rem !important;
+  width: 0.75rem !important;
   aspect-ratio: 1/1 !important;
   border: 1px solid #343F56 !important;
   margin: 0px 0.35rem;

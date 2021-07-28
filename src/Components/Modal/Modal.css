@@ -22,7 +22,7 @@
 }
 
 .modal-dialog {
-  z-index: -2 !important;
+  z-index: 10 !important;
   overflow: visible !important;
 }
 

@@ -16,16 +16,23 @@
   max-width: 100%;
 }
 
+.card-small .texture-bottom-big {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(-5%, 10%);
+          transform: translate(-5%, 10%);
+  opacity: 0.15;
+}
+
 @media screen and (max-width: 768px) {
   .card-small {
     max-width: 100%;
-    min-height: 10rem;
+    min-height: 7rem;
   }
-}
-
-.card-small .texture-bottom-big {
-  width: 30%;
-  -webkit-transform: translate(-5%, 10%);
-          transform: translate(-5%, 10%);
+  .card-small .texture-bottom-big {
+    width: 20vmax;
+  }
 }
 /*# sourceMappingURL=CardSmall.css.map */

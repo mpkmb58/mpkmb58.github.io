@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,iBAAiB,CAAA;EACb,YAAY,EAAE,GAAG;CACpB",
+    "mappings": "",
     "sources": [
         "Agenda.scss"
     ],

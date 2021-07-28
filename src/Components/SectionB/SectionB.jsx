@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import Card from '../Card/Card'
 import CardLiniMasa from '../../Components/CardLiniMasa/CardLiniMasa'
 import Modal from '../../Components/Modal/Modal'
@@ -43,7 +43,48 @@ function SectionB() {
 
 
     return (
+        <Fragment>
+        <Modal 
+                id="mentoring"
+                title = "MENTORING MPKMB"
+                content = {<p className="text-center text-blue"><span className="fw-bold">Mentoring</span> merupakan rangkaian acara MPKMB yang bertujuan untuk mempersiapkan calon mahasiswa baru dalam menjalani rangkaian acara utama MPKMB. Mentoring pada MPKMB tahun 2021 dilaksanakan pada tanggal <span className="fw-bold">23 Juli - 7 Agustus 2021 untuk gelombang pertama</span>, <span className="fw-bold">sedangkan 4 - 7 Agustus 2021 untuk gelombang kedua.</span></p>}
+                size ="modal-lg"
+            />
+            <Modal
+                id="panduan"
+                title = "Panduan MPKMB"
+                content = 
+                {
+                    <Fragment>
+                        <iframe src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" width="640" height="350" allow="autoplay"></iframe>
+                        <button className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey">Download PDF</button>
+                    </Fragment>
+                }
+                size ="modal-lg"
+            />
+            
+            <Modal
+                id="sk"
+                title = "Surat Keputusan Rektor"
+                content = 
+                {
+                    <Fragment>
+                        <iframe src="https://drive.google.com/file/d/1j7YX38amioVZ70wvJgo76BqY6jzXfGDV/preview" width="640" height="350" allow="autoplay"></iframe>
+                        <button className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey">Download PDF</button>
+                    </Fragment>
+                }
+                size ="modal-lg"
+            />
+            <Modal 
+                id="opening"
+                title = "Opening MPKMB"
+                content = {<p className="text-center text-blue">Upacara pembukaan Masa Pengenalan Kampus Mahasiswa Baru atau <span className="fw-bold">Opening Ceremony MPKMB</span> merupakan momentum peresmian pembukaan rangkaian acara MPKMB yang akan dilaksanakan pada tanggal <span className="fw-bold">9 Agustus 2021.</span></p>}
+                size ="modal-lg"
+            />
         <section className="bg-grey b py-4" >
+
+            
+
             <div class="container">
                 <div class="row">
                     <div class="col-12 about-wrapper">
@@ -102,6 +143,7 @@ function SectionB() {
                 </div>
             </div>
         </section>
+        </Fragment>
     )
 }
 

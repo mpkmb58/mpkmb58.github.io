@@ -17,14 +17,12 @@
             color: #f8f8f8;
             padding: 0.5rem;
             border-radius: 50%;
-
-
         }
     }
 }
 
 .modal-dialog {
-    z-index: -2 !important;
+    z-index: 10 !important;
     overflow: visible !important;
 }
 

@@ -2,9 +2,8 @@ import React, {Fragment} from 'react'
 import CardSmall from '../../Components/CardSmall/CardSmall'
 import ButtonKembali from '../../Components/Button/ButtonKembali/ButtonKembali'
 import Footer from '../../Components/Footer/Footer'
-import './Agenda.css'
 
-function Agenda() {
+function AgendaHari() {
     return (
         <Fragment>
         <section className="three-card-page">            
@@ -36,4 +35,4 @@ function Agenda() {
     )
 }
 
-export default Agenda
+export default AgendaHari
