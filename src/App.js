@@ -28,7 +28,6 @@ const App = () => {
         <Route path="/FAQ" component={FAQ} />
         <Route path="/AgendaPenugasan" component={AgendaPenugasan} />
         <Route path="/Agenda" component={Agenda} />
-        {/* <Route path="/Agenda" component={AgendaHari} /> */}
         <Route component={PageNotFound} />
       </Switch>
       <Footer />

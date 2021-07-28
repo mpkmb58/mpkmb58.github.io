@@ -52,7 +52,7 @@ function Agenda() {
                 <div class="row mt-5 justify-content-center">
                     {
                         contentEvent.map(e =>
-                            <div class="col-md-6 mt-3 ">
+                            <div class="col-lg-6 mt-3 ">
                                 <Card
                                     directTo={e.directTo}
                                     title={e.title}
