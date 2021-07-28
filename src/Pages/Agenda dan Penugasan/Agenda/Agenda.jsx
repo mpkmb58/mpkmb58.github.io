@@ -5,9 +5,10 @@ import bgCreature from '../../../Assets/img/VectorLogo-harian-3.svg'
 import bgYoung from '../../../Assets/img/VectorLogo-harian-4.svg'
 import bgClosing from '../../../Assets/img/VectorLogo-harian-5.svg'
 import Card from '../../../Components/Card/Card'
+import './Agenda.css'
 
 
-const bgEvent = (e) => (<div class="event-bg-wrapper position-absolute">
+const bgEvent = (e) => (<div class="bg-agenda-size position-absolute">
     <img src={e} alt="Illustarasi Event" width="100%" className="element-bg" />
 </div>)
 
@@ -55,8 +56,9 @@ function Agenda() {
                                 <Card
                                     directTo={e.directTo}
                                     title={e.title}
+                                    titleSize='h4'
                                     color={e.bgColors}
-                                    backgorund={e.bgImages}
+                                    background={e.bgImages}
                                     customSize='card-agenda-size'
                                 />
                             </div>

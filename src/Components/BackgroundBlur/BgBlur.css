@@ -1,0 +1,47 @@
+.one,
+.two,
+.three,
+.four {
+  top: 0;
+}
+
+.five,
+.six,
+.seven,
+.eight {
+  bottom: 0;
+}
+
+.one,
+.five {
+  left: 0;
+}
+
+.two,
+.six {
+  left: 25%;
+}
+
+.three,
+.seven {
+  left: 50%;
+}
+
+.four,
+.eight {
+  left: 75%;
+}
+
+/* .bg-logo {
+        z-index: 2;
+        margin: auto;
+
+        img {
+            transform: translateY(-10%) scale(1.5);
+            opacity: 0.15;
+            width: 20vmax;
+        }
+    }
+
+    . */
+/*# sourceMappingURL=BgBlur.css.map */

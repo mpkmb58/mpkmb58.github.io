@@ -1,0 +1,86 @@
+.box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 240px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-style: none;
+}
+
+.box h5 {
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.box .texture-box {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.box .texture-box img {
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.box .texture-number {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+  opacity: 0.1;
+}
+
+.box .texture-number p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 270px;
+  font-weight: 700;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.box .date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: end;
+}
+
+.box .date .fw-lighter {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+.box:hover h5, .box:hover .texture-box > img, .box:hover .texture-number > p {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+/*# sourceMappingURL=Box.css.map */

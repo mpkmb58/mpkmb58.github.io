@@ -18,7 +18,7 @@ function AgendaPenugasan() {
             bgImages: bgEvent(bgAgenda)
         },
         {
-            directTo: '/',
+            directTo: '/Panduan',
             title: "Panduan",
             bgColors: "bg-red",
             bgImages: bgEvent(bgPanduan)
@@ -44,7 +44,7 @@ function AgendaPenugasan() {
                                     directTo={e.directTo}
                                     title={e.title}
                                     color={e.bgColors}
-                                    backgorund={e.bgImages}
+                                    background={e.bgImages}
                                     customSize='card-event-size'
                                 />
                             </div>

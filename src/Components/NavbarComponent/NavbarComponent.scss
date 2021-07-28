@@ -31,6 +31,7 @@
     transition: all .6s;
 }
 
+
 .hamburger,
 .hamburger::after,
 .hamburger::before {
@@ -41,11 +42,13 @@
     transition: all .5s;
 }
 
+
 .hamburger::after,
 .hamburger::before {
     content: '';
     position: absolute;
 }
+
 
 .hamburger::after {
     transform: translateY(7px);
@@ -56,15 +59,18 @@
 }
 
 .menu.open .hamburger {
+
     transform: rotate(45deg);
     background: transparent;
 }
+
 
 .menu.open .hamburger::before {
     transform: rotate(0deg)
 }
 
 .menu.open .hamburger::after {
+
     transform: rotate(-90deg)
 }
 .nav-brand{

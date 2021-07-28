@@ -11142,4 +11142,35 @@ fieldset:disabled .btn {
 section {
   min-height: 100vh;
 }
+
+.card-component {
+  overflow: hidden;
+  min-height: 240px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f8f8f8;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h3, .h3 {
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
 /*# sourceMappingURL=App.css.map */

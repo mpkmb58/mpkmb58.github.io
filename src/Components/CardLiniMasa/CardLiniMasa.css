@@ -1,0 +1,68 @@
+.card-lini-masa .owl-stage-outer {
+  padding: 0rem 0.5rem;
+}
+
+.card-lini-masa .owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-lini-masa .owl-nav .owl-prev {
+  color: #343F56 !important;
+  width: 2rem !important;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 40%;
+  left: 0;
+  z-index: 3;
+}
+
+.card-lini-masa .owl-nav .owl-prev span {
+  width: 10rem !important;
+  height: 10rem !important;
+}
+
+.card-lini-masa .owl-nav .owl-next {
+  color: #343F56 !important;
+  width: 2rem !important;
+  position: absolute;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  top: 40%;
+  right: 0;
+  z-index: 3;
+}
+
+.card-lini-masa .owl-dots {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-lini-masa .owl-dots .owl-dot {
+  width: 0.75rem !important;
+  aspect-ratio: 1/1 !important;
+  border: 1px solid #343F56 !important;
+  margin: 0px 0.35rem;
+  border-radius: 50%;
+}
+
+.card-lini-masa .owl-dots .active {
+  background-color: #343F56;
+}
+/*# sourceMappingURL=CardLiniMasa.css.map */

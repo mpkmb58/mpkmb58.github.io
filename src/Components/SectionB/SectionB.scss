@@ -1,6 +1,23 @@
 .b{
     position: relative;
+    padding : 80px 0px;
+    z-index: 1;
+    font-family: 'Poppins',sans-serif;
+
+    h3 {
+        font-weight: 500;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
 }
+
 .b::after{
     content: '';
     position: absolute;
@@ -12,6 +29,12 @@
     background-repeat: repeat-x;
     transform: rotate(180deg) translateY(40%);
     filter: blur(20px);
+
+}
+
+iframe {
+    width : 70vmin;
+    aspect-ratio: 16/9;
     z-index: 0;
 }
 
@@ -29,7 +52,6 @@
     bottom: -20%;
     left: 0;
     transform: rotate(45deg);
-
 }
 .borders-V{
     width: 0.25rem;
@@ -50,6 +72,27 @@
     top: 0;
     right: 0;
     transform: rotate(-45deg);
+}
+
+.sponsor {
+    position : relative;
+    z-index : 3;
+    .v-line {
+       height : 200px;
+       width : 0.25rem; 
+    }
+
+    .h-line {
+        display : none;
+    }
+
+    @media screen and (max-width : 768px) {
+        .h-line {
+            display: block;
+            height : 0.25rem;
+            width : 100%;
+        }
+    }
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,42 @@
+.modal-content {
+  min-height: 50vh;
+  position: relative;
+  z-index: 0;
+  overflow: visible !important;
+  border: 1px solid #f8f8f8 !important;
+  border-radius: 1rem !important;
+}
+
+.modal-content .modal-body {
+  position: relative;
+}
+
+.modal-content .modal-body .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1.1;
+  color: #f8f8f8;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.modal-dialog {
+  z-index: 10 !important;
+  overflow: visible !important;
+}
+
+.modal-content::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  border-radius: 1rem !important;
+}
+/*# sourceMappingURL=Modal.css.map */

@@ -1,5 +1,21 @@
 .b {
   position: relative;
+  padding: 80px 0px;
+  z-index: 1;
+  font-family: 'Poppins',sans-serif;
+}
+
+.b h3 {
+  font-weight: 500;
+}
+
+.b a {
+  text-decoration: none;
+}
+
+.b .container {
+  position: relative;
+  z-index: 2;
 }
 
 .b::after {
@@ -15,6 +31,11 @@
           transform: rotate(180deg) translateY(40%);
   -webkit-filter: blur(20px);
           filter: blur(20px);
+}
+
+iframe {
+  width: 70vmin;
+  aspect-ratio: 16/9;
   z-index: 0;
 }
 
@@ -57,6 +78,28 @@
   right: 0;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.sponsor {
+  position: relative;
+  z-index: 3;
+}
+
+.sponsor .v-line {
+  height: 200px;
+  width: 0.25rem;
+}
+
+.sponsor .h-line {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sponsor .h-line {
+    display: block;
+    height: 0.25rem;
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {

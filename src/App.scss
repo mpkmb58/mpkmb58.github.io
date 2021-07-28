@@ -27,5 +27,30 @@ section{
     min-height: 100vh;
 }
 
+.card-component {
+    overflow: hidden;
+    min-height: 240px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8f8f8;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none !important;
+}
+
+h3 {
+    position: relative;
+    z-index: 2;
+    font-weight : 700;
+}
+
+img {
+    width: 100%;
+}
+
+
 
 
