@@ -12,7 +12,8 @@ import Footer from './Components/Footer/Footer';
 import Event from './Pages/Event/Event';
 import AgendaPenugasan from './Pages/Agenda dan Penugasan/AgendaPenugasan';
 import FAQ from './Pages/Panduan dan FAQ/FAQ';
-import Agenda from './Pages/Agenda dan Penugasan/Agenda/Agenda';
+import BgBlur from './Components/BackgroundBlur/BgBlur';
+// import Agenda from './Pages/Agenda dan Penugasan/Agenda/Agenda';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -20,6 +21,7 @@ import Agenda from './Pages/Agenda dan Penugasan/Agenda/Agenda';
 const App = () => {
   return (
     <Router>
+      <BgBlur/>
       <NavbarComponents />
       <Switch>
         <Route path="/" exact component={Home} />

@@ -78,6 +78,18 @@ iframe {
   width: 0.25rem;
 }
 
+.sponsor .h-line {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sponsor .h-line {
+    display: block;
+    height: 0.25rem;
+    width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   .b::after {
     -webkit-transform: translateY(0) rotate(180deg);
