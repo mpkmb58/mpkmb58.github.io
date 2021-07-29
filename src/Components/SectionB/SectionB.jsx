@@ -108,7 +108,7 @@ function SectionB() {
                 size="modal-lg"
             />
             <Modal
-                id="narasi"
+                id="comingsoon"
                 title="Coming Soon"
                 content={`Content Will be update soon!`}
                 size="modal-lg"

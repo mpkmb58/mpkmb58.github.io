@@ -18,10 +18,6 @@ function Card(props) {
                         props.viewSponsor ? props.viewSponsor : (<div></div>)
                     }
 
-                    {
-                         props.viewLiniMasa ? props.ViewLiniMasa : (<div></div>)
-                    }
-
                     <div className='card-element wrapper d-flex justify-content-center align-items-center position-absolute'>
                         {props.background}
                     </div>

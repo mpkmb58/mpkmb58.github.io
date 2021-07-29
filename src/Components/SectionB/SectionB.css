@@ -65,13 +65,13 @@ iframe {
 }
 
 .borders-V {
-  width: 0.25rem;
+  width: 0.4rem;
   height: 100%;
   z-index: 3;
 }
 
 .borders-H {
-  height: 0.25rem;
+  height: 0.4rem;
   width: 100%;
   z-index: 3;
 }
