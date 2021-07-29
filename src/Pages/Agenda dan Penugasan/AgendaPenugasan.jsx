@@ -32,7 +32,6 @@ function AgendaPenugasan() {
         }
     ]
     return (
-
         <Modal
                 id="mentoring"
                 title="MENTORING MPKMB"
@@ -47,7 +46,7 @@ function AgendaPenugasan() {
                 <div class="row mt-3">
                     {
                         contentEvent.map(e =>
-                            <div class="col-md-4 mt-3 mt-md-0">
+                            <div class="col-lg-4 mt-3 mt-lg-0">
                                 <Card
                                     directTo={e.directTo}
                                     title={e.title}
