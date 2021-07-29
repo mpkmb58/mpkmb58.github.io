@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.50ad387d.chunk.css",
-    "main.js": "/static/js/main.2de43c27.chunk.js",
-    "main.js.map": "/static/js/main.2de43c27.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.caab1406.js",
-    "runtime-main.js.map": "/static/js/runtime-main.caab1406.js.map",
+    "main.css": "/static/css/main.a056a00c.chunk.css",
+    "main.js": "/static/js/main.22abfd75.chunk.js",
+    "main.js.map": "/static/js/main.22abfd75.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c557e2cf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c557e2cf.js.map",
     "static/css/2.591db2b6.chunk.css": "/static/css/2.591db2b6.chunk.css",
-    "static/js/2.cc38777e.chunk.js": "/static/js/2.cc38777e.chunk.js",
-    "static/js/2.cc38777e.chunk.js.map": "/static/js/2.cc38777e.chunk.js.map",
-    "static/js/3.05ca5f39.chunk.js": "/static/js/3.05ca5f39.chunk.js",
-    "static/js/3.05ca5f39.chunk.js.map": "/static/js/3.05ca5f39.chunk.js.map",
+    "static/js/2.d2c3d24d.chunk.js": "/static/js/2.d2c3d24d.chunk.js",
+    "static/js/2.d2c3d24d.chunk.js.map": "/static/js/2.d2c3d24d.chunk.js.map",
+    "static/js/3.75934fa8.chunk.js": "/static/js/3.75934fa8.chunk.js",
+    "static/js/3.75934fa8.chunk.js.map": "/static/js/3.75934fa8.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.591db2b6.chunk.css.map": "/static/css/2.591db2b6.chunk.css.map",
-    "static/css/main.50ad387d.chunk.css.map": "/static/css/main.50ad387d.chunk.css.map",
-    "static/js/2.cc38777e.chunk.js.LICENSE.txt": "/static/js/2.cc38777e.chunk.js.LICENSE.txt",
+    "static/css/main.a056a00c.chunk.css.map": "/static/css/main.a056a00c.chunk.css.map",
+    "static/js/2.d2c3d24d.chunk.js.LICENSE.txt": "/static/js/2.d2c3d24d.chunk.js.LICENSE.txt",
     "static/media/Logo_biru.302bf7b0.svg": "/static/media/Logo_biru.302bf7b0.svg",
     "static/media/Logo_hijau.a0940807.svg": "/static/media/Logo_hijau.a0940807.svg",
     "static/media/Logo_kuning.72a1b389.svg": "/static/media/Logo_kuning.72a1b389.svg",
@@ -49,10 +49,10 @@
     "static/media/texture.4af97bcc.svg": "/static/media/texture.4af97bcc.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.caab1406.js",
+    "static/js/runtime-main.c557e2cf.js",
     "static/css/2.591db2b6.chunk.css",
-    "static/js/2.cc38777e.chunk.js",
-    "static/css/main.50ad387d.chunk.css",
-    "static/js/main.2de43c27.chunk.js"
+    "static/js/2.d2c3d24d.chunk.js",
+    "static/css/main.a056a00c.chunk.css",
+    "static/js/main.22abfd75.chunk.js"
   ]
 }
