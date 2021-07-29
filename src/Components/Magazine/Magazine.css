@@ -24,7 +24,7 @@
   z-index: 1;
 }
 
-.hash::before {
+.hash::before, .hash-dekstop::before {
   content: '';
   position: absolute;
   top: 0;
@@ -34,19 +34,25 @@
   border-left: 0px solid #343F56;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+.hash::before {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-.hash:hover::before {
+.hash:hover::before, .hash-dekstop:hover::before {
   border-left: 10px solid #343F56;
 }
 
-.hash {
+.hash, .hash-dekstop {
   border-radius: 0 !important;
 }
 
+.hash-dekstop {
+  width: 100%;
+}
+
 .drop-down {
-  display: none;
   top: 0;
   right: 0;
   height: -webkit-fit-content;

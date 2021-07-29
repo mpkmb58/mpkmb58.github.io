@@ -35,7 +35,7 @@ function Magazine(props) {
 
                         </div>
                     </div>
-                    <div className="col-lg-2 bg-grey about-nav-wrapper p-lg-5 p-1  d-lg-flex d-none flex-row flex-lg-column justify-content-center justify-content-lg-start align-items-center overflow-hidden">
+                    <div className="col-lg-2 bg-grey px-0 about-nav-wrapper py-5  d-lg-flex d-none flex-row flex-lg-column justify-content-center justify-content-lg-start align-items-center overflow-hidden " >
                         {
                             props.contentWrapper.map(e =>
                                 <div onClick={() => {
@@ -43,11 +43,13 @@ function Magazine(props) {
                                     setNav(props.contentWrapper[e.key].link)
                                     setCollapse(collapse)
                                 }}
-                                    className='btn rounded-pill my-2 py-1'>
+                                    className='hash-dekstop position-relative btn m-0 py-3 '
+                                >
                                     <h5 className="m-0">{e.link}</h5>
                                 </div>
                             )
                         }
+
                     </div>
                     <div className="content col-lg-9 bg-grey about-nav-wrapper p-5 my-4 my-lg-0">
                         {content}
