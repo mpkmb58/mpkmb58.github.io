@@ -55,14 +55,23 @@
     width: 8rem !important;
 }
 
+.content, .about-nav-wrapper {
+    max-width: 100%;
+}
+
+.content {
+    min-height: 70vh;
+}
+
+
 
 @media (min-width: 992px) {
     .about-nav-wrapper{
-        min-height: 60vh;
+        min-height:70vmin;
     }
 
     .content{
-        max-height: 25rem;
+        max-height : 50vh;
         aspect-ratio: 20/9 !important;
     }
  

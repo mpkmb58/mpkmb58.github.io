@@ -38,9 +38,9 @@
           filter: blur(20px);
 }
 
-iframe {
+.modalDocument {
   width: 95%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 3/4;
   z-index: 0;
 }
 
@@ -102,6 +102,11 @@ iframe {
   .b::after {
     -webkit-transform: translateY(0) rotate(180deg);
             transform: translateY(0) rotate(180deg);
+  }
+  .modalDocument {
+    width: 95%;
+    aspect-ratio: 4/3;
+    z-index: 0;
   }
 }
 /*# sourceMappingURL=SectionB.css.map */

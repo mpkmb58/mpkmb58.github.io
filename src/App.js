@@ -8,7 +8,7 @@ import PageNotFound from './Components/PageNotFound/PageNotFound';
 import Footer from './Components/Footer/Footer';
 import Event from './Pages/Event/Event';
 import AgendaPenugasan from './Pages/Agenda dan Penugasan/AgendaPenugasan';
-import FAQ from './Pages/Panduan dan FAQ/FAQ';
+import FAQ from './Pages/FAQ/FAQ';
 import Agenda from './Pages/Agenda dan Penugasan/Agenda/Agenda';
 import BgBlur from './Components/BackgroundBlur/BgBlur';
 // import logo from './logo.svg';

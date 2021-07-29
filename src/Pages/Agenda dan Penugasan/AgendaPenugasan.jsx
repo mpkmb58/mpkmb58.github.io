@@ -32,7 +32,6 @@ function AgendaPenugasan() {
         }
     ]
     return (
-        <Fragment>
         <section className="d-flex justify-content-center align-items-center py-5">
             <div class="container pt-5">
                 <h2 className="fw-bold text-center text-blue">Agenda dan Penugasan</h2>
@@ -54,7 +53,6 @@ function AgendaPenugasan() {
                 </div>
             </div>
         </section>
-        </Fragment>
     )
 }
 

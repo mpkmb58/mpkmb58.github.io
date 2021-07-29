@@ -51,14 +51,13 @@ function Magazine(props) {
         <div className="py-5 position-relative z-index-2">
             <div className="container pt-5 ">
 
-                <div className="row mb-4 justify-content-between">
-
-                    <div className="col-lg-2 link bg-grey about-nav-wrapper position-relative p-lg-5 p-1  d-lg-none d-flex flex-row flex-lg-column justify-content-center justify-content-lg-start align-items-center overflow-visible">
-                        <h3 className="m-0 my-3">{nav}</h3>
+                <div className="row mb-4 mx-lg-0 mx-0 justify-content-between">
+                    <div className="col-lg-2 link bg-grey about-nav-wrapper position-relative p-lg-5 px-5  d-lg-none d-flex flex-row flex-lg-column justify-content-center justify-content-lg-start align-items-center overflow-visible">
+                        <h3 className="m-0 my-3 text-center">{nav}</h3>
                         <div className="arrow-down position-absolute" onClick={() => setCollapse(!collapse)}>
                             <img src={arrowDown} alt="Arrow down" />
                         </div>
-                        <div class={`drop-down bg-grey shadow-lg position-absolute col-4 overflow-hidden flex-column ${collapse ? 'd-flex' : 'd-none'}`}>
+                        <div class={`drop-down bg-grey px-4 shadow-lg position-absolute col-4 overflow-hidden flex-column ${collapse ? 'd-flex' : 'd-none'}`}>
                             {
                                 props.contentWrapper.map(e =>
                                     <div onClick={() => {
@@ -67,14 +66,14 @@ function Magazine(props) {
                                         setCollapse(!collapse)
                                     }}
                                         className='hash btn position-relative  py-4'>
-                                        <h5 className="m-0">{e.link}</h5>
+                                        <h5 className="m-0 text-center">{e.link}</h5>
                                     </div>
                                 )
                             }
 
                         </div>
                     </div>
-                    <div className="col-lg-2 bg-grey px-0 about-nav-wrapper py-5  d-lg-flex d-none flex-row flex-lg-column justify-content-center justify-content-lg-start align-items-center overflow-hidden " >
+                    <div className="col-lg-2 bg-grey px-2 about-nav-wrapper py-5  d-lg-flex d-none flex-row flex-lg-column justify-content-center justify-content-lg-start align-items-center overflow-hidden " >
                         {
                             props.contentWrapper.map(e =>
                                 <div onClick={() => {
@@ -90,7 +89,7 @@ function Magazine(props) {
                         }
 
                     </div>
-                    <div className="content col-lg-9 bg-grey about-nav-wrapper p-5 my-4 my-lg-0">
+                    <div className="content col-lg-9 bg-grey about-nav-wrapper p-md-5 p-3 my-4 my-lg-0">
                         {content}
                     </div>
                 </div>

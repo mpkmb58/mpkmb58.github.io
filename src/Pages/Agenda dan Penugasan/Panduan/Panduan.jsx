@@ -3,7 +3,10 @@ import Magazine from '../../../Components/Magazine/Magazine'
 import { AboutStyle } from '../../About/About.style'
 import { Iframe } from './Panduan.style'
 import panduanPDF from '../../../Assets/documents/GuideBook.pdf'
-import penugasanPDF from '../../Assets/documents/'
+import penugasanPDF from '../../../Assets/documents/Panduan Penugasan MPKMB IPB 58.pdf'
+import pendaftaranPDF from '../../../Assets/documents/Panduan Pendaftaran Ashura-Ashira Anausa MPKMB IPB 58.pdf'
+import kelompokPDF from '../../../Assets/documents/Enrollment Key Mahardika Cakrabinaya.pdf'
+import penggunaanCoursePDF from '../../../Assets/documents/Panduan Penggunaan Course.pdf'
 function Panduan() {
     const contentView = [
         {
@@ -11,10 +14,10 @@ function Panduan() {
             link: 'GUIDE BOOK',
             isi: 
             <div>
-                <h2 className="fw-bold text-center mb-4">GUIDE BOOK MPKMB</h2>
+                <h2 className="fw-bold text-center mb-4 px-1">GUIDE BOOK MPKMB</h2>
                 <div className="d-flex flex-column align-items-center justify-content-center">
                     <Iframe src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></Iframe>
-                    <a href={panduanPDF} className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey" download="Guide Book MPKMB 58.pdf">Download PDF</a>
+                    <a href={panduanPDF} className="mt-4 bg-blue py-2 px-4 rounded-pill text-grey" download="Guide Book MPKMB 58.pdf">Download PDF</a>
                 </div>
             </div>,
             linkStatus: true
@@ -24,10 +27,10 @@ function Panduan() {
             link: 'PANDUAN PENUGASAN',
             isi: 
             <div>
-                <h2 className="fw-bold text-center mb-4">PANDUAN PENUGASAN</h2>
+                <h2 className="fw-bold text-center mb-4 mx-3">PANDUAN PENUGASAN</h2>
                 <div className="d-flex flex-column align-items-center justify-content-center">
-                    <Iframe src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></Iframe>
-                    <a href={panduanPDF} className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey" download="Guide Book MPKMB 58.pdf">Download PDF</a>
+                    <Iframe src="https://drive.google.com/file/d/1-RZBgCa5csmfwGGEMSuMje2JkFSXV9c0/preview" allow="autoplay"></Iframe>
+                    <a href={penugasanPDF} className="mt-4 bg-blue py-2 px-4 rounded-pill text-grey" download="Panduan Penugasan MPKMB IPB 58.pdf">Download PDF</a>
                 </div>
             </div>,
             linkStatus: false
@@ -39,8 +42,8 @@ function Panduan() {
             isi: <div>
                 <h2 className="fw-bold text-center mb-4">PANDUAN PENGGUNAAN COURSE</h2>
                 <div className="d-flex flex-column align-items-center justify-content-center">
-                    <Iframe src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></Iframe>
-                    <a href={panduanPDF} className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey" download="Guide Book MPKMB 58.pdf">Download PDF</a>
+                    <Iframe src="https://drive.google.com/file/d/1wW4NGT8-ZS2LhZhZlMHddA26oCU5OoIy/preview" allow="autoplay"></Iframe>
+                    <a href={penggunaanCoursePDF} className="mt-4 bg-blue py-2 px-4 rounded-pill text-grey" download="Panduan Penggunaan Course.pdf">Download PDF</a>
                 </div>
             </div>,
             linkStatus: false
@@ -51,8 +54,20 @@ function Panduan() {
             isi: <div>
                 <h2 className="fw-bold text-center mb-4">INFORMASI PEMBAGIAN KELOMPOK</h2>
                 <div className="d-flex flex-column align-items-center justify-content-center">
-                    <Iframe src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></Iframe>
-                    <a href={panduanPDF} className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey" download="Guide Book MPKMB 58.pdf">Download PDF</a>
+                    <Iframe src="https://drive.google.com/file/d/1TncZ2rKjB1Gp3AhLEILrlVLzHnmHTbc6/preview" allow="autoplay"></Iframe>
+                    <a href={kelompokPDF} className="mt-4 bg-blue py-2 px-4 rounded-pill text-grey" download="Enrollment Key Mahardika Cakrabinaya.pdf">Download PDF</a>
+                </div>
+            </div>,
+            linkStatus: false
+        }, 
+        {
+            key: 4,
+            link: 'PENDAFTARAN',
+            isi: <div>
+                <h2 className="fw-bold text-center mb-4">PANDUAN PENDAFTARAN ASHURA</h2>
+                <div className="d-flex flex-column align-items-center justify-content-center">
+                    <Iframe src="https://drive.google.com/file/d/15TLxwkG8lyvAy7WG9Io3iKl3V4mG9Pxj/preview" allow="autoplay"></Iframe>
+                    <a href={pendaftaranPDF} className="mt-4 bg-blue py-2 px-4 rounded-pill text-grey" download="Panduan Pendaftaran Ashura-Ashira Anausa MPKMB IPB 58.pdf">Download PDF</a>
                 </div>
             </div>,
             linkStatus: false
@@ -61,9 +76,9 @@ function Panduan() {
 
     
     return (
-        <AboutStyle>
+        <section className= "d-flex align-items-center justify-content-center">
             <Magazine contentWrapper={contentView} />
-        </AboutStyle>
+        </section>
     )
 }
 

@@ -33,7 +33,7 @@ function Event() {
     ]
 
     return (
-        <section className="py-5 d-flex justify-content-center align-items-center position-relative z-index-3">
+        <section className="d-flex justify-content-center align-items-center position-relative z-index-3">
             <div className="container pt-5">
                 <div className="row justify-content-center">
                     <h2 className="fw-bold text-center text-blue">Event MPKMB</h2>
