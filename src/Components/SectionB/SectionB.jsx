@@ -23,26 +23,26 @@ import './SectionB.css'
 
 function SectionB() {
     const logoLogo = <div className="element-bg d-flex">
-        <img className="mx-3 bg-logo" src={logo1} alt="logo-bg" width="100%" />
-        <img className="mx-3 bg-logo" src={logo2} alt="logo-bg" width="100%" />
-        <img className="mx-3 bg-logo" src={logo3} alt="logo-bg" width="100%" />
-        <img className="mx-3 bg-logo" src={logo4} alt="logo-bg" width="100%" />
-        <img className="mx-3 bg-logo" src={logo5} alt="logo-bg" width="100%" />
+        <img className="mx-3 bg-logo" src={logo1} alt="logo-bg" />
+        <img className="mx-3 bg-logo" src={logo2} alt="logo-bg" />
+        <img className="mx-3 bg-logo" src={logo3} alt="logo-bg" />
+        <img className="mx-3 bg-logo" src={logo4} alt="logo-bg" />
+        <img className="mx-3 bg-logo" src={logo5} alt="logo-bg" />
     </div>
 
     const logoConsole = <div className="logo-console-wrapper element-bg">
-        <img className="bg-logo" src={logoconsole} alt="logo-bg" width="100%" />
+        <img className="bg-logo" src={logoconsole} alt="logo-bg" />
     </div>
 
-    const logoFAQ = <div className="element-bg"><img className="mx-3 bg-logo" src={logofaq} alt="logo-bg" width="100%" /> </div>
+    const logoFAQ = <div className="element-bg"><img className="mx-3 bg-logo" src={logofaq} alt="logo-bg" /> </div>
 
     const penugasan =
         <div className="wrapper position-absolute d-flex">
             <div className="scale-up agenda-logo-wrapper element-bg">
-                <img className="mx-3 bg-logo" src={logoAgenda} alt="logo-bg" width="100%" />
+                <img className="mx-3 bg-logo" src={logoAgenda} alt="logo-bg" />
             </div>
             <div className="scale-up penugasan-logo-wrapper element-bg">
-                <img className="mx-3 bg-logo" src={logoPenugasan} alt="logo-bg" width="100%" />
+                <img className="mx-3 bg-logo" src={logoPenugasan} alt="logo-bg" />
             </div>
         </div>
 
@@ -82,8 +82,13 @@ function SectionB() {
                 content=
                 {
                     <Fragment>
+<<<<<<< HEAD
                         <iframe src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></iframe>
                         <a href={panduanPDF} className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey" download="Guide Book MPKMB 58.pdf">Download PDF</a>
+=======
+                        <iframe className="iframe-size" src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></iframe>
+                        <button className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey">Download PDF</button>
+>>>>>>> 9aead6564b6c9f994063f5f6fc8f1aebd3ec8d1f
                     </Fragment>
                 }
                 size="modal-lg"
@@ -107,6 +112,12 @@ function SectionB() {
                 content={<p className="text-center text-blue">Upacara pembukaan Masa Pengenalan Kampus Mahasiswa Baru atau <span className="fw-bold">Opening Ceremony MPKMB</span> merupakan momentum peresmian pembukaan rangkaian acara MPKMB yang akan dilaksanakan pada tanggal <span className="fw-bold">9 Agustus 2021.</span></p>}
                 size="modal-lg"
             />
+            <Modal
+                id="narasi"
+                title="Coming Soon"
+                content={`Content Will be update soon!`}
+                size="modal-lg"
+            />
             <section className="b py-4" >
                 <div className="container">
                     <div className="row">
@@ -119,7 +130,8 @@ function SectionB() {
                                 texture={true}
                                 bgPositionTop='texture-top-left'
                                 bgPositionBottom='texture-bottom-right'
-                                animateBottom={true} />
+                                animateBottom={true}
+                                animateTop={true} />
                         </div>
                     </div>
                     <div className="row mt-3">

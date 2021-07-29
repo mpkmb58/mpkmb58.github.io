@@ -17,7 +17,10 @@
         z-index: 2;
     }
 }
-
+.iframe-size{
+    width: 640px; 
+    height: 350px;
+}
 .b::after{
     content: '';
     position: absolute;

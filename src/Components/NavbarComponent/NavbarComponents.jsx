@@ -13,7 +13,7 @@ function NavbarComponents() {
                 <div className="container-fluid d-flex justify-content-between align-items-center px-sm-5 px-2">
                     <div class="nav-brand d-flex align-items-center ">
                         <a className="navbar-brand text-red pb-3" href="/">
-                            <img width=" 100%" src={Logo} alt="" />
+                            <img src={Logo} alt="Logo Mahardika Cakarbinaya" />
                         </a>
                         <div><h4 className="brand-title m-0 fw-bold text-blue">MPKMB IPB 58</h4></div>
                     </div>

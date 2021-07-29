@@ -24,6 +24,7 @@
 }
 
 .texture-top-left, .texture-bottom-right, .texture-bottom-center, .texture-bottom-left, .texture-top-center, .texture-top-right {
+<<<<<<< HEAD
   width: 20vmax;
 }
 
@@ -31,6 +32,9 @@
   .texture-top-left, .texture-bottom-right, .texture-bottom-center, .texture-bottom-left, .texture-top-center, .texture-top-right {
     width: 15vmax;
   }
+=======
+  width: calc(2.5rem + 20vmin);
+>>>>>>> 9aead6564b6c9f994063f5f6fc8f1aebd3ec8d1f
 }
 
 .texture-top-left {
