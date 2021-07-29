@@ -11,6 +11,11 @@ import logoconsole from '../../Assets/img/VectorEvent-2.svg'
 import logoPenugasan from '../../Assets/img/VectorPenugasan.svg'
 import logoAgenda from '../../Assets/img/Vectoragenda-logo.svg'
 import logofaq from '../../Assets/img/VectorFAQ.svg'
+import logoInaco from '../../Assets/img/Sponsor-Inaco.svg'
+import logoHimalaya from '../../Assets/img/Sponsor-Himalaya.svg'
+import logoIDX from '../../Assets/img/sponsor-IDX.svg'
+import panduanPDF from '../../Assets/documents/GuideBook.pdf'
+import skRektorPDF  from '../../Assets/documents/Surat Edaran - Penetapan Awal Tahun Akademik 2020_2021.pdf'
 
 
 
@@ -41,16 +46,24 @@ function SectionB() {
             </div>
         </div>
 
-    const sponsor = <div className="wrapper position-abolute container pt-3">
-        <div className="row ">
+    const sponsor = <div className="wrapper position-abolute container p-3">
+        <div className="row py-4">
             <div className="col-md-4 pe-4 d-flex flex-column flex-md-row align-items-center">
-                <h3 className="mb-1 mb-md-0 fw-bold text-grey text-end me-lg-1">Sponsor dan Media Partner</h3>
-                <div className="borders-V ms-1 bg-grey d-none d-md-block"></div>
-                <div className="borders-H mt-1 bg-grey d-md-none d-block"></div>
+                <h3 className="mb-1 mb-md-0 fw-bold text-grey text-lg-end text-center me-lg-1">Sponsor dan Media Partner</h3>
+                <div className="borders-V ms-5 bg-grey d-none d-md-block"></div>
+                <div className="borders-H mt-3 bg-grey d-md-none d-block"></div>
             </div>
-            <div className="col-md-8">
-
-            </div>
+            <div className="col-md-8 py-3 d-flex flex-column flex-md-row align-items-center align-items-lg-start">
+                <div className="box-sponsor bg-grey py-2 px-4 mx-2 d-flex align-items-center justify-content-center">
+                    <img src={logoInaco} alt="" srcset="" />
+                </div>
+                <div className="box-sponsor bg-grey py-2 px-4 mx-2 d-flex align-items-center justify-content-center">
+                    <img src={logoHimalaya} alt="" srcset="" />
+                </div>
+                <div className="box-sponsor bg-grey py-2 px-4 mx-2 d-flex align-items-center justify-content-center">
+                    <img className="scaled-up" src={logoIDX} alt="" srcset=""/>
+                </div>
+            </div>      
         </div>
     </div>
 
@@ -69,8 +82,8 @@ function SectionB() {
                 content=
                 {
                     <Fragment>
-                        <iframe src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" width="640" height="350" allow="autoplay"></iframe>
-                        <button className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey">Download PDF</button>
+                        <iframe src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></iframe>
+                        <a href={panduanPDF} className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey" download="Guide Book MPKMB 58.pdf">Download PDF</a>
                     </Fragment>
                 }
                 size="modal-lg"
@@ -82,8 +95,8 @@ function SectionB() {
                 content=
                 {
                     <Fragment>
-                        <iframe src="https://drive.google.com/file/d/1j7YX38amioVZ70wvJgo76BqY6jzXfGDV/preview" width="640" height="350" allow="autoplay"></iframe>
-                        <button className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey">Download PDF</button>
+                        <iframe src="https://drive.google.com/file/d/1j7YX38amioVZ70wvJgo76BqY6jzXfGDV/preview" allow="autoplay" ></iframe>
+                        <a href={skRektorPDF} className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey" download="Surat Edaran - Penetapan Awal Tahun Akademik 2020_2021.pdf">Download PDF</a>
                     </Fragment>
                 }
                 size="modal-lg"
@@ -125,6 +138,7 @@ function SectionB() {
                                 texture={true}
                                 bgPositionTop='texture-top-left'
                                 bgPositionBottom='texture-bottom-right'
+                                animateTop={true}
                             />
                         </div>
                         <div className="col-md-6 mt-3 mt-md-0">
@@ -136,7 +150,7 @@ function SectionB() {
                                 texture={true}
                                 bgPositionTop='texture-top-right'
                                 bgPositionBottom='texture-bottom-left'
-                                animateTop={true} />
+                                />
                         </div>
                     </div>
                     <div className="row mt-3">
@@ -156,7 +170,6 @@ function SectionB() {
                     <div className="row mt-3">
                         <div className="col-12 about-wrapper">
                             <Card
-                                directTo=""
                                 title=''
                                 viewSponsor={sponsor}
                                 color="bg-blue"

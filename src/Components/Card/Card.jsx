@@ -11,11 +11,15 @@ function Card(props) {
                 <div className={`${props.customSize} card-hover position-relative card-rounded overflow-hidden ${props.color}`}>
 
                     <div className="card-title position-absolute wrapper d-flex justify-content-center align-items-center">
-                        <h3 className={`${props.titleSize} fw-bold text-grey m-0 d-inline-block`}>{props.title}</h3>
+                        <h3 className={`${props.titleSize} text-center fw-bold text-grey m-0 d-inline-block`}>{props.title}</h3>
                     </div>
 
                     {
                         props.viewSponsor ? props.viewSponsor : (<div></div>)
+                    }
+
+                    {
+                         props.viewLiniMasa ? props.ViewLiniMasa : (<div></div>)
                     }
 
                     <div className='card-element wrapper d-flex justify-content-center align-items-center position-absolute'>

@@ -123,4 +123,8 @@
         transition : transform 0.25s ease-in-out;
     }
 
+    .texture-box > img {
+        transform: translateX(25%) rotate(45deg);
+    }
+
 }

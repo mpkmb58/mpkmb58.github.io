@@ -51,6 +51,25 @@ img {
     width: 100%;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #343F56; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #343F56; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F8F8F8; 
+}
 
 
 
