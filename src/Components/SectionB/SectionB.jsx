@@ -82,13 +82,8 @@ function SectionB() {
                 content=
                 {
                     <Fragment>
-<<<<<<< HEAD
                         <iframe src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></iframe>
                         <a href={panduanPDF} className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey" download="Guide Book MPKMB 58.pdf">Download PDF</a>
-=======
-                        <iframe className="iframe-size" src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></iframe>
-                        <button className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey">Download PDF</button>
->>>>>>> 9aead6564b6c9f994063f5f6fc8f1aebd3ec8d1f
                     </Fragment>
                 }
                 size="modal-lg"

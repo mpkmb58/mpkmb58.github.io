@@ -18,16 +18,13 @@
 }
 
 .texture-top-left, .texture-bottom-right, .texture-bottom-center, .texture-bottom-left, .texture-top-center, .texture-top-right{
-<<<<<<< HEAD
     // width: calc(1.5rem + 9vw);
-    width: 20vmax;
-=======
+    // width: 20vmax;
     width: calc(2.5rem + 20vmin);
->>>>>>> 9aead6564b6c9f994063f5f6fc8f1aebd3ec8d1f
 
-    @media screen and (min-width : 768px) {
-        width : 15vmax;
-    }
+    // @media screen and (min-width : 768px) {
+    //     width : 15vmax;
+    // }
 }
 .texture-top-left{
     top: 0;
