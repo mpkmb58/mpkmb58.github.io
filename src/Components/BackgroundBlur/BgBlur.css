@@ -48,16 +48,16 @@
   position: absolute;
   aspect-ratio: 1/1;
   opacity: 0.5;
-  -webkit-filter: blur(30rem);
-          filter: blur(30rem);
+  -webkit-filter: blur(25rem);
+          filter: blur(25rem);
   border-radius: 50%;
   z-index: 0;
 }
 
 @-webkit-keyframes blur {
   from {
-    -webkit-filter: blur(30rem);
-            filter: blur(30rem);
+    -webkit-filter: blur(20rem);
+            filter: blur(20rem);
   }
   to {
     -webkit-filter: blur(10rem);
@@ -67,8 +67,8 @@
 
 @keyframes blur {
   from {
-    -webkit-filter: blur(30rem);
-            filter: blur(30rem);
+    -webkit-filter: blur(20rem);
+            filter: blur(20rem);
   }
   to {
     -webkit-filter: blur(10rem);

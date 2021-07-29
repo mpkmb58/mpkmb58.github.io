@@ -1,9 +1,11 @@
 .card-agenda-size {
   aspect-ratio: 4/1;
+  min-height: 7rem;
+  max-width: 100%;
 }
 
 .bg-agenda-size {
-  min-width: 20vmax;
+  width: 20vmax;
   right: 0;
   bottom: 0;
   -webkit-transform: translate(-5%, 10%);
@@ -12,7 +14,7 @@
 
 @media (min-width: 768px) {
   .bg-agenda-size {
-    min-width: 30%;
+    width: 30% !important;
   }
 }
 /*# sourceMappingURL=Agenda.css.map */

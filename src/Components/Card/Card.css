@@ -24,7 +24,17 @@
 }
 
 .texture-top-left, .texture-bottom-right, .texture-bottom-center, .texture-bottom-left, .texture-top-center, .texture-top-right {
+<<<<<<< HEAD
+  width: 20vmax;
+}
+
+@media screen and (min-width: 768px) {
+  .texture-top-left, .texture-bottom-right, .texture-bottom-center, .texture-bottom-left, .texture-top-center, .texture-top-right {
+    width: 15vmax;
+  }
+=======
   width: calc(2.5rem + 20vmin);
+>>>>>>> 9aead6564b6c9f994063f5f6fc8f1aebd3ec8d1f
 }
 
 .texture-top-left {
@@ -58,15 +68,15 @@
 .texture-top-center {
   top: 0;
   right: 50%;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -70%);
+          transform: translate(50%, -70%);
 }
 
 .texture-bottom-center {
   bottom: 0;
   right: 50%;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  -webkit-transform: translate(50%, 70%);
+          transform: translate(50%, 70%);
 }
 
 .wrapper {
@@ -81,7 +91,7 @@
 }
 
 .card-wrapper-default {
-  min-height: 240px;
+  min-height: 15rem;
 }
 
 .anime-flip {

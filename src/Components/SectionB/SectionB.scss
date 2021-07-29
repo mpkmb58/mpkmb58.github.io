@@ -36,7 +36,7 @@
 }
 
 iframe {
-    width : 70vmin;
+    width : 95%;
     aspect-ratio: 16/9;
     z-index: 0;
 }
@@ -58,15 +58,14 @@ iframe {
 }
 .borders-V{
     width: 0.25rem;
-    height: 200px;
+    height: 100%;
     z-index: 3;
 }
 .borders-H{
     height: 0.25rem;
-    width: 90%;
+    width: 100%;
     z-index: 3;
 }
-
 
 
 .penugasan-logo-wrapper{
@@ -77,26 +76,19 @@ iframe {
     transform: rotate(-45deg);
 }
 
-.sponsor {
-    position : relative;
-    z-index : 3;
-    .v-line {
-       height : 200px;
-       width : 0.25rem; 
-    }
+.box-sponsor {
+    border: 1px solid #f8f8f8;
+    width : 50%!important;
+    height: 50%!important;
+    border-radius: 0.5rem;
+    margin: 1rem 0rem;
 
-    .h-line {
-        display : none;
-    }
-
-    @media screen and (max-width : 768px) {
-        .h-line {
-            display: block;
-            height : 0.25rem;
-            width : 100%;
-        }
+    .scaled-up {
+        transform: scale(0.7);
     }
 }
+
+
 
 @media (min-width: 768px) {
  
