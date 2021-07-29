@@ -13,7 +13,7 @@
 
 @media (min-width: 768px) {
   .card-event-size {
-    aspect-ratio: 3/4;
+    aspect-ratio: 3/4 !important;
   }
 }
 /*# sourceMappingURL=Event.css.map */

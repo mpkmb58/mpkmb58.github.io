@@ -31,7 +31,7 @@ function AgendaPenugasan() {
         }
     ]
     return (
-        <section className=" py-5">
+        <section className="position-relative z-index-3 py-5">
             <div class="container pt-5">
                 <div className="row justify-content-center">
                     <h2 className="fw-bold text-center text-blue">Agenda dan Penugasan</h2>
@@ -39,7 +39,7 @@ function AgendaPenugasan() {
                 <div class="row mt-3">
                     {
                         contentEvent.map(e =>
-                            <div class="col-md-4 mt-3 mt-md-0">
+                            <div class="col-lg-4 mt-3 mt-lg-0">
                                 <Card
                                     directTo={e.directTo}
                                     title={e.title}
