@@ -15,7 +15,7 @@ import logoInaco from '../../Assets/img/Sponsor-Inaco.svg'
 import logoHimalaya from '../../Assets/img/Sponsor-Himalaya.svg'
 import logoIDX from '../../Assets/img/sponsor-IDX.svg'
 import panduanPDF from '../../Assets/documents/GuideBook.pdf'
-import skRektorPDF  from '../../Assets/documents/Surat Edaran - Penetapan Awal Tahun Akademik 2020_2021.pdf'
+import skRektorPDF from '../../Assets/documents/Surat Edaran - Penetapan Awal Tahun Akademik 2020_2021.pdf'
 
 
 
@@ -61,9 +61,9 @@ function SectionB() {
                     <img src={logoHimalaya} alt="" srcset="" />
                 </div>
                 <div className="box-sponsor bg-grey py-2 px-4 mx-2 d-flex align-items-center justify-content-center">
-                    <img className="scaled-up" src={logoIDX} alt="" srcset=""/>
+                    <img className="scaled-up" src={logoIDX} alt="" srcset="" />
                 </div>
-            </div>      
+            </div>
         </div>
     </div>
 
@@ -82,13 +82,8 @@ function SectionB() {
                 content=
                 {
                     <Fragment>
-<<<<<<< HEAD
                         <iframe src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></iframe>
                         <a href={panduanPDF} className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey" download="Guide Book MPKMB 58.pdf">Download PDF</a>
-=======
-                        <iframe className="iframe-size" src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></iframe>
-                        <button className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey">Download PDF</button>
->>>>>>> 9aead6564b6c9f994063f5f6fc8f1aebd3ec8d1f
                     </Fragment>
                 }
                 size="modal-lg"
@@ -162,7 +157,7 @@ function SectionB() {
                                 texture={true}
                                 bgPositionTop='texture-top-right'
                                 bgPositionBottom='texture-bottom-left'
-                                />
+                            />
                         </div>
                     </div>
                     <div className="row mt-3">
