@@ -15,6 +15,47 @@
   width: 80px !important;
 }
 
+.arrow-down {
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hash::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-left: 0px solid #343F56;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.hash:hover::before {
+  border-left: 10px solid #343F56;
+}
+
+.hash {
+  border-radius: 0 !important;
+}
+
+.drop-down {
+  display: none;
+  top: 0;
+  right: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 16px;
+  z-index: 2;
+}
+
 .logo-kelompok {
   width: 8rem !important;
 }
