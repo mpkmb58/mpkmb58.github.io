@@ -6,7 +6,8 @@ import logoMerah from '../../Assets/img/Logo_merah.svg';
 import logoHijau from '../../Assets/img/Logo_hijau.svg';
 import logoBiru from '../../Assets/img/Logo_biru.svg';
 import Magazine from '../../Components/Magazine/Magazine';
-// import './About.css'
+import { AboutStyle } from './About.style';
+import './About.css'
 
 function About() {
     const contentView = [
@@ -65,10 +66,12 @@ function About() {
         }
     ]
 
+
     return (
-        <section className=" pt-5 position-relative z-index-2" >
+        // className="position-relative z-index-2 d-flex align-items-center justify-content-center" 
+        <AboutStyle>
             <Magazine contentWrapper={contentView} />
-        </section>
+        </AboutStyle>
     )
 }
 

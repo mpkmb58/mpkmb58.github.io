@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavbarComponents from './Components/NavbarComponent/NavbarComponents';
 import About from './Pages/About/About';
 import Home from './Pages/Home/Home';
-import Panduan from './Pages/Panduan dan FAQ/Panduan';
+import Panduan from './Pages/Agenda dan Penugasan/Panduan/Panduan';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
 import Footer from './Components/Footer/Footer';
 import Event from './Pages/Event/Event';

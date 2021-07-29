@@ -1,11 +1,10 @@
 import React, { Fragment } from 'react'
-import $ from 'jquery';
 import Box from '../Box/Box'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import texture from '../../Assets/img/texture-blue.svg'
 import './CardLiniMasa.css'
+import texture from '../../Assets/img/texture-blue.svg'
 
 
 export const CardLiniMasa = () => {
@@ -34,7 +33,7 @@ export const CardLiniMasa = () => {
     return (
             <Fragment>
                 <div className="card-lini-masa position-relative card-component bg-grey p-md-5 p-3 d-flex position-relative flex-column justify-content-center align-items-center">
-                    
+
                     <h3 className="text-center text-blue fw-bold">LINI MASA</h3>
                     <OwlCarousel className="mt-3" {...options}>
                         <div className="item mx-3">

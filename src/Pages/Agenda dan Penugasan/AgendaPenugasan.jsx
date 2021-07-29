@@ -5,7 +5,7 @@ import bgPenugasan from '../../Assets/img/VectorPenugasan.svg'
 import Card from '../../Components/Card/Card'
 import Modal from '../../Components/Modal/Modal'
 
-const bgEvent = (e) => (<div class="event-bg-wrapper position-absolute">
+const bg = (e) => (<div class="event-bg-wrapper position-absolute">
     <img src={e} alt="Illustarasi Event" width="100%" className="element-bg" />
 </div>)
 
@@ -16,28 +16,26 @@ function AgendaPenugasan() {
             directTo: '/Agenda',
             title: "Agenda",
             bgColors: "bg-blue",
-            bgImages: bgEvent(bgAgenda)
+            bgImages: bg(bgAgenda)
         },
         {
             directTo: '/Panduan',
             title: "Panduan",
             bgColors: "bg-red",
-            bgImages: bgEvent(bgPanduan)
+            bgImages: bg(bgPanduan)
         },
         {
             directTo: '/',
             title: "Penugasan",
             bgColors: "bg-orange",
-            bgImages: bgEvent(bgPenugasan)
+            bgImages: bg(bgPenugasan)
         }
     ]
     return (
         <Fragment>
-        <section className=" py-5">
+        <section className="d-flex justify-content-center align-items-center py-5">
             <div class="container pt-5">
-                <div className="row justify-content-center">
-                    <h2 className="fw-bold text-center text-blue">Agenda dan Penugasan</h2>
-                </div>
+                <h2 className="fw-bold text-center text-blue">Agenda dan Penugasan</h2>
                 <div class="row mt-3">
                     {
                         contentEvent.map(e =>
@@ -48,6 +46,7 @@ function AgendaPenugasan() {
                                     color={e.bgColors}
                                     background={e.bgImages}
                                     customSize='card-event-size'
+                                    modalID = "comingsoon"
                                 />
                             </div>
                         )

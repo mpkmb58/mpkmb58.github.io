@@ -15,16 +15,64 @@
   width: 80px !important;
 }
 
+.arrow-down {
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hash::before, .hash-dekstop::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-left: 0px solid #343F56;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.hash::before {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.hash:hover::before, .hash-dekstop:hover::before {
+  border-left: 10px solid #343F56;
+}
+
+.hash, .hash-dekstop {
+  border-radius: 0 !important;
+}
+
+.hash-dekstop {
+  width: 100%;
+}
+
+.drop-down {
+  top: 0;
+  right: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 16px;
+  z-index: 2;
+}
+
 .logo-kelompok {
   width: 8rem !important;
 }
 
 @media (min-width: 992px) {
   .about-nav-wrapper {
-    min-height: 30em;
+    min-height: 60vh;
   }
   .content {
     max-height: 25rem;
+    aspect-ratio: 20/9 !important;
   }
 }
 /*# sourceMappingURL=Magazine.css.map */
