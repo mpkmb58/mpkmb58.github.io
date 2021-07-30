@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavbarComponents from './Components/NavbarComponent/NavbarComponents';
 import BgBlur from './Components/BackgroundBlur/BgBlur';
+import Loader from './Components/Loader/Loader';
 
 const Home = lazy(() => import('./Pages/Home/Home'))
 const About = lazy(() => import('./Pages/About/About'));
@@ -11,7 +12,6 @@ const Event = lazy(() => import('./Pages/Event/Event'))
 const Panduan = lazy(() => import('./Pages/Agenda dan Penugasan/Panduan/Panduan'));
 const FAQ = lazy(() => import('./Pages/FAQ/FAQ'));
 const PageNotFound = lazy(() => import('./Components/PageNotFound/PageNotFound'))
-
 const Footer = lazy(() => import('./Components/Footer/Footer'));
 
 
@@ -19,9 +19,10 @@ const Footer = lazy(() => import('./Components/Footer/Footer'));
 const App = () => {
   return (
     <Router>
+
       <BgBlur />
       <NavbarComponents />
-      <Suspense fallback={<h1>Loading..</h1>}>
+      <Suspense fallback={<Loader></Loader>}>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/About" component={About} />

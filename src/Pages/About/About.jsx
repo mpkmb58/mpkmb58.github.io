@@ -5,7 +5,6 @@ import logoUngu from '../../Assets/img/Logo_ungu.svg';
 import logoMerah from '../../Assets/img/Logo_merah.svg';
 import logoHijau from '../../Assets/img/Logo_hijau.svg';
 import logoBiru from '../../Assets/img/Logo_biru.svg';
-import { AboutStyle } from './About.style';
 import './About.css'
 
 
@@ -25,7 +24,7 @@ function About() {
         {
             key: 1,
             link: 'NAMA',
-            isi: <div>
+            isi: <div className="pt-5">
                 <h2 className="fw-bold text-center mb-3">NAMA ANGKATAN</h2>
                 <p> Kata "Mahardika" dalam Kamus Besar Bahasa Indonesia (KBBI) memiliki makna <b>berilmu (cerdik, pandai, bijak); berbudi luhur; dan memiliki sifat bangsawan</b>. Kata Cakrabinaya adalah akronim dari cita-cita, kerja, dan kontribusi nyata. Menurut KBBI makna Cakra adalah roda. Segala sesuatu mengalir kembali ke hulu seperti lingkaran. Memungkinkan terjadinya pembaharuan, repetisi, dan regenerasi. Dimana lingkaran yang ada mendorong setiap diri untuk memikirkan secara mendalam setiap momentum yang dilalui, sehingga mahasiswa 58 dapat bertumbuhdan menjadi regenerasi putra-putri terbaik bangsa.</p>
 
@@ -39,7 +38,8 @@ function About() {
                 <div className="text-center my-3  d-flex justify-content-center">
                     <img loading="lazy" src={logo} alt="Logo Mahardika Cakrabinaya" className="logo-akt" />
                 </div>
-                <p><b>Mahardika Cakrabinaya</b> digambarkan dalam wujud <b>Rusa Terbang</b>. <b>Rusa</b> mencerminkan sosok elegan yang mampu mengatasi berbagai masalah dengan kemurnian hatinya. Kepala rusa yang senantiasa selalu <b>menunduk ke arah kanan</b> menunjukkan keluhuran budi. <b>Bentangan sayap</b> yang dimiliki Rusa ini mencerminkan bentangan cakrawala ilmu pengetahuan. Sesuai dengan harapan dari nama Mahardika Cakrabinaya yaitu insan berkualitas yang berilmu dan berbudi yang luhur.</p></div>,
+                <p><b>Mahardika Cakrabinaya</b> digambarkan dalam wujud <b>Rusa Terbang</b>. <b>Rusa</b> mencerminkan sosok elegan yang mampu mengatasi berbagai masalah dengan kemurnian hatinya. Kepala rusa yang senantiasa selalu <b>menunduk ke arah kanan</b> menunjukkan keluhuran budi. <b>Bentangan sayap</b> yang dimiliki Rusa ini mencerminkan bentangan cakrawala ilmu pengetahuan. Sesuai dengan harapan dari nama Mahardika Cakrabinaya yaitu insan berkualitas yang berilmu dan berbudi yang luhur.</p>
+            </div>,
         },
         {
             key: 3,

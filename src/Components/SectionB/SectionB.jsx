@@ -14,6 +14,7 @@ import logoIDX from '../../Assets/img/sponsor-IDX.svg'
 import panduanPDF from '../../Assets/documents/GuideBook.pdf'
 import skRektorPDF from '../../Assets/documents/Surat Edaran - Penetapan Awal Tahun Akademik 2020_2021.pdf'
 import './SectionB.css'
+import Loader from '../Loader/Loader';
 
 const Modal = lazy(() => import('../../Components/Modal/Modal'))
 const CardLiniMasa = lazy(() => import('../../Components/CardLiniMasa/CardLiniMasa'))
@@ -69,7 +70,7 @@ function SectionB() {
 
     return (
         <Fragment>
-            <Suspense fallback={<h1>Loading..</h1>}>
+            <Suspense fallback={<Loader></Loader>}>
                 <Modal
                     id="mentoring"
                     title="MENTORING MPKMB"

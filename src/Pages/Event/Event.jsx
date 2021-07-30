@@ -3,6 +3,7 @@ import bgVirtual from '../../Assets/img/VectorEvent.svg'
 import bgCampus from '../../Assets/img/VectorEvent-1.svg'
 import bgAgriventure from '../../Assets/img/VectorEvent-2.svg'
 import './Event.css'
+import Loader from '../../Components/Loader/Loader'
 const Card = lazy(() => import('../../Components/Card/Card'))
 
 const bgEvent = (e) => (<div class="event-bg-wrapper position-absolute">
@@ -39,7 +40,7 @@ function Event() {
                     <h2 className="fw-bold text-center text-blue">Event MPKMB</h2>
                 </div>
                 <div className="row mt-3">
-                    <Suspense fallback={<h1>Loading...</h1>}>
+                    <Suspense fallback={<Loader></Loader>}>
                         {
                             contentEvent.map(e =>
                                 <div className="col-lg-4 mt-3 mt-lg-0">

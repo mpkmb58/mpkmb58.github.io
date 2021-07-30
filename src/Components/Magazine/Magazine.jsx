@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './Magazine.css'
-import styled from 'styled-components'
 import arrowDown from '../../Assets/img/Arrowdown.svg'
 
 
@@ -68,8 +67,12 @@ function Magazine(props) {
                         }
 
                     </div>
-                    <div className="content position-relative overflow-hidden col-lg-9 bg-grey about-nav-wrapper p-sm-5 p-3 my-4 my-lg-0">
-                        {content}
+                    <div className="content bg-grey position-relative overflow-hidden px-0 col-lg-9 about-nav-wrapper my-4 my-lg-0">
+                        <div class="content-parent px-5 py-4 ">
+                            <div class="content-child d-flex align-items-center justify-content-center">
+                                {content}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

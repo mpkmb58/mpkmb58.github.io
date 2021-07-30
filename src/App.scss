@@ -56,26 +56,23 @@ img {
 /* width */
 ::-webkit-scrollbar {
   width: 0.45rem;
-  
-  
-  
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #F8F8F8; 
-  
+  border-radius: 10px !important;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #343F56; 
-  height: 1rem;
+  border-radius: 10px !important;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #343F56; 
+  background: $orange; 
   
 }
 

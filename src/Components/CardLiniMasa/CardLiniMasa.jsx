@@ -3,6 +3,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import './CardLiniMasa.css'
 import texture from '../../Assets/img/texture-blue.svg'
+import Loader from '../Loader/Loader';
 const Box = lazy(() => import('../Box/Box'))
 const OwlCarousel = lazy(() => import('react-owl-carousel'))
 
@@ -12,15 +13,15 @@ export const CardLiniMasa = () => {
     const options = {
         margin: 16,
         responsiveClass: true,
-        owldots : true,
+        owldots: true,
         nav: true,
         smartSpeed: 1000,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            540:{
-                items:2
+            540: {
+                items: 2
             },
             992: {
                 items: 3
@@ -35,7 +36,7 @@ export const CardLiniMasa = () => {
         <Fragment>
             <div className="card-lini-masa card-component bg-grey p-md-5 p-3 d-flex flex-column justify-content-center align-items-center">
                 <h3 className="text-center text-blue fw-bold">LINI MASA</h3>
-                <Suspense fallback={<h1>Loading...</h1>}>
+                <Suspense fallback={<Loader></Loader>}>
                     <OwlCarousel className="mt-3" {...options}>
                         <div className="item mx-3">
                             <Box color="bg-blue"

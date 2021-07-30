@@ -2,11 +2,6 @@
   border-radius: 20px;
   -webkit-box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
-  overflow: scroll;
-}
-
-.content {
-  height: 1000vh !important;
 }
 
 .logo-akt {
@@ -20,6 +15,23 @@
           transform: translateY(-50%);
   cursor: pointer;
   z-index: 1;
+}
+
+.content-parent {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content-child {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 17px;
+  /* Increase/decrease this value for cross-browser compatibility */
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* So the width will be 100% + 17px */
 }
 
 .hash::before, .hash-dekstop::before {
@@ -71,10 +83,6 @@
   width: 8rem !important;
 }
 
-.content, .about-nav-wrapper {
-  max-width: 100%;
-}
-
 .link {
   cursor: pointer;
 }
@@ -102,7 +110,7 @@
     min-height: 70vmin;
   }
   .content {
-    max-height: 50vh;
+    max-height: 100%;
     aspect-ratio: 20/9 !important;
   }
   .link-page {
