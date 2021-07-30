@@ -1,4 +1,3 @@
-import Card from '../../Components/Card/Card'
 import React, { lazy, Suspense } from 'react'
 import bgAgenda from '../../Assets/img/Vectoragenda-logo.svg'
 import bgPanduan from '../../Assets/img/Vectorpanduan-logo.svg'
@@ -18,19 +17,19 @@ function AgendaPenugasan() {
             directTo: '/AgendaPenugasan/Agenda',
             title: "Agenda",
             bgColors: "bg-blue",
-            bgImages: bg(bgAgenda)
+            bgImages: bgEvent(bgAgenda)
         },
         {
-            directTo: '/',
+            directTo: '/Panduan',
             title: "Panduan",
             bgColors: "bg-red",
-            bgImages: bg(bgPanduan)
+            bgImages: bgEvent(bgPanduan)
         },
         {
             directTo: '/',
             title: "Penugasan",
             bgColors: "bg-orange",
-            bgImages: bg(bgPenugasan)
+            bgImages: bgEvent(bgPenugasan)
         }
     ]
     return (

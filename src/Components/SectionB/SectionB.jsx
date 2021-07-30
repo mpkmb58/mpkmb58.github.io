@@ -73,7 +73,13 @@ function SectionB() {
                 <Modal
                     id="mentoring"
                     title="MENTORING MPKMB"
-                    content={<p className="text-center text-blue"><span className="fw-bold">Mentoring</span> merupakan rangkaian acara MPKMB yang bertujuan untuk mempersiapkan calon mahasiswa baru dalam menjalani rangkaian acara utama MPKMB. Mentoring pada MPKMB tahun 2021 dilaksanakan pada tanggal <span className="fw-bold">23 Juli - 7 Agustus 2021 untuk gelombang pertama</span>, <span className="fw-bold">sedangkan 4 - 7 Agustus 2021 untuk gelombang kedua.</span></p>}
+                    content={
+                    <div>
+                        <p className="text-center text-blue"><span className="fw-bold">Mentoring</span> merupakan rangkaian acara MPKMB yang bertujuan untuk mempersiapkan calon mahasiswa baru dalam menjalani rangkaian acara utama MPKMB. Mentoring dilaksanakan pada tanggal <span className="fw-bold">23 Juli - 7 Agustus 2021 untuk gelombang pertama</span>, <span className="fw-bold">sedangkan 4 - 7 Agustus 2021 untuk gelombang kedua.</span></p><br/>
+                        <p className="text-center text-blue fw-light">telusuri informasi mengenai mentoring lebih lanjut pada laman <a className="fw-bold text-decoration-none" href="https://course.ipb.ac.id/course/view.php?id=1363">course.ipb.ac.id</a> </p>
+                    
+                    </div>
+                    }
                     size="modal-lg"
                 />
 
@@ -83,7 +89,7 @@ function SectionB() {
                     content=
                     {
                         <Fragment>
-                            <iframe loading="lazy" src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></iframe>
+                            <iframe className="modalDocument" loading="lazy" src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></iframe>
                             <a href={panduanPDF} className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey" download="Guide Book MPKMB 58.pdf">Download PDF</a>
                         </Fragment>
                     }
@@ -96,7 +102,7 @@ function SectionB() {
                     content=
                     {
                         <Fragment>
-                            <iframe loading="lazy" src="https://drive.google.com/file/d/1j7YX38amioVZ70wvJgo76BqY6jzXfGDV/preview" allow="autoplay" ></iframe>
+                            <iframe className="modalDocument" loading="lazy" src="https://drive.google.com/file/d/1j7YX38amioVZ70wvJgo76BqY6jzXfGDV/preview" allow="autoplay" ></iframe>
                             <a href={skRektorPDF} className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey" download="Surat Edaran - Penetapan Awal Tahun Akademik 2020_2021.pdf">Download PDF</a>
                         </Fragment>
                     }
@@ -119,7 +125,7 @@ function SectionB() {
 
                 <section className="b py-4" >
                     <div className="container">
-                        <div className="row">
+                        <div className="row mb-3">
                             <div className="col-12 about-wrapper">
 
                                 <Card
@@ -134,7 +140,7 @@ function SectionB() {
                                     animateTop={true} />
 
 
-                            </div>å
+                            </div>
                         </div>
                         <div className="row mt-3">
                             <div className="col-12">

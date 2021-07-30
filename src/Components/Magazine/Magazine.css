@@ -59,7 +59,7 @@
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 16px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .logo-kelompok {
@@ -74,6 +74,24 @@
   min-height: 70vh;
 }
 
+.back-btn {
+  border-radius: 0.75rem;
+  border-style: none;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+}
+
+.back-btn:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+}
+
 @media (min-width: 992px) {
   .about-nav-wrapper {
     min-height: 70vmin;
@@ -81,6 +99,9 @@
   .content {
     max-height: 50vh;
     aspect-ratio: 20/9 !important;
+  }
+  .link-page {
+    width: 20% !important;
   }
 }
 /*# sourceMappingURL=Magazine.css.map */

@@ -51,7 +51,7 @@ linkStatus: true
 
 return (
 // className="position-relative z-index-2 d-flex align-items-center justify-content-center"
-<section className="d-flex justify-content-center align-items-center">
+<section className="d-flex justify-content-center align-items-center"> 
     <Magazine contentWrapper={contentView} />
 </section>
 )

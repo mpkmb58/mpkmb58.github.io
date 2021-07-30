@@ -63,6 +63,16 @@
     min-height: 70vh;
 }
 
+.back-btn {
+    border-radius: 0.75rem;
+    border-style: none;
+    transition: transform 0.1s ease-in-out;
+    &:hover {
+        transform: scale(1.03);
+        transition: transform 0.1s ease-in-out;
+    }
+}
+
 
 
 @media (min-width: 992px) {
@@ -73,6 +83,10 @@
     .content{
         max-height : 50vh;
         aspect-ratio: 20/9 !important;
+    }
+
+    .link-page{
+        width : 20% !important;
     }
  
 }
