@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import bgCeremony from '../../../Assets/img/Vector-hari-1.svg'
 import bgFaculty from '../../../Assets/img/Vector-hari-2.svg'
 import bgCreature from '../../../Assets/img/Vector-hari-3.svg'
 import bgYoung from '../../../Assets/img/Vector-hari-4.svg'
 import bgClosing from '../../../Assets/img/Vector-hari-5.svg'
-import Card from '../../../Components/Card/Card'
 import './Agenda.css'
+
+const Card = lazy(() => import('../../../Components/Card/Card'))
 
 
 const bgEvent = (e) => (<div class="bg-agenda-size position-absolute">
-    <img src={e} alt="Illustarasi Event" width="100%" className="element-bg" />
+    <img loading="lazy" src={e} alt="Illustarasi Event" className="element-bg" />
 </div>)
 
 function Agenda() {
@@ -50,20 +51,22 @@ function Agenda() {
         <section className=" py-5">
             <div class="container pt-5">
                 <div class="row mt-5 justify-content-center">
-                    {
-                        contentEvent.map(e =>
-                            <div class="col-lg-6 mt-3 ">
-                                <Card
-                                    directTo={e.directTo}
-                                    title={e.title}
-                                    titleSize='h4'
-                                    color={e.bgColors}
-                                    background={e.bgImages}
-                                    customSize='card-agenda-size'
-                                />
-                            </div>
-                        )
-                    }
+                    <Suspense fallback={<h1>Loading ...</h1>}>
+                        {
+                            contentEvent.map(e =>
+                                <div class="col-lg-6 mt-3 ">
+                                    <Card
+                                        directTo={e.directTo}
+                                        title={e.title}
+                                        titleSize='h4'
+                                        color={e.bgColors}
+                                        background={e.bgImages}
+                                        customSize='card-agenda-size'
+                                    />
+                                </div>
+                            )
+                        }
+                    </Suspense>
                 </div>
             </div>
         </section>

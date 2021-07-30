@@ -1,12 +1,12 @@
-import React from 'react'
-import Card from '../../Components/Card/Card'
+import React, { lazy, Suspense } from 'react'
 import bgVirtual from '../../Assets/img/VectorEvent.svg'
 import bgCampus from '../../Assets/img/VectorEvent-1.svg'
 import bgAgriventure from '../../Assets/img/VectorEvent-2.svg'
 import './Event.css'
+const Card = lazy(() => import('../../Components/Card/Card'))
 
 const bgEvent = (e) => (<div class="event-bg-wrapper position-absolute">
-    <img src={e} alt="Illustarasi Event" width="100%" className="element-bg" />
+    <img loading="lazy" src={e} alt="Illustarasi Event" width="100%" className="element-bg" />
 </div>)
 
 function Event() {
@@ -39,19 +39,21 @@ function Event() {
                     <h2 className="fw-bold text-center text-blue">Event MPKMB</h2>
                 </div>
                 <div className="row mt-3">
-                    {
-                        contentEvent.map(e =>
-                            <div className="col-lg-4 mt-3 mt-lg-0">
-                                <Card
-                                    directTo={e.directTo}
-                                    title={e.title}
-                                    color={e.bgColors}
-                                    background={e.bgImages}
-                                    customSize='card-event-size'
-                                />
-                            </div>
-                        )
-                    }
+                    <Suspense fallback={<h1>Loading...</h1>}>
+                        {
+                            contentEvent.map(e =>
+                                <div className="col-lg-4 mt-3 mt-lg-0">
+                                    <Card
+                                        directTo={e.directTo}
+                                        title={e.title}
+                                        color={e.bgColors}
+                                        background={e.bgImages}
+                                        customSize='card-event-size'
+                                    />
+                                </div>
+                            )
+                        }
+                    </Suspense>
                 </div>
             </div>
         </section>

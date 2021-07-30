@@ -6,43 +6,6 @@ import arrowDown from '../../Assets/img/Arrowdown.svg'
 
 function Magazine(props) {
 
-    // let [content, setContent] = useState(props.contentWrapper[0].isi)
-    // const PageLink = styled.button`
-    //     padding : 0.5rem 1rem;
-    //     border-style: none;
-    //     margin: 0.5rem 0;
-    //     border-radius: 30px;
-    //     background-color: #F8F8F8;
-    //     color : #343F56;
-    // `
-    
-    // const PageLinkActive = styled(PageLink)`
-    //     background-color: #F8F8F8;
-    //     color : #343F56;
-    //     ${({active}) => 
-    //         active && `
-    //             background-color: #343F56;
-    //             color : #F8F8F8; 
-    //         `
-    //     }
-    // `
-    // // membuat fungsi untuk mengubah page
-    // function ToggleGroup() {
-    //     let [active, setActive] = useState(props.contentWrapper[0])
-    //     return <div className="col-lg-2 bg-grey about-nav-wrapper p-5 d-flex flex-row flex-lg-column justify-content-center justify-content-lg-start align-items-center overflow-hidden">
-    //         {props.contentWrapper.map(e => (
-    //             <PageLinkActive
-    //                 active = {active === e}
-    //                 onClick = {() => {
-    //                     setActive(e)
-    //                 }}
-    //             >
-    //                 <h5 className="m-0">{e.link}</h5>
-    //             </PageLinkActive>
-    //         ))}
-    //     </div>
-    // }
-
     let [content, setContent] = useState(props.contentWrapper[0].isi);
     let [collapse, setCollapse] = useState(false);
     let [nav, setNav] = useState(props.contentWrapper[0].link);
