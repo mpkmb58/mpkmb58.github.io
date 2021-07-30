@@ -69,9 +69,9 @@ function About() {
 
     return (
         // className="position-relative z-index-2 d-flex align-items-center justify-content-center" 
-        <AboutStyle>
+        <section className="d-flex justify-content-center align-items-center">
             <Magazine contentWrapper={contentView} />
-        </AboutStyle>
+        </section>
     )
 }
 

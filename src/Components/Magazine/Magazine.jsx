@@ -45,7 +45,7 @@ function Magazine(props) {
 
     let [content, setContent] = useState(props.contentWrapper[0].isi);
     let [collapse, setCollapse] = useState(false);
-    let [nav, setNav] = useState('DEFINISI');
+    let [nav, setNav] = useState(props.contentWrapper[0].link);
 
     return (
         <div className="py-5 position-relative z-index-2">
