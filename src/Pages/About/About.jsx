@@ -5,9 +5,12 @@ import logoUngu from '../../Assets/img/Logo_ungu.svg';
 import logoMerah from '../../Assets/img/Logo_merah.svg';
 import logoHijau from '../../Assets/img/Logo_hijau.svg';
 import logoBiru from '../../Assets/img/Logo_biru.svg';
+import { AboutStyle } from './About.style';
+import './About.css'
+
 
 const Magazine = lazy(() => import('../../Components/Magazine/Magazine'))
-// import './About.css'
+
 
 function About() {
     const contentView = [
@@ -31,7 +34,7 @@ function About() {
         {
             key: 2,
             link: 'LOGO',
-            isi: <div>
+            isi: <div >
                 <h2 className="fw-bold text-center mb-3">LOGO ANGKATAN</h2>
                 <div className="text-center my-3  d-flex justify-content-center">
                     <img loading="lazy" src={logo} alt="Logo Mahardika Cakrabinaya" className="logo-akt" />
@@ -61,8 +64,10 @@ function About() {
         }
     ]
 
+
     return (
-        <section className=" pt-5 position-relative z-index-2" >
+        // className="position-relative z-index-2 d-flex align-items-center justify-content-center" 
+        <section className="d-flex justify-content-center align-items-center z-index-2" >
             <Suspense fallback={<h1>Loading</h1>}>
                 <Magazine contentWrapper={contentView} />
             </Suspense>

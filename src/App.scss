@@ -26,6 +26,7 @@ $grey: #F8F8F8;
 }
 section{
     min-height: 100vh;
+    padding: 5rem 0;
 }
 
 .card-component {
@@ -54,22 +55,28 @@ img {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.45rem;
+  
+  
+  
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #343F56; 
+  background: #F8F8F8; 
+  
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #343F56; 
+  height: 1rem;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #F8F8F8; 
+  background: #343F56; 
+  
 }
 
 

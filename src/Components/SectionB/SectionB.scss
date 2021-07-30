@@ -35,9 +35,9 @@
 
 }
 
-iframe {
+.modalDocument {
     width : 95%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 3/4;
     z-index: 0;
 }
 
@@ -57,12 +57,12 @@ iframe {
     transform: rotate(45deg);
 }
 .borders-V{
-    width: 0.25rem;
+    width: 0.4rem;
     height: 100%;
     z-index: 3;
 }
 .borders-H{
-    height: 0.25rem;
+    height: 0.4rem;
     width: 100%;
     z-index: 3;
 }
@@ -94,6 +94,12 @@ iframe {
  
     .b::after{
         transform: translateY(0) rotate(180deg);
+    }
+
+    .modalDocument {
+        width: 95%;
+        aspect-ratio: 4/3;
+        z-index: 0;
     }
 
     

@@ -20,7 +20,7 @@ function AgendaPenugasan() {
             bgImages: bgEvent(bgAgenda)
         },
         {
-            directTo: '/',
+            directTo: '/Panduan',
             title: "Panduan",
             bgColors: "bg-red",
             bgImages: bgEvent(bgPanduan)
@@ -33,11 +33,9 @@ function AgendaPenugasan() {
         }
     ]
     return (
-        <section className="position-relative z-index-3 py-5">
+        <section className="d-flex justify-content-center align-items-center py-5">
             <div class="container pt-5">
-                <div className="row justify-content-center">
-                    <h2 className="fw-bold text-center text-blue">Agenda dan Penugasan</h2>
-                </div>
+                <h2 className="fw-bold text-center text-blue">Agenda dan Penugasan</h2>
                 <div class="row mt-3">
                     <Suspense fallback={<h1>Loading ...</h1>}>
                         {

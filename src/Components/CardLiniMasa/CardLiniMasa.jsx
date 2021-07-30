@@ -2,23 +2,25 @@ import React, { Fragment, lazy, Suspense } from 'react'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import './CardLiniMasa.css'
+import texture from '../../Assets/img/texture-blue.svg'
 const Box = lazy(() => import('../Box/Box'))
 const OwlCarousel = lazy(() => import('react-owl-carousel'))
 
-function CardLiniMasa() {
 
+
+export const CardLiniMasa = () => {
     const options = {
         margin: 16,
         responsiveClass: true,
-        owldots: true,
+        owldots : true,
         nav: true,
         smartSpeed: 1000,
         responsive: {
-            0: {
-                items: 1
+            0:{
+                items:1
             },
-            540: {
-                items: 2
+            540:{
+                items:2
             },
             992: {
                 items: 3
@@ -28,7 +30,6 @@ function CardLiniMasa() {
             }
         },
     };
-
 
     return (
         <Fragment>
@@ -77,6 +78,16 @@ function CardLiniMasa() {
                                 modalID="narasi" />
                         </div>
                     </OwlCarousel>
+
+                    <div className="texture">
+                        <div className="position-absolute texture-bottom-left">
+                            <img src={texture} alt="texture" className="anime-flip" width="100%" />
+                        </div>
+                        <div className="position-absolute texture-top-right">
+                            <img src={texture} alt="texture" className="anime-flip" width="100%" />
+                        </div>
+                    </div>
+
                 </Suspense>
             </div>
         </Fragment>
@@ -84,3 +95,4 @@ function CardLiniMasa() {
 }
 
 export default CardLiniMasa
+
