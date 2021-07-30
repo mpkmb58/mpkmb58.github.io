@@ -1,13 +1,19 @@
 .card-hover:hover .element-bg{
-    transform: scale(1.3);
+    transform: scale(1.3) rotate(0);
 }
 .element-bg{
     transition: .3s;
+    transform: scale(1) rotate(45deg);
+}
+.card-hover:hover .about-bg-logo{
+    transform: scale(1.3);
+}
+.about-bg-logo{
+    transition: .3s;
     transform: scale(1);
 }
-
 .card-title{
-    z-index: 1;
+    z-index: 1; 
 }
 .card-element{
     z-index: 0;

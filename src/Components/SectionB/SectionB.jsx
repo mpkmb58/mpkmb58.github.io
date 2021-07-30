@@ -21,12 +21,12 @@ const Card = lazy(() => import('../Card/Card'))
 
 
 function SectionB() {
-    const logoLogo = <div className="element-bg d-flex">
-        <img loading="lazy" className="mx-3 bg-logo" src={logo1} alt="logo-bg" />
-        <img loading="lazy" className="mx-3 bg-logo" src={logo2} alt="logo-bg" />
-        <img loading="lazy" className="mx-3 bg-logo" src={logo3} alt="logo-bg" />
-        <img loading="lazy" className="mx-3 bg-logo" src={logo4} alt="logo-bg" />
-        <img loading="lazy" className="mx-3 bg-logo" src={logo5} alt="logo-bg" />
+    const logoLogo = <div className="about-bg-logo d-flex">
+        <img loading="lazy" className="mx-3" src={logo1} alt="logo-bg" />
+        <img loading="lazy" className="mx-3" src={logo2} alt="logo-bg" />
+        <img loading="lazy" className="mx-3" src={logo3} alt="logo-bg" />
+        <img loading="lazy" className="mx-3" src={logo4} alt="logo-bg" />
+        <img loading="lazy" className="mx-3" src={logo5} alt="logo-bg" />
     </div>
 
     const logoConsole = <div className="logo-console-wrapper element-bg">
@@ -38,7 +38,7 @@ function SectionB() {
     const penugasan =
         <div className="wrapper position-absolute d-flex">
             <div className="scale-up agenda-logo-wrapper element-bg">
-                <img loading="lazy" className="mx-3 bg-logo" src={logoAgenda} alt="logo-bg" />
+                <img className="mx-3 bg-logo" src={logoAgenda} alt="logo-bg" />
             </div>
             <div className="scale-up penugasan-logo-wrapper element-bg">
                 <img loading="lazy" className="mx-3 bg-logo" src={logoPenugasan} alt="logo-bg" />
