@@ -41,29 +41,29 @@ const Footer = () => {
                                 <div className="socmed-col-1 d-flex flex-column">
                                     <a href="https://page.line.me/731qklyo?openQrModal=true" target="_blank" className="p-2 d-flex align-items-center text-grey">
                                         <div className="boxed me-3">
-                                            <img src={logoline} alt="Logo sosmed" />
+                                            <img loading="lazy" src={logoline} alt="Logo sosmed" />
                                         </div>Line
                                     </a>
                                     <a href="https://www.youtube.com/channel/UCdHt1R2mPVPZkP_Zr0eKGFw" target="_blank" className="p-2 d-flex align-items-center text-grey">
                                         <div className="boxed me-3">
-                                            <img src={logoyoutube} alt="Logo sosmed" />
+                                            <img loading="lazy" src={logoyoutube} alt="Logo sosmed" />
                                         </div> Youtube
                                     </a>
                                     <a href="https://twitter.com/mpkmb_ipb" target="_blank" className="p-2 d-flex align-items-center text-grey">
                                         <div className="boxed me-3">
-                                            <img src={logotwitter} alt="Logo sosmed" />
+                                            <img loading="lazy" src={logotwitter} alt="Logo sosmed" />
                                         </div> Twitter
                                     </a>
                                 </div>
                                 <div className="socmed-col-2 d-flex flex-column">
                                     <a href="https://www.instagram.com/mpkmbipb/" target="_blank" className="p-2 d-flex align-items-center text-grey">
                                         <div className="boxed me-3">
-                                            <img src={logoinstagram} alt="Logo sosmed" />
+                                            <img loading="lazy" src={logoinstagram} alt="Logo sosmed" />
                                         </div> Instagram
                                     </a>
                                     <a href="https://www.tiktok.com/@mpkmbipb?_d=secCgYIASAHKAESMgowfGCHhsOIHkNzGDEUdLAQfetAQnD8AVXU1zx1s0R91n8ho2y6LnfX6isqqhEv0kOnGgA%3D&_r=1&checksum=b5cdd4c55d7278c9236947ed8730d871d7bbf09f3507736238fe17710b747723&language=en&sec_uid=MS4wLjABAAAAGU7XXkDW76tKvjKiH3wZ1r_ky2O9zZZ8dinT84aIsZ51sRtqOHIfm1BbpK6D2AEs&sec_user_id=MS4wLjABAAAALPzXoVaBBAxzqVz_8KSf_dPQhk1uUoThv6My1XHDvkMb_gVBXkMFJ6ROQxZLaFYN&share_app_id=1180&share_author_id=6965485347060909057&share_link_id=EBD899B2-50CD-4B13-993E-D5BE1C117095&source=h5_t&tt_from=copy&u_code=d7hl03dm1mfihh&user_id=6722943081283503106&utm_campaign=client_share&utm_medium=ios&utm_source=copy" target="_blank" className="p-2 d-flex align-items-center text-grey">
                                         <div className="boxed me-3">
-                                            <img src={logotiktok} alt="Logo sosmed" />
+                                            <img loading="lazy" src={logotiktok} alt="Logo sosmed" />
                                         </div> TikTok
                                     </a>
                                 </div>

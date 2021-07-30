@@ -1,10 +1,10 @@
-import React, {Fragment} from 'react'
-import './CardSmall.css'
+import React, { Fragment } from 'react'
 import logonasionalisme from '../../Assets/img/g12logo-harian.svg'
 import logoterompet from '../../Assets/img/VectorLogo-harian-1.svg'
 import logotoga from '../../Assets/img/Vectorlogo-harian.svg'
 import logodadah from '../../Assets/img/Group 120logo-harian.svg'
 import logomekanik from '../../Assets/img/Group 152logo-harian.svg'
+import './CardSmall.css'
 
 
 function CardSmall(props) {
@@ -13,15 +13,15 @@ function CardSmall(props) {
         switch (day) {
             case "1":
                 return logoterompet;
-            case "2" : 
+            case "2":
                 return logotoga;
             case "3":
                 return logomekanik;
-            case "4" :
+            case "4":
                 return logonasionalisme;
             case "5":
-                return logodadah; 
-            
+                return logodadah;
+
             default:
                 return logonasionalisme;
         }

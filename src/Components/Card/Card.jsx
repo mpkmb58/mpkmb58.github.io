@@ -19,7 +19,7 @@ function Card(props) {
                     }
 
                     {
-                         props.viewLiniMasa ? props.ViewLiniMasa : (<div></div>)
+                        props.viewLiniMasa ? props.ViewLiniMasa : (<div></div>)
                     }
 
                     <div className='card-element wrapper d-flex justify-content-center align-items-center position-absolute'>
@@ -29,10 +29,10 @@ function Card(props) {
                     {props.texture && (
                         <Fragment>
                             <div className={`position-absolute ${props.bgPositionTop}`}>
-                                <img src={texture} alt="texture" className={props.animateTop && (`anime-flip`)} />
+                                <img loading="lazy" src={texture} alt="texture" className={props.animateTop && (`anime-flip`)} />
                             </div>
                             <div className={`position-absolute ${props.bgPositionBottom}`}>
-                                <img src={texture} alt="texture" className={props.animateBottom && (`anime-flip`)} />
+                                <img loading="lazy" src={texture} alt="texture" className={props.animateBottom && (`anime-flip`)} />
                             </div>
                         </Fragment>
                     )}

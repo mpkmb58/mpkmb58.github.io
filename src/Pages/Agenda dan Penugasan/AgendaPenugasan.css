@@ -1,0 +1,19 @@
+.agenda-bg-wrapper {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(25%, 25%);
+          transform: translate(25%, 25%);
+  width: 300px;
+}
+
+.card-agenda-size {
+  margin: .2em;
+  aspect-ratio: 2/1;
+}
+
+@media (min-width: 768px) {
+  .card-agenda-size {
+    aspect-ratio: 3/4 !important;
+  }
+}
+/*# sourceMappingURL=AgendaPenugasan.css.map */
