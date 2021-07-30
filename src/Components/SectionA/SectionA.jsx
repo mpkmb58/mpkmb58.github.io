@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './SectionA.css'
 import Coin from '../../Assets/img/coin-ipb.svg'
+import { TweenMax, Power3 } from "gsap";
 
 
 function SectionA() {
+
+    let CoinIpb = useRef(null)
+
+    useEffect(() => {
+        TweenMax.from(CoinIpb, {
+            y: 20,
+            duration: 2,
+            opacity: 0,
+            ease: Power3.easeOut
+        })
+
+    }, [])
     return (
 
         <section className="banner a panel d-flex align-items-center overflow-hidden" >
@@ -26,7 +39,7 @@ function SectionA() {
 
 
             <div className="coin-wrapper container d-flex justify-content-lg-end justify-content-center align-items-end">
-                <img src={Coin} className="coin" alt="Illustrasi Coin IPB" />
+                <img src={Coin} className="coin" alt="Illustrasi Coin IPB" ref={el => CoinIpb = el} />
 
             </div>
 

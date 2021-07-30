@@ -21,7 +21,10 @@ const CardLiniMasa = lazy(() => import('../../Components/CardLiniMasa/CardLiniMa
 const Card = lazy(() => import('../Card/Card'))
 
 
+
 function SectionB() {
+
+
     const logoLogo = <div className="about-bg-logo d-flex">
         <img loading="lazy" className="mx-3" src={logo1} alt="logo-bg" />
         <img loading="lazy" className="mx-3" src={logo2} alt="logo-bg" />
@@ -127,7 +130,7 @@ function SectionB() {
                 <section className="b py-4" >
                     <div className="container">
                         <div className="row mb-3">
-                            <div className="col-12 about-wrapper">
+                            <div className="col-12 about-wrapper " >
 
                                 <Card
                                     directTo="/About"

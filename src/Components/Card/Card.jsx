@@ -25,10 +25,10 @@ function Card(props) {
                     {props.texture && (
                         <Fragment>
                             <div className={`position-absolute ${props.bgPositionTop}`}>
-                                <img loading="lazy" src={texture} alt="texture" className={props.animateTop && (`anime-flip`)} />
+                                <img src={texture} alt="texture" className={props.animateTop && (`anime-flip`)} />
                             </div>
                             <div className={`position-absolute ${props.bgPositionBottom}`}>
-                                <img loading="lazy" src={texture} alt="texture" className={props.animateBottom && (`anime-flip`)} />
+                                <img src={texture} alt="texture" className={props.animateBottom && (`anime-flip`)} />
                             </div>
                         </Fragment>
                     )}
