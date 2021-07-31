@@ -77,7 +77,7 @@ function SectionB() {
                     content={
                         <div>
                             <p className="text-center text-blue"><span className="fw-bold">Mentoring</span> merupakan rangkaian acara MPKMB yang bertujuan untuk mempersiapkan calon mahasiswa baru dalam menjalani rangkaian acara utama MPKMB. Mentoring dilaksanakan pada tanggal <span className="fw-bold">23 Juli - 7 Agustus 2021 untuk gelombang pertama</span>, <span className="fw-bold">sedangkan 4 - 7 Agustus 2021 untuk gelombang kedua.</span></p><br />
-                            <p className="text-center text-blue fw-light">telusuri informasi mengenai mentoring lebih lanjut pada laman <a className="fw-bold text-decoration-none" href="https://course.ipb.ac.id/course/view.php?id=1363">course.ipb.ac.id</a> </p>
+                            <p className="text-center text-blue fw-light">telusuri informasi mengenai mentoring lebih lanjut pada laman <a className="fw-bold text-decoration-none" target="_blank" href="https://course.ipb.ac.id/course/view.php?id=1363">course.ipb.ac.id</a> </p>
 
                         </div>
                     }
@@ -124,7 +124,7 @@ function SectionB() {
                     size="modal-lg"
                 />
 
-                <section className="b py-4" >
+                <section className="b" >
                     <div className="container">
                         <div className="row mb-3">
                             <div className="col-12 about-wrapper">
@@ -138,7 +138,7 @@ function SectionB() {
                                     bgPositionTop='texture-top-left'
                                     bgPositionBottom='texture-bottom-right'
                                     animateBottom={true}
-                                    animateTop={true} />
+                                />
 
 
                             </div>

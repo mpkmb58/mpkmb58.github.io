@@ -48,8 +48,8 @@
   position: absolute;
   aspect-ratio: 1/1;
   opacity: 0.5;
-  -webkit-filter: blur(25rem);
-          filter: blur(25rem);
+  -webkit-filter: blur(280px);
+          filter: blur(280px);
   border-radius: 50%;
   z-index: 0;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Magazine.css'
 import arrowDown from '../../Assets/img/Arrowdown.svg'
+import texture from '../../Assets/img/texture-blue.svg'
 
 
 function Magazine(props) {
@@ -68,7 +69,13 @@ function Magazine(props) {
 
                     </div>
                     <div className="content bg-grey position-relative overflow-hidden px-0 col-lg-9 about-nav-wrapper my-4 my-lg-0">
-                        <div class="content-parent px-5 py-4 ">
+                        {/* <div className="texture-left position-abolute z-index-3">
+                            <img src={texture} alt="" srcset="" />
+                        </div>
+                        <div className="texture-right position-abolute z-index-3">
+                            <img src={texture} alt="" srcset="" />
+                        </div> */}
+                        <div class="content-parent position-relative px-4 px-lg-5 py-4 ">
                             <div class="content-child d-flex align-items-center justify-content-center">
                                 {content}
                             </div>

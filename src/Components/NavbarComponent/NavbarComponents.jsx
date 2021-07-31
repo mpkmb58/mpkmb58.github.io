@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react'
 
 import Logo from '../../Assets/img/logo_mahardika_cakrabinaya 1.svg'
 import './NavbarComponent.css'
+import BgBlur from '../BackgroundBlur/BgBlur';
 
 function NavbarComponents() {
 
@@ -9,6 +10,7 @@ function NavbarComponents() {
 
     return (
         <Fragment>
+            <BgBlur/>
             <nav className="navbar bg-navbar fixed-top ">
                 <div className="container-fluid d-flex justify-content-between align-items-center px-sm-5 px-2">
                     <div class="nav-brand d-flex align-items-center ">

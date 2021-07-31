@@ -105,6 +105,24 @@
   transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
 }
 
+.texture-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.texture-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
 @media (min-width: 992px) {
   .about-nav-wrapper {
     min-height: 70vmin;
