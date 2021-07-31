@@ -1,15 +1,23 @@
-import React from 'react'
+import React, {useRef, useEffect}from 'react'
 import texture from '../../Assets/img/texture.svg';
 import './Card.css'
 import { Fragment } from 'react';
 
 
 function Card(props) {
-    return (
-        <Fragment>
-            <a href={props.directTo} className="text-decoration-none">
-                <div className={`${props.customSize} card-hover position-relative card-rounded overflow-hidden ${props.color}`}>
 
+    let comingSoon = useRef(null);
+
+    // useEffect(() => {
+    //     props.comingsoon && comingSoon.setAttribute('data-bs-toggle', "modal").setAttribute('data-bs-target', '#comingsoon');
+    // }, [])
+    // ref={(el) => comingSoon = el}
+
+    return (
+    
+        <Fragment>
+            <a href={props.directTo} className="text-decoration-none" >
+                <div className={`${props.customSize} card-hover position-relative card-rounded overflow-hidden ${props.color}`} >
                     <div className="card-title position-absolute wrapper d-flex justify-content-center align-items-center">
                         <h3 className={`${props.titleSize} text-center fw-bold text-grey m-0 d-inline-block`}>{props.title}</h3>
                     </div>
@@ -25,10 +33,10 @@ function Card(props) {
                     {props.texture && (
                         <Fragment>
                             <div className={`position-absolute ${props.bgPositionTop}`}>
-                                <img loading="lazy" src={texture} alt="texture" className={props.animateTop && (`anime-flip`)} />
+                                <img src={texture} alt="texture" className={props.animateTop && (`anime-flip`)} />
                             </div>
                             <div className={`position-absolute ${props.bgPositionBottom}`}>
-                                <img loading="lazy" src={texture} alt="texture" className={props.animateBottom && (`anime-flip`)} />
+                                <img src={texture} alt="texture" className={props.animateBottom && (`anime-flip`)} />
                             </div>
                         </Fragment>
                     )}

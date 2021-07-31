@@ -7,7 +7,7 @@ import bgClosing from '../../../Assets/img/Vector-hari-5.svg'
 import './Agenda.css'
 
 const Card = lazy(() => import('../../../Components/Card/Card'))
-
+const ComingSoon = lazy(() => import('../../../Components/ComingSoon/ComingSoon'))
 
 const bgEvent = (e) => (<div class="bg-agenda-size position-absolute">
     <img loading="lazy" src={e} alt="Illustarasi Event" className="element-bg" />
@@ -48,9 +48,9 @@ function Agenda() {
         }
     ]
     return (
-        <section className=" py-5">
+        <section className="d-flex justify-content-center align-items-center">
             <div class="container pt-5">
-                <div class="row mt-5 justify-content-center">
+                <div class="row justify-content-center">
                     <Suspense fallback={<h1>Loading ...</h1>}>
                         {
                             contentEvent.map(e =>
@@ -62,6 +62,7 @@ function Agenda() {
                                         color={e.bgColors}
                                         background={e.bgImages}
                                         customSize='card-agenda-size'
+                                        comingsoon={e.comingsoon}
                                     />
                                 </div>
                             )

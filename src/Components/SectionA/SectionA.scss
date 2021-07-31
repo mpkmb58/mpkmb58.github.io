@@ -1,7 +1,4 @@
-.hero-banner{
-    font-family: 'Cinzel Decorative', poppins;
-    font-size: calc(0.5rem + 4vmin);
-}
+
 .hero-banner-link{
     font-size: calc(0.5rem + 2vmin);
 }
@@ -10,22 +7,7 @@
     filter: blur(2px)
 }
 
-.bg-blur{
-    background-image: url('../../Assets/img/bg.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.banner{
-    position: relative;
-    .hero{
-        position: relative;
-        z-index: 2;
-    }
-}
-
-
-.banner::after{
+.banner::after {
     content: '';
     position: absolute;
     background-image: url('../../Assets/img/leaf.svg');
@@ -38,18 +20,6 @@
     background-position: bottom center;
     z-index: 3;
     transform: translateY(20px);
-}
-.coin{
-    width: calc(10rem + 20vw);
-    // margin-bottom: -65px;
-}
-.coin-wrapper{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
 
 .mahardika{
@@ -71,27 +41,8 @@
         font-size: 5.5em;
     }
 
- 
-    
 }
 
-@media (max-height: 500px) {
-    .coin{
-        width: 50vmin;
-        // margin-bottom: -65px;
-    }
-    
-}
-
-@media (min-height: 1200px) {
-    
-
-    .coin{
-        width: calc(10rem + 30vh);
-        // margin-bottom: -65px;
-    }
-    
-}
     
     
 

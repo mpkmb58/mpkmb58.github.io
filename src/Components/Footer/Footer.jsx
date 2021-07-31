@@ -9,7 +9,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className="footer bg-blue text-grey">
-            <div className="container">
+            <div className="container footer-container">
                 <div className="row">
                     <div className="col-md-6 px-lg-5">
                         <div className="text">
@@ -23,11 +23,9 @@ const Footer = () => {
                                 <p className="text-grey">Jalan Lingkar Kampus IPB Darmaga, Babakan, Dramaga, Babakan, Kec. Dramaga, Bogor, Jawa
                                     Barat 16680</p>
                             </a>
-                            <p>Jam kerja pukul 08.00 - 16.00 WIB<br></br>
-                                <a href="mailto:mpkmbipb@apps.ipb.ac.id">
-                                    <p className="text-grey">mpkmbipb@apps.ipb.ac.id</p>
-                                </a>
-                            </p>
+                            <p><strong>Jam kerja pukul 08.00 - 16.00 WIB</strong></p>
+                            <a href="mailto:mpkmbipb@apps.ipb.ac.id" className="text-grey">mpkmbipb@apps.ipb.ac.id</a><br/>
+                            <a href="mailto:helpcenter.ipb.ac.id" className="text-grey">helpcenter.ipb.ac.id</a>
                         </div>
                         <br />
                     </div>
@@ -35,7 +33,7 @@ const Footer = () => {
                         <div className="text">
                             <h3 className="mt-md-0 mt-2 fw-bold">Pusat Informasi:</h3>
                             <br />
-                            <p>Narahubung MPKMB: <a href="http://">+62813-8201-8481</a></p>
+                            <p>Narahubung MPKMB: <a href="http://">+62 852-3763-6737</a> (Hafidzh .H)</p>
                             <p>Official Account MPKMB:</p>
                             <div className="social-media">
                                 <div className="socmed-col-1 d-flex flex-column">

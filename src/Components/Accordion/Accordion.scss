@@ -1,7 +1,10 @@
 .accordion-button{
     box-shadow: none !important;
+    padding-left: 0;
 }
 
-.tl-2 {
-    transform: translateX(-5%);
+.accordion-collapse {
+    max-width : 100%;
 }
+
+

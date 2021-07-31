@@ -1,10 +1,11 @@
 import React from 'react'
+import { AccordionStyle } from './Accordion.style'
 
 function Accordion(props) {
     return (
-        <div class="accordion accordion-flush" id={props.parentId}>
+        <AccordionStyle class="accordion accordion-flush" id={props.parentId}>
             {props.content}
-        </div>
+        </AccordionStyle>
     )
 }
 

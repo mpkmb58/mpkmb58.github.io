@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Magazine.css'
 import arrowDown from '../../Assets/img/Arrowdown.svg'
 import texture from '../../Assets/img/texture-blue.svg'
+import $ from 'jquery'
+
 
 
 function Magazine(props) {
@@ -10,24 +12,16 @@ function Magazine(props) {
     let [collapse, setCollapse] = useState(false);
     let [nav, setNav] = useState(props.contentWrapper[0].link);
 
+    useEffect(() => {
+        $('.hash-dekstop').on('click', function () {
+            $(this).addClass('btn-blue').siblings().removeClass('btn-blue')
+        })
+    }, [])
+    
+
     return (
-        <div className="position-relative z-index-2">
+        <div className="position-relative z-index-2" >
             <div className="container pt-5 ">
-
-                {/* <div className="row">
-                    <div className="d-flex justify-content-between align-items-center">
-                        <button href="/Beranda" className="back-btn bg-blue text-grey py-2 px-4">Kembali</button>
-                        <div className="d-flex align-items-center">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item text-blue"><a href="/">Beranda</a></li>
-                                    <li class="breadcrumb-item active text-blue fw-bold" aria-current="page">FAQ</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div> */}
-
                 <div className="row mt-4 mb-4 mx-lg-0 mx-0 justify-content-between">
                     {/* MOBILE */}
                     <div className="col-lg-2 link bg-grey about-nav-wrapper position-relative px-0 d-lg-none d-flex flex-row flex-lg-column justify-content-center justify-content-lg-start align-items-center overflow-visible" onClick={() => setCollapse(!collapse)}>
@@ -60,7 +54,7 @@ function Magazine(props) {
                                     setNav(props.contentWrapper[e.key].link)
                                     setCollapse(collapse)
                                 }}
-                                    className='hash-dekstop position-relative btn m-0 py-3 '
+                                    className='hash-dekstop position-relative  btn m-0 py-3 '
                                 >
                                     <h5 className="m-0">{e.link}</h5>
                                 </div>
@@ -76,7 +70,7 @@ function Magazine(props) {
                             <img src={texture} alt="" srcset="" />
                         </div> */}
                         <div class="content-parent position-relative px-4 px-lg-5 py-4 ">
-                            <div class="content-child d-flex align-items-center justify-content-center">
+                            <div class="content-child">
                                 {content}
                             </div>
                         </div>

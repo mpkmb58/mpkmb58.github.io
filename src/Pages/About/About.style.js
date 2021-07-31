@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
-export const AboutStyle = styled.div`
-    min-height : 100vh;
+export const ContentBox = styled.div`
+    height: 100%;
+    width: 100%;
     display : flex;
     align-items : center;
     justify-content: center;
 `
+

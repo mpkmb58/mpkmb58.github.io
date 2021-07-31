@@ -23,7 +23,7 @@ const leftToRight = keyframes`
     `
 const LoaderInner = styled.div`
     width: 100vw;
-    height: 10px;
+    height: 0.25rem;
     background-color: #343F56;
     transform-origin: left center;
     animation: ${leftToRight} .6s forwards  ; 

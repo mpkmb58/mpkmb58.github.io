@@ -3,7 +3,8 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import './CardLiniMasa.css'
 import texture from '../../Assets/img/texture-blue.svg'
-import Loader from '../Loader/Loader';
+// import Loader from '../Loader/Loader';
+
 const Box = lazy(() => import('../Box/Box'))
 const OwlCarousel = lazy(() => import('react-owl-carousel'))
 
@@ -14,7 +15,6 @@ export const CardLiniMasa = () => {
         margin: 16,
         responsiveClass: true,
         owldots: true,
-        nav: true,
         smartSpeed: 1000,
         responsive: {
             0: {
@@ -34,9 +34,9 @@ export const CardLiniMasa = () => {
 
     return (
         <Fragment>
+            <Suspense>
             <div className="card-lini-masa card-component bg-grey p-md-5 p-3 d-flex flex-column justify-content-center align-items-center">
                 <h3 className="text-center text-blue fw-bold">LINI MASA</h3>
-                <Suspense fallback={<Loader></Loader>}>
                     <OwlCarousel className="mt-3" {...options}>
                         <div className="item mx-3">
                             <Box color="bg-blue"
@@ -76,7 +76,7 @@ export const CardLiniMasa = () => {
                                 title="Narasi Besar"
                                 date="9 Agustus 2021"
                                 time="08.00 WIB - 17.00 WIB"
-                                modalID="narasi" />
+                                modalID="comingsoon" />
                         </div>
                     </OwlCarousel>
 
@@ -88,9 +88,8 @@ export const CardLiniMasa = () => {
                             <img src={texture} alt="texture" className="anime-flip" width="100%" />
                         </div>
                     </div>
-
-                </Suspense>
-            </div>
+                </div>
+            </Suspense>
         </Fragment>
     )
 }

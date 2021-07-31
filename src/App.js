@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavbarComponents from './Components/NavbarComponent/NavbarComponents';
 import BgBlur from './Components/BackgroundBlur/BgBlur';
 import Loader from './Components/Loader/Loader';
+// import Home from './Pages/Home/Home'
 
 const Home = lazy(() => import('./Pages/Home/Home'))
 const About = lazy(() => import('./Pages/About/About'));
@@ -19,22 +20,27 @@ const Footer = lazy(() => import('./Components/Footer/Footer'));
 const App = () => {
   return (
     <Router>
-
       <BgBlur />
       <NavbarComponents />
       <Suspense fallback={<Loader></Loader>}>
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/About" component={About} />
-          <Route path="/Panduan" component={Panduan} />
-          <Route path="/Event" component={Event} />
-          <Route path="/FAQ" component={FAQ} />
-          <Route path="/AgendaPenugasan" exact component={AgendaPenugasan} />
-          <Route path="/AgendaPenugasan/Agenda" exact component={Agenda} />
-          <Route component={PageNotFound} />
+            <Route path="/" exact component={Home} />
+            <Suspense fallback={<Loader></Loader>}>
+              <Route path="/About" component={About} />
+              <Route path="/Panduan" component={Panduan} />
+              <Route path="/Event" component={Event} />
+              <Route path="/FAQ" component={FAQ} />
+              <Route path="/AgendaPenugasan" exact component={AgendaPenugasan} />
+              <Suspense fallback={<Loader></Loader>}>
+                <Route path="/AgendaPenugasan/Agenda" exact component={Agenda} />
+                <Suspense fallback={<Loader></Loader>}>
+                  <Route component={PageNotFound} />
+                </Suspense>
+              </Suspense>
+            </Suspense>
         </Switch>
-        <Footer />
-      </Suspense>
+        <Footer/>
+      </Suspense> 
     </Router>
   );
 }

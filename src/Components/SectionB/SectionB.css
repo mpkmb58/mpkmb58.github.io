@@ -18,11 +18,6 @@
   z-index: 2;
 }
 
-.iframe-size {
-  width: 640px;
-  height: 350px;
-}
-
 .b::after {
   content: '';
   position: absolute;
@@ -36,12 +31,6 @@
           transform: rotate(180deg) translateY(40%);
   -webkit-filter: blur(20px);
           filter: blur(20px);
-}
-
-.modalDocument {
-  width: 95%;
-  aspect-ratio: 3/4;
-  z-index: 0;
 }
 
 .about-wrapper {
@@ -102,11 +91,6 @@
   .b::after {
     -webkit-transform: translateY(0) rotate(180deg);
             transform: translateY(0) rotate(180deg);
-  }
-  .modalDocument {
-    width: 95%;
-    aspect-ratio: 16/9;
-    z-index: 0;
   }
 }
 /*# sourceMappingURL=SectionB.css.map */

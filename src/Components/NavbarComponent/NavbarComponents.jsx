@@ -2,7 +2,6 @@ import React, { Fragment, useState } from 'react'
 
 import Logo from '../../Assets/img/logo_mahardika_cakrabinaya 1.svg'
 import './NavbarComponent.css'
-import BgBlur from '../BackgroundBlur/BgBlur';
 
 function NavbarComponents() {
 
@@ -10,7 +9,6 @@ function NavbarComponents() {
 
     return (
         <Fragment>
-            <BgBlur/>
             <nav className="navbar bg-navbar fixed-top ">
                 <div className="container-fluid d-flex justify-content-between align-items-center px-sm-5 px-2">
                     <div class="nav-brand d-flex align-items-center ">
@@ -41,7 +39,6 @@ function NavbarComponents() {
                         </a>
                         <a href="/Event" className="col  my-3 d-inline-block text-decoration-none  text-blue">
                             <span className="d-inline-block hover">Event</span>
-
                         </a>
                         <a href="/AgendaPenugasan" className="col  my-3 d-inline-block text-decoration-none  text-blue">
                             <span className="d-inline-block hover">Agenda dan Penugasan</span>

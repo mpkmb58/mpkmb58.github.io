@@ -1,10 +1,10 @@
 .accordion-button {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+  padding-left: 0;
 }
 
-.tl-2 {
-  -webkit-transform: translateX(-5%);
-          transform: translateX(-5%);
+.accordion-collapse {
+  max-width: 100%;
 }
 /*# sourceMappingURL=Accordion.css.map */
