@@ -57,8 +57,4 @@
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
-
-.footer .footer-container {
-  width: 80%;
-}
 /*# sourceMappingURL=Footer.css.map */

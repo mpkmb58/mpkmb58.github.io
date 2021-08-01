@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavbarComponents from './Components/NavbarComponent/NavbarComponents';
 import BgBlur from './Components/BackgroundBlur/BgBlur';
@@ -25,19 +25,13 @@ const App = () => {
       <Suspense fallback={<Loader></Loader>}>
         <Switch>
             <Route path="/" exact component={Home} />
-            <Suspense fallback={<Loader></Loader>}>
               <Route path="/About" component={About} />
               <Route path="/Panduan" component={Panduan} />
               <Route path="/Event" component={Event} />
               <Route path="/FAQ" component={FAQ} />
               <Route path="/AgendaPenugasan" exact component={AgendaPenugasan} />
-              <Suspense fallback={<Loader></Loader>}>
-                <Route path="/AgendaPenugasan/Agenda" exact component={Agenda} />
-                <Suspense fallback={<Loader></Loader>}>
-                  <Route component={PageNotFound} />
-                </Suspense>
-              </Suspense>
-            </Suspense>
+              <Route path="/AgendaPenugasan/Agenda" exact component={Agenda} />
+              <Route component={PageNotFound}/>
         </Switch>
         <Footer/>
       </Suspense> 

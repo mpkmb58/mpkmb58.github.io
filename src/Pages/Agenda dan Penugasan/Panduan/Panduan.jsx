@@ -1,6 +1,5 @@
 import React from 'react'
 import Magazine from '../../../Components/Magazine/Magazine'
-import { AboutStyle } from '../../About/About.style'
 import { Iframe } from './Panduan.style'
 import panduanPDF from '../../../Assets/documents/GuideBook.pdf'
 import penugasanPDF from '../../../Assets/documents/Panduan Penugasan MPKMB IPB 58.pdf'

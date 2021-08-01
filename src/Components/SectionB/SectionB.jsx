@@ -1,4 +1,4 @@
-import React, { Fragment, lazy, Suspense } from 'react'
+import React, { Fragment, lazy, Suspense , useEffect} from 'react'
 import { logoLogo, logoConsole, logoFAQ, penugasan, sponsor} from './SectionB.data'
 import panduanPDF from '../../Assets/documents/GuideBook.pdf'
 import skRektorPDF from '../../Assets/documents/Surat Edaran - Penetapan Awal Tahun Akademik 2020_2021.pdf'
@@ -9,9 +9,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styled from 'styled-components'
 
-AOS.init();
-
-
 const ComingSoon = lazy(() => import('../ComingSoon/ComingSoon'));
 const Modal = lazy(() => import('../../Components/Modal/Modal'))
 const CardLiniMasa = lazy(() => import('../../Components/CardLiniMasa/CardLiniMasa'))
@@ -21,7 +18,7 @@ const ModalDoc = styled.iframe`
         width: 95%;
         aspect-ratio: 16/9;
         z-index: 0;
-        
+
     @media (max-width : 768px){
         width : 95%;
         aspect-ratio: 3/4;
@@ -35,11 +32,16 @@ const AboutWrapper = styled.div`
 `
 
 function SectionB() {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+    
     return (
         <Fragment>
             <Suspense fallback={<Loader></Loader>}>
-                <Suspense>
-                    <Suspense>
+                <Suspense fallback={<Loader></Loader>}>
+                    <Suspense fallback={<Loader></Loader>}>
                         <Modal
                             id="mentoring"
                             title="MENTORING MPKMB"
@@ -54,19 +56,18 @@ function SectionB() {
                                         </ul>
                                     </p>
                                     <p>
-                                    Informasi lebih lanjut tentang mentoring dapat dibaca pada laman <a className="fw-bold text-decoration-none" target="_blank" href="https://course.ipb.ac.id/course/view.php?id=1363"> course.ipb.ac.id</a></p>
+                                    Informasi lebih lanjut tentang mentoring dapat dibaca pada laman <a className="fw-bold text-decoration-none" target="_blank" rel="noreferrer" href="https://course.ipb.ac.id/course/view.php?id=1363"> course.ipb.ac.id</a></p>
                                     </Fragment>
                                 </div>
                             }
                             size="modal-lg"
                         />
-
                         <Modal
                             id="panduan"
                             title="Panduan MPKMB"
                             content=
                             {
-                                <Fragment>
+                                <Fragment> 
                                     <ModalDoc loading="lazy" src="https://drive.google.com/file/d/1nnoVjlCXwGVSYG39SJIOicxGOU3wjKub/preview" allow="autoplay"></ModalDoc>
                                     <a href={panduanPDF} className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey" download="Guide Book MPKMB 58.pdf">Download PDF</a>
                                 </Fragment>
@@ -121,9 +122,9 @@ function SectionB() {
 
                                 </div>
                             </div>
-                        <Suspense>
-                        <div class="row mt-3" data-aos="fade-up">
-                            <div class="col-md-6">
+                        <Suspense fallback={<Loader></Loader>}>
+                        <div class="row mt-3" >
+                            <div class="col-md-6" data-aos="fade-right">
 
                                 <Card
                                     directTo="/Event"
@@ -137,7 +138,7 @@ function SectionB() {
                                 />
 
                             </div>
-                            <div className="col-md-6 mt-3 mt-md-0">
+                            <div className="col-md-6 mt-3 mt-md-0" data-aos="fade-left">
 
                                 <Card
                                     directTo="/FAQ"

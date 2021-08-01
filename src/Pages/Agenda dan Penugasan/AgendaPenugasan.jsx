@@ -3,6 +3,10 @@ import bgAgenda from '../../Assets/img/Vectoragenda-logo.svg'
 import bgPanduan from '../../Assets/img/Vectorpanduan-logo.svg'
 import bgPenugasan from '../../Assets/img/VectorPenugasan.svg'
 import './AgendaPenugasan.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const Card = lazy(() => import('../../Components/Card/Card'))
 
@@ -40,7 +44,7 @@ function AgendaPenugasan() {
                     <Suspense fallback={<h1>Loading ...</h1>}>
                         {
                             contentAgendaPenugasan.map(e =>
-                                <div class="col-lg-4 mt-3 mt-lg-0">
+                                <div class="col-lg-4 mt-3 mt-lg-0" data-aos="fade-up">
                                     <Card
                                         directTo={e.directTo}
                                         title={e.title}

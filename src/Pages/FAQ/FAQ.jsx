@@ -1,12 +1,12 @@
 import React from 'react'
 import Magazine from '../../Components/Magazine/Magazine'
-import { AboutStyle } from '../About/About.style'
 import styled from 'styled-components'
 import Accordion from '../../Components/Accordion/AccordionItem'
 import './FAQ.css'
 import AccordionItem from '../../Components/Accordion/AccordionItems'
 import { Fragment } from 'react'
-
+import kelompokPDF from '../../Assets/documents/Enrollment Key Mahardika Cakrabinaya.pdf'
+import sk from '../../Assets/documents/Surat Edaran - Penetapan Awal Tahun Akademik 2020_2021.pdf'
 function FAQ() {
 
         const AccordionWrap = styled.div`
@@ -30,13 +30,13 @@ function FAQ() {
                                     parentId="ListPertanyaanUmum"
                                     id = "One"
                                     question = "Kapan MPKMB dilaksanakan?"
-                                    answer = {<p>MPKMB akan dilaksanakan pada tanggal <strong>9 - 14 Agustus 2021.</strong> MPKMB akan dilaksanakan selama 5 hari. Telusuri informasi agenda MPKMB setiap pada <a href="" className="fw-bold">halaman agenda.</a></p>}
+                                    answer = {<p>MPKMB akan dilaksanakan pada tanggal <strong>9 - 14 Agustus 2021.</strong> MPKMB akan dilaksanakan selama 5 hari. Telusuri informasi agenda MPKMB setiap pada <a href="/AgendaPenugasan/Agenda" className="fw-bold">halaman agenda.</a></p>}
                                 />
                                 <AccordionItem
                                     parentId="ListPertanyaanUmum"
                                     id = "Two"
                                     question = "MPKMB IPB 58 akan diselenggarakan secara daring atau luring?"
-                                    answer = {<p>Berdasarkan <a href="" className="fw-bold">Surat Edaran Kegiatan Akademik</a> yang diresmikan pada tahun 2020, seluruh kegiatan akademik dan non-akademik <strong>dilaksanakan secara daring</strong></p>}
+                                    answer = {<p>Berdasarkan <a href={sk} className="fw-bold" download>Surat Edaran Kegiatan Akademik</a> yang diresmikan pada tahun 2020, seluruh kegiatan akademik dan non-akademik <strong>dilaksanakan secara daring</strong></p>}
                                 />
                                 <AccordionItem
                                     parentId="ListPertanyaanUmum"
@@ -48,7 +48,7 @@ function FAQ() {
                                     parentId="ListPertanyaanUmum"
                                     id = "Four"
                                     question = "Platform apa saja yang biasa digunakan untuk mengakses informasi terkini?"
-                                    answer = {<p>Informasi terbaru mengenai rangkaian acara MPKMB dapat diakses melalui laman resmi mpkmb dan <a href="" className="fw-bold">instagram resmi MPKMB</a></p>}
+                                    answer = {<p>Informasi terbaru mengenai rangkaian acara MPKMB dapat diakses melalui laman resmi mpkmb dan <a href="https://www.instagram.com/mpkmbipb/" target="_blank" rel="noreferrer" className="fw-bold">instagram resmi MPKMB</a></p>}
                                 />
                                 <AccordionItem
                                     parentId="ListPertanyaanUmum"
@@ -83,7 +83,7 @@ function FAQ() {
                                     parentId="ListPertanyaanCourse"
                                     id = "One"
                                     question = "Apa itu Course IPB"
-                                    answer = {<p>Course IPB merupakan salah satu platform yang digunakan untuk melakukan kegiatan belajar-mengajar. Seluruh materi dan penugasan rangkaian MPKMB akan dilaksanakan pada halaman <a href="" className="fw-bold">course.ipb.ac.id</a></p>}
+                                    answer = {<p>Course IPB merupakan salah satu platform yang digunakan untuk melakukan kegiatan belajar-mengajar. Seluruh materi dan penugasan rangkaian MPKMB akan dilaksanakan pada halaman <a href="https://course.ipb.ac.id/course/view.php?id=1363" className="fw-bold">course.ipb.ac.id</a></p>}
                                 />
                                 <AccordionItem
                                     parentId="ListPertanyaanCourse"
@@ -95,19 +95,19 @@ function FAQ() {
                                     parentId="ListPertanyaanCourse"
                                     id = "Two"
                                     question = "Apa itu enrollment Key"
-                                    answer = {<p>Enrollment Key merupakan kode unik yang dimiliki oleh setiap section pada course. Seluruh Mahasiswa Baru akan diberikan enrollment key untuk mengakses halaman course MPKMB yang tersedia pada course.ipb.ac.id. Periksa  enrollment key pada <a href="" className="fw-bold">halaman panduan</a> atau unduh informasi pembagian kelompok beserta enrollment key <a href="" className="fw-bold">di sini.</a></p>}
+                                    answer = {<p>Enrollment Key merupakan kode unik yang dimiliki oleh setiap section pada course. Seluruh Mahasiswa Baru akan diberikan enrollment key untuk mengakses halaman course MPKMB yang tersedia pada course.ipb.ac.id. Periksa  enrollment key pada <a href="/Panduan" className="fw-bold">halaman panduan</a> atau unduh informasi pembagian kelompok beserta enrollment key <a href={kelompokPDF} className="fw-bold" download>di sini.</a></p>}
                                 />
                                 <AccordionItem
                                     parentId="ListPertanyaanCourse"
                                     id = "Three"
                                     question = "Bagaimana jika saya belum memiliki email IPB?"
-                                    answer = {<p>Hubungi help center IPB pada laman <a href="" className="fw-bold">helpcenter.ipb.ac.id</a> atau ajukan pertanyaan kepada mentor.</p>}
+                                    answer = {<p>Hubungi help center IPB pada laman <a href="https://helpcenter.ipb.ac.id/" className="fw-bold">helpcenter.ipb.ac.id</a> atau ajukan pertanyaan kepada mentor.</p>}
                                 />
                                 <AccordionItem
                                     parentId="ListPertanyaanCourse"
                                     id = "Four"
                                     question = "Bagaimana jika saya lupa password dari email IPB saya?"
-                                    answer = {<p>Hubungi help center IPB pada laman <a href="" className="fw-bold">helpcenter.ipb.ac.id</a> atau ajukan pertanyaan kepada mentor.</p>}
+                                    answer = {<p>Hubungi help center IPB pada laman <a href="https://helpcenter.ipb.ac.id/" className="fw-bold">helpcenter.ipb.ac.id</a> atau ajukan pertanyaan kepada mentor.</p>}
                                 />
                             </Fragment>
                         }
@@ -130,7 +130,7 @@ function FAQ() {
                                     parentId="ListPertanyaanSOP"
                                     id = "One"
                                     question = "Bagaimana ketentuan pakaian saat kegiatan MPKMB berlangsung?"
-                                    answer = {<p>Ketentuan dapat dilihat pada SOP dan visualisasi SOP di <a href="" className="fw-bold">Youtube MPKMB IPB</a></p>}
+                                    answer = {<p>Ketentuan dapat dilihat pada SOP dan visualisasi SOP di <a href="https://youtu.be/iPIchRraXcE" className="fw-bold">Youtube MPKMB IPB</a></p>}
                                 />
                             </Fragment>
                         }

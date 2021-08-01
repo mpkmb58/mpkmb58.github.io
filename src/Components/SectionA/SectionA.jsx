@@ -1,4 +1,4 @@
-import React, { useEffect, useRef , lazy , Suspense} from 'react'
+import React, { Suspense} from 'react'
 import './SectionA.css'
 import Coin from '../../Assets/img/coin-ipb.svg'
 import AOS from 'aos';

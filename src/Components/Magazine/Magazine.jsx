@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import './Magazine.css'
 import arrowDown from '../../Assets/img/Arrowdown.svg'
-import texture from '../../Assets/img/texture-blue.svg'
 import $ from 'jquery'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 
@@ -16,7 +18,11 @@ function Magazine(props) {
         $('.hash-dekstop').on('click', function () {
             $(this).addClass('btn-blue').siblings().removeClass('btn-blue')
         })
+
+        AOS.init()
     }, [])
+
+
     
 
     return (
@@ -46,7 +52,7 @@ function Magazine(props) {
                         </div>
                     </div>
                     {/* DEKSTOP */}
-                    <div className="link-page col-lg-2 bg-grey about-nav-wrapper py-5 px-0 d-lg-flex d-none flex-row flex-lg-column justify-content-center justify-content-lg-start align-items-center overflow-hidden " >
+                    <div className="link-page col-lg-2 bg-grey about-nav-wrapper py-5 px-0 d-lg-flex d-none flex-row flex-lg-column justify-content-center justify-content-lg-start align-items-center overflow-hidden " data-aos="fade-right">
                         {
                             props.contentWrapper.map(e =>
                                 <div onClick={() => {
@@ -62,14 +68,14 @@ function Magazine(props) {
                         }
 
                     </div>
-                    <div className="content bg-grey position-relative overflow-hidden px-0 col-lg-9 about-nav-wrapper my-4 my-lg-0">
+                    <div className="content bg-grey position-relative overflow-hidden px-0 col-lg-9 about-nav-wrapper my-4 my-lg-0" data-aos="fade-up">
                         {/* <div className="texture-left position-abolute z-index-3">
                             <img src={texture} alt="" srcset="" />
                         </div>
                         <div className="texture-right position-abolute z-index-3">
                             <img src={texture} alt="" srcset="" />
                         </div> */}
-                        <div class="content-parent position-relative px-4 px-lg-5 py-4 ">
+                        <div class="content-parent position-relative px-4 px-lg-5 py-4 " data-aos="fade-left">
                             <div class="content-child">
                                 {content}
                             </div>

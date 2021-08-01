@@ -5,9 +5,13 @@ import bgCreature from '../../../Assets/img/Vector-hari-3.svg'
 import bgYoung from '../../../Assets/img/Vector-hari-4.svg'
 import bgClosing from '../../../Assets/img/Vector-hari-5.svg'
 import './Agenda.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const Card = lazy(() => import('../../../Components/Card/Card'))
-const ComingSoon = lazy(() => import('../../../Components/ComingSoon/ComingSoon'))
+// const ComingSoon = lazy(() => import('../../../Components/ComingSoon/ComingSoon'))
 
 const bgEvent = (e) => (<div class="bg-agenda-size position-absolute">
     <img loading="lazy" src={e} alt="Illustarasi Event" className="element-bg" />
@@ -54,7 +58,7 @@ function Agenda() {
                     <Suspense fallback={<h1>Loading ...</h1>}>
                         {
                             contentEvent.map(e =>
-                                <div class="col-lg-6 mt-3 ">
+                                <div class="col-lg-6 mt-3 " data-aos="fade-up">
                                     <Card
                                         directTo={e.directTo}
                                         title={e.title}

@@ -2,9 +2,12 @@
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   padding-left: 0;
+  padding-bottom: 0;
+  overflow: hidden;
 }
 
 .accordion-collapse {
-  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 /*# sourceMappingURL=Accordion.css.map */

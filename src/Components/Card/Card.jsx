@@ -1,4 +1,4 @@
-import React, {useRef, useEffect}from 'react'
+import React from 'react'
 import texture from '../../Assets/img/texture.svg';
 import './Card.css'
 import { Fragment } from 'react';
@@ -6,7 +6,7 @@ import { Fragment } from 'react';
 
 function Card(props) {
 
-    let comingSoon = useRef(null);
+    // let comingSoon = useRef(null);
 
     // useEffect(() => {
     //     props.comingsoon && comingSoon.setAttribute('data-bs-toggle', "modal").setAttribute('data-bs-target', '#comingsoon');
