@@ -6,7 +6,7 @@ import SectionA from '../../Components/SectionA/SectionA'
 const SectionB = lazy(() => import('../../Components/SectionB/SectionB'))
 function Home() {
     return (
-        <div className="">
+        <div className="overflow-hidden">
             <SectionA />
             <Suspense fallback={<Loader></Loader>}>
                 <SectionB />
