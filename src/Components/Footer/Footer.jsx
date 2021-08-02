@@ -71,7 +71,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="copyright pt-1">
-                <h6 class="text-center"><i class="fa fa-copyright" aria-hidden="true"></i> 2021. Divisi IT MPKMB IPB</h6>
+                <h6 class="text-center"><i class="fa fa-copyright" aria-hidden="true"></i>© 2021. Divisi IT <strong>MPKMB IPB</strong></h6>
             </div>
         </div>
     )
