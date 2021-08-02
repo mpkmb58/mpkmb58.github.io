@@ -34,14 +34,14 @@ function NavbarComponents() {
                         <a href="/" className="col  my-3 d-inline-block text-decoration-none  text-blue">
                             <span className="d-inline-block hover">Home</span>
                         </a>
+                        <a href="/AgendaPenugasan" className="col  my-3 d-inline-block text-decoration-none  text-blue">
+                            <span className="d-inline-block hover">Agenda dan Penugasan</span>
+                        </a>
                         <a href="/About" className="col  my-3 d-inline-block text-decoration-none  text-blue">
                             <span className="d-inline-block hover">About</span>
                         </a>
                         <a href="/Event" className="col  my-3 d-inline-block text-decoration-none  text-blue">
                             <span className="d-inline-block hover">Event</span>
-                        </a>
-                        <a href="/AgendaPenugasan" className="col  my-3 d-inline-block text-decoration-none  text-blue">
-                            <span className="d-inline-block hover">Agenda dan Penugasan</span>
                         </a>
                         <a href="/FAQ" className="col  my-3 d-inline-block text-decoration-none  text-blue">
                             <span className="d-inline-block hover">FAQ</span>
