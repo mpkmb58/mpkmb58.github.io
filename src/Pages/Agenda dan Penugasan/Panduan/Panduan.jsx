@@ -60,18 +60,6 @@ function Panduan() {
             </div>,
             linkStatus: false
         }, 
-        {
-            key: 4,
-            link: 'PENDAFTARAN',
-            isi: <div>
-                <h2 className="fw-bold text-center mb-4">PENDAFTARAN ASHURA</h2>
-                <div className="d-flex flex-column align-items-center justify-content-center">
-                    <Iframe src="https://drive.google.com/file/d/15TLxwkG8lyvAy7WG9Io3iKl3V4mG9Pxj/preview" allow="autoplay"></Iframe>
-                    <a href={pendaftaranPDF} className="mt-4 bg-blue py-2 px-4 rounded-pill text-grey" download="Panduan Pendaftaran Ashura-Ashira Anausa MPKMB IPB 58.pdf">Download PDF</a>
-                </div>
-            </div>,
-            linkStatus: false
-        }
     ]
 
     

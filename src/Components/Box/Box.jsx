@@ -6,7 +6,7 @@ const Box = (props) => {
     return (
         <button className={`box ${props.color} text-grey p-5`} data-bs-toggle="modal" data-bs-target={`#${props.modalID}`}>
             <div className="texture-box">
-                <img src={texture} />
+                <img src={texture} alt="texture" />
             </div>
             <div className="texture-number fw-bold"><p>{props.number}</p></div>
             <h5 className="text-center fw-bold">{props.title}</h5>

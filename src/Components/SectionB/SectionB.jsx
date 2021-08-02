@@ -48,8 +48,8 @@ function SectionB() {
                             content={
                                 <div className="text-blue">
                                     <Fragment>
-                                    <p className="text-blue">Pada kegiatan mentoring, kamu akan diberikan informasi yang diperlukan untuk mengikuti seluruh kegiatan MPKMB. kamu akan dibagi menjadi beberapa kelompok dan dibimbing oleh seorang  mentor. Unduh informasi pembagian kelompok <a href={kelompokPDF} className="fw-bold" download="Enrollment Key Mahardika Cakrabinaya.pdf">disini.</a></p>
-                                    <p> Mentoring akan dilaksakan <strong>dalam dua gelombang</strong>: <br/>
+                                    <p className="text-blue">Pada kegiatan mentoring, kamu akan diberikan informasi yang diperlukan untuk mengikuti seluruh kegiatan MPKMB. Kamu akan dibagi menjadi beberapa kelompok dan dibimbing oleh seorang  mentor. Unduh informasi pembagian kelompok <a href={kelompokPDF} className="fw-bold" download="Enrollment Key Mahardika Cakrabinaya.pdf">disini.</a></p>
+                                    <p> Mentoring akan dilaksakan <strong>dalam dua gelombang</strong> : <br/>
                                         <ul>
                                             <li>Gelombang Pertama : 23 Juli - 7 Agustus 2021</li>
                                             <li>Gelombang Kedua   : 4 Agustus - 7 Agustus 2021</li>
@@ -91,7 +91,7 @@ function SectionB() {
                         <Modal
                             id="opening"
                             title="Opening MPKMB"
-                            content={<p className="text-center text-blue">Upacara pembukaan Masa Pengenalan Kampus Mahasiswa Baru atau <span className="fw-bold">Opening Ceremony MPKMB</span> merupakan momentum peresmian pembukaan rangkaian acara MPKMB yang akan dilaksanakan pada tanggal <span className="fw-bold">9 Agustus 2021.</span></p>}
+                            content={<p className="text-center text-blue">Upacara pembukaan Masa Pengenalan Kampus Mahasiswa Baru atau <span className="fw-bold">Opening Ceremony MPKMB</span> akan dilaksanakan pada tanggal <span className="fw-bold">9 Agustus 2021.</span></p>}
                             size="modal-lg"
                         />
 

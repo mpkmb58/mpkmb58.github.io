@@ -8,8 +8,6 @@ import OwlCarousel from 'react-owl-carousel'
 
 const Box = lazy(() => import('../Box/Box'))
 
-
-
 export const CardLiniMasa = () => {
     const options = {
         margin: 16,
