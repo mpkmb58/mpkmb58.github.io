@@ -7,6 +7,7 @@ import logoHijau from '../../Assets/img/Logo_hijau.svg';
 import logoBiru from '../../Assets/img/Logo_biru.svg';
 import './About.css'
 import { ContentBox } from './About.style';
+import Loader from '../../Components/Loader/Loader';
 
 
 const Magazine = lazy(() => import('../../Components/Magazine/Magazine'))
@@ -48,19 +49,19 @@ function About() {
             key: 3,
             link: 'KELOMPOK',
             isi: <ContentBox className="row justify-content-center align-items-center">
-                <div class="col-md-4 mb-4  text-center ">
+                <div className="col-md-4 mb-4  text-center ">
                     <img loading="lazy" src={logoBiru} alt="Logo Mahardika Nawesana" className="logo-kelompok" />
                 </div>
-                <div class="col-md-4  mb-4 text-center ">
+                <div className="col-md-4  mb-4 text-center ">
                     <img loading="lazy" src={logoHijau} alt="Logo Mahardika Reswara" className="logo-kelompok" />
                 </div>
-                <div class="col-md-4 mb-4   text-center ">
+                <div className="col-md-4 mb-4   text-center ">
                     <img loading="lazy" src={logoUngu} alt="Logo Mahardika Arunakara" className="logo-kelompok" />
                 </div>
-                <div class="col-md-4 mb-4  text-center ">
+                <div className="col-md-4 mb-4  text-center ">
                     <img src={logoMerah} alt="Logo Mahardika Wirakarsa" className="logo-kelompok" />
                 </div>
-                <div class="col-md-4  mb-4  text-center ">
+                <div className="col-md-4  mb-4  text-center ">
                     <img loading="lazy" src={logoKuning} alt="Logo Mahardika Kalawa" className="logo-kelompok" />
                 </div>
             </ContentBox>,
@@ -71,8 +72,8 @@ function About() {
     return (
         // className="position-relative z-index-2 d-flex align-items-center justify-content-center" 
         <section className="d-flex justify-content-center align-items-center z-index-2" >
-            <Suspense fallback={<h1>Loading</h1>}>
-                <Magazine contentWrapper={contentView} />
+            <Suspense fallback={<Loader></Loader>}>
+                <Magazine contentWrapper={contentView} depth="two" prev="Beranda" current="About" prevPage="/"/>
             </Suspense>
         </section>
     )

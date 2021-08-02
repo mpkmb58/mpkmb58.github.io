@@ -52,6 +52,12 @@ function FAQ() {
                                 />
                                 <AccordionItem
                                     parentId="ListPertanyaanUmum"
+                                    id = "Seven"
+                                    question = "Apakah MPKMB berbeda dengan 7 Habits? Apa perbedaannya?"
+                                    answer = {<p>MPKMB <strong>berbeda</strong> dengan 7 Habits. MPKMB bertujuan untuk mengenalkan tentang kampus IPB University dan bagaimana cara menjadi seorang mahasiswa untuk menghadapi dunia perkuliahan, sedangkan 7 Habits merupakan kegiatan yang bertujuan melatih pribadi dengan kebiasaan-kebiasaan yang sangat efektif.</p>}
+                                />
+                                <AccordionItem
+                                    parentId="ListPertanyaanUmum"
                                     id = "Five"
                                     question = "Apakah MPKMB bersifat wajib? Bagaimana jika mahasiswa baru tidak mengikuti rangkaian MPKMB?"
                                     answer = {<p>MPKMB <strong>bersifat wajib</strong> bagi seluruh mahasiswa baru IPB angkatan 58. Apabila mahasiswa baru tidak mengikuti rangkaian MPKMB IPB 58, mahasiswa tersebut diwajibkan untuk mengikuti MPKMB di tahun berikutnya</p>}
@@ -89,7 +95,7 @@ function FAQ() {
                                     parentId="ListPertanyaanCourse"
                                     id = "Five"
                                     question = "Apa itu NIM?"
-                                    answer = {<p>NIM atau Nomor Induk Mahasiswa merupakan nomor yang dimiliki oleh setiap Mahasiswa sebagai identitas keikutsertaan dalam proses belajar-mengajar pada suatu Universitas.</p>}
+                                    answer = {<p>NIM atau Nomor Induk Mahasiswa merupakan nomor unik yang dimiliki oleh setiap Mahasiswa sebagai identitas keikutsertaan dalam proses belajar-mengajar pada suatu Universitas.</p>}
                                 />
                                 <AccordionItem
                                     parentId="ListPertanyaanCourse"
@@ -118,7 +124,7 @@ function FAQ() {
             },
             {
             key: 2,
-            link: 'SOP',
+            link: 'PENUGASAN DAN SOP',
             isi: <div>
                 <h2 className="fw-bold text-blue text-center mt-3">KETENTUAN SOP</h2>
                 <AccordionWrap>
@@ -131,6 +137,18 @@ function FAQ() {
                                     id = "One"
                                     question = "Bagaimana ketentuan pakaian saat kegiatan MPKMB berlangsung?"
                                     answer = {<p>Ketentuan dapat dilihat pada SOP dan visualisasi SOP di <a href="https://youtu.be/iPIchRraXcE" className="fw-bold">Youtube MPKMB IPB</a></p>}
+                                />
+                                <AccordionItem
+                                    parentId="ListPertanyaanSOP"
+                                    id = "Two"
+                                    question = "Di mana mahasiswa baru dapat melihat pembagian kelompok?"
+                                    answer = {<p>Pembagian kelompok besar, sedang, dan kecil dapat dilihat pada tautan berikut : ipb.link/kelompok-mahardikacakrabinaya58</p>}
+                                />
+                                <AccordionItem
+                                    parentId="ListPertanyaanSOP"
+                                    id = "Three"
+                                    question = "Di mana bisa mendapatkan logo Mahardika Cakrabinaya dan logo IPB?"
+                                    answer = {<p>Pada tautan berikut ini : ipb.link/logo-mpkmb58</p>}
                                 />
                             </Fragment>
                         }
@@ -145,7 +163,7 @@ function FAQ() {
 return (
 // className="position-relative z-index-2 d-flex align-items-center justify-content-center"
 <section className="d-flex justify-content-center align-items-center"> 
-    <Magazine contentWrapper={contentView} />
+    <Magazine contentWrapper={contentView} depth="two" prevPage="/" prev="Beranda" current="FAQ"/>
 </section>
 )
 }

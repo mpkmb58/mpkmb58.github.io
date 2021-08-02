@@ -16,8 +16,8 @@ function Card(props) {
     return (
     
         <Fragment>
-            <a href={props.directTo} className="text-decoration-none" >
-                <div className={`${props.customSize} card-hover position-relative card-rounded overflow-hidden ${props.color}`} >
+            <a href={props.directTo} className="text-decoration-none " >
+                <div className={`${props.customSize} shadow card-hover position-relative card-rounded overflow-hidden ${props.color}`} >
                     <div className="card-title position-absolute wrapper d-flex justify-content-center align-items-center">
                         <h3 className={`${props.titleSize} text-center fw-bold text-grey m-0 d-inline-block`}>{props.title}</h3>
                     </div>

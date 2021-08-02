@@ -1,14 +1,16 @@
-import React, { lazy, Suspense } from 'react'
+import React, { lazy, Suspense, useEffect } from 'react'
 import bgCeremony from '../../../Assets/img/Vector-hari-1.svg'
 import bgFaculty from '../../../Assets/img/Vector-hari-2.svg'
 import bgCreature from '../../../Assets/img/Vector-hari-3.svg'
 import bgYoung from '../../../Assets/img/Vector-hari-4.svg'
 import bgClosing from '../../../Assets/img/Vector-hari-5.svg'
+import Loader from '../../../Components/Loader/Loader'
 import './Agenda.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import BackButton from '../../../Components/BackButton/BackButton'
+import Breadcumb from '../../../Components/Breadcumb/Breadcumb'
 
-AOS.init();
 
 const Card = lazy(() => import('../../../Components/Card/Card'))
 // const ComingSoon = lazy(() => import('../../../Components/ComingSoon/ComingSoon'))
@@ -18,6 +20,12 @@ const bgEvent = (e) => (<div class="bg-agenda-size position-absolute">
 </div>)
 
 function Agenda() {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
+
     document.title = "MPKMB IPB 58 | Agenda";
     const contentEvent = [
         {
@@ -53,12 +61,18 @@ function Agenda() {
     ]
     return (
         <section className="d-flex justify-content-center align-items-center">
-            <div class="container pt-5">
-                <div class="row justify-content-center">
-                    <Suspense fallback={<h1>Loading ...</h1>}>
+            <div class="container pt-5"> 
+                <div className="row">
+                    <div className="d-flex justify-content-between">
+                        <BackButton prevPage="/AgendaPenugasan"/>
+                        <Breadcumb depth="three" prevPage="/AgendaPenugasan" prevPrevPage="/" prev="Agenda dan Penugasan" current="Agenda" prevPrev="Beranda"/>
+                    </div>
+                </div>
+                <div class="row justify-content-center pt-3">
+                    <Suspense fallback={<Loader></Loader>}>
                         {
                             contentEvent.map(e =>
-                                <div class="col-lg-6 mt-3 " data-aos="fade-up">
+                                <div class="col-lg-6 mt-4" data-aos="fade-up">
                                     <Card
                                         directTo={e.directTo}
                                         title={e.title}

@@ -11,7 +11,7 @@ function NavbarComponents() {
         <Fragment>
             <nav className="navbar bg-navbar fixed-top ">
                 <div className="container-fluid d-flex justify-content-between align-items-center px-sm-5 px-2">
-                    <div class="nav-brand d-flex align-items-center ">
+                    <div className="nav-brand d-flex align-items-center ">
                         <a className="navbar-brand text-red pb-3" href="/">
                             <img src={Logo} alt="Logo Mahardika Cakarbinaya" />
                         </a>
@@ -32,7 +32,7 @@ function NavbarComponents() {
                     </div>
                     <div className="row text-center flex-column">
                         <a href="/" className="col  my-3 d-inline-block text-decoration-none  text-blue">
-                            <span className="d-inline-block hover"> Home</span>
+                            <span className="d-inline-block hover">Home</span>
                         </a>
                         <a href="/About" className="col  my-3 d-inline-block text-decoration-none  text-blue">
                             <span className="d-inline-block hover">About</span>
@@ -42,6 +42,9 @@ function NavbarComponents() {
                         </a>
                         <a href="/AgendaPenugasan" className="col  my-3 d-inline-block text-decoration-none  text-blue">
                             <span className="d-inline-block hover">Agenda dan Penugasan</span>
+                        </a>
+                        <a href="/FAQ" className="col  my-3 d-inline-block text-decoration-none  text-blue">
+                            <span className="d-inline-block hover">FAQ</span>
                         </a>
                     </div>
                 </div>

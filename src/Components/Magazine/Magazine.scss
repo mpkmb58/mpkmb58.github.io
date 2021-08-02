@@ -78,15 +78,7 @@
 }
 
 
-.back-btn {
-    border-radius: 0.75rem;
-    border-style: none;
-    transition: transform 0.1s ease-in-out;
-    &:hover {
-        transform: scale(1.03);
-        transition: transform 0.1s ease-in-out;
-    }
-}
+
 
 .texture-left {
     position: absolute;

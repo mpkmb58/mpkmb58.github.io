@@ -74,7 +74,7 @@ export const CardLiniMasa = () => {
                             <Box color="bg-red"
                                 number="5"
                                 title="Narasi Besar"
-                                date="9 Agustus 2021"
+                                date="9 - 14 Agustus 2021"
                                 time="08.00 WIB - 17.00 WIB"
                                 modalID="comingsoon" />
                         </div>

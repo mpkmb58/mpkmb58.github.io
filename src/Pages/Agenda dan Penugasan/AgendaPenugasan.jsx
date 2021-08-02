@@ -5,6 +5,7 @@ import bgPenugasan from '../../Assets/img/VectorPenugasan.svg'
 import './AgendaPenugasan.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Loader from '../../Components/Loader/Loader'
 
 AOS.init();
 
@@ -30,7 +31,7 @@ function AgendaPenugasan() {
             bgImages: bgEvent(bgPanduan)
         },
         {
-            directTo: '/',
+            directTo: 'https://course.ipb.ac.id/course/view.php?id=1363#section-11',
             title: "Penugasan",
             bgColors: "bg-orange",
             bgImages: bgEvent(bgPenugasan)
@@ -38,13 +39,13 @@ function AgendaPenugasan() {
     ]
     return (
         <section className="d-flex justify-content-center align-items-center py-5">
+            <Suspense fallback={<Loader></Loader>}>
             <div class="container pt-5">
                 <h2 className="fw-bold text-center text-blue">Agenda dan Penugasan</h2>
-                <div class="row mt-3">
-                    <Suspense fallback={<h1>Loading ...</h1>}>
+                <div class="row mt-4 m-auto">
                         {
                             contentAgendaPenugasan.map(e =>
-                                <div class="col-lg-4 mt-3 mt-lg-0" data-aos="fade-up">
+                                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up">
                                     <Card
                                         directTo={e.directTo}
                                         title={e.title}
@@ -55,9 +56,9 @@ function AgendaPenugasan() {
                                 </div>
                             )
                         }
-                    </Suspense>
                 </div>
             </div>
+            </Suspense>
         </section>
 
     )

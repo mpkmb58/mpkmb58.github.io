@@ -23,12 +23,6 @@
           transform: translateY(20px);
 }
 
-.bg-blur {
-  background-image: url("../../Assets/img/bg.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .mahardika {
   font-size: 1.5em;
 }

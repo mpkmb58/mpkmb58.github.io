@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-6 px-lg-5">
                         <div className="text">
-                            <h3 className="fw-bold">Sekretariat MPKMB IPB</h3>
+                            <h3 className="fw-bold">Panitia MPKMB IPB</h3>
                             <br></br>
                             <p>Panitia Pusat MPKMB IPB<br></br>
                                 Direktorat Kemahasiswaan dan Pengembangan Karir<br></br>
@@ -33,7 +33,7 @@ const Footer = () => {
                         <div className="text">
                             <h3 className="mt-md-0 mt-2 fw-bold">Pusat Informasi:</h3>
                             <br />
-                            <p>Narahubung MPKMB: <a href="http://">+62 852-3763-6737</a> (Hafidzh .H)</p>
+                            <p>Narahubung MPKMB: <a href="http://">+62 852-3763-6737</a> (Hafizh)</p>
                             <p>Official Account MPKMB:</p>
                             <div className="social-media">
                                 <div className="socmed-col-1 d-flex flex-column">

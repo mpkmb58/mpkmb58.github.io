@@ -4,6 +4,8 @@ import arrowDown from '../../Assets/img/Arrowdown.svg'
 import $ from 'jquery'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import BackButton from '../BackButton/BackButton';
+import Breadcumb from '../Breadcumb/Breadcumb';
 
 
 
@@ -27,8 +29,14 @@ function Magazine(props) {
 
     return (
         <div className="position-relative z-index-2" >
-            <div className="container pt-5 ">
-                <div className="row mt-4 mb-4 mx-lg-0 mx-0 justify-content-between">
+            <div className="container pt-5">
+                <div className="row">
+                    <div className="d-flex justify-content-between">
+                        <BackButton prevPage={props.prevPage}/>
+                        <Breadcumb depth={props.depth} prevPage={props.prevPage} prevPrevPage={props.prevPrevPage} prev={props.prev} current={props.current} prevPrev={props.prevPrev}/>
+                    </div>
+                </div>
+                <div className="row mt-4 mb-4 mx-lg-0 mx-0 m-auto justify-content-between">
                     {/* MOBILE */}
                     <div className="col-lg-2 link bg-grey about-nav-wrapper position-relative px-0 d-lg-none d-flex flex-row flex-lg-column justify-content-center justify-content-lg-start align-items-center overflow-visible" onClick={() => setCollapse(!collapse)}>
                         <h3 className="m-0 my-3 text-center">{nav}</h3>

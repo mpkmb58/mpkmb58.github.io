@@ -6,6 +6,7 @@ import penugasanPDF from '../../../Assets/documents/Panduan Penugasan MPKMB IPB 
 import pendaftaranPDF from '../../../Assets/documents/Panduan Pendaftaran Ashura-Ashira Anausa MPKMB IPB 58.pdf'
 import kelompokPDF from '../../../Assets/documents/Enrollment Key Mahardika Cakrabinaya.pdf'
 import penggunaanCoursePDF from '../../../Assets/documents/Panduan Penggunaan Course.pdf'
+
 function Panduan() {
     const contentView = [
         {
@@ -26,7 +27,7 @@ function Panduan() {
             link: 'PANDUAN PENUGASAN',
             isi: 
             <div>
-                <h2 className="fw-bold text-center mb-4 mx-3">PANDUAN PENUGASAN</h2>
+                <h2 className="fw-bold text-center mb-4 mx-3">PENUGASAN</h2>
                 <div className="d-flex flex-column align-items-center justify-content-center">
                     <Iframe src="https://drive.google.com/file/d/1-RZBgCa5csmfwGGEMSuMje2JkFSXV9c0/preview" allow="autoplay"></Iframe>
                     <a href={penugasanPDF} className="mt-4 bg-blue py-2 px-4 rounded-pill text-grey" download="Panduan Penugasan MPKMB IPB 58.pdf">Download PDF</a>
@@ -39,7 +40,7 @@ function Panduan() {
             key: 2,
             link: 'PENGGUNAAN COURSE',
             isi: <div>
-                <h2 className="fw-bold text-center mb-4">PANDUAN PENGGUNAAN COURSE</h2>
+                <h2 className="fw-bold text-center mb-4">PENGGUNAAN COURSE</h2>
                 <div className="d-flex flex-column align-items-center justify-content-center">
                     <Iframe src="https://drive.google.com/file/d/1wW4NGT8-ZS2LhZhZlMHddA26oCU5OoIy/preview" allow="autoplay"></Iframe>
                     <a href={penggunaanCoursePDF} className="mt-4 bg-blue py-2 px-4 rounded-pill text-grey" download="Panduan Penggunaan Course.pdf">Download PDF</a>
@@ -63,7 +64,7 @@ function Panduan() {
             key: 4,
             link: 'PENDAFTARAN',
             isi: <div>
-                <h2 className="fw-bold text-center mb-4">PANDUAN PENDAFTARAN ASHURA</h2>
+                <h2 className="fw-bold text-center mb-4">PENDAFTARAN ASHURA</h2>
                 <div className="d-flex flex-column align-items-center justify-content-center">
                     <Iframe src="https://drive.google.com/file/d/15TLxwkG8lyvAy7WG9Io3iKl3V4mG9Pxj/preview" allow="autoplay"></Iframe>
                     <a href={pendaftaranPDF} className="mt-4 bg-blue py-2 px-4 rounded-pill text-grey" download="Panduan Pendaftaran Ashura-Ashira Anausa MPKMB IPB 58.pdf">Download PDF</a>
@@ -75,8 +76,8 @@ function Panduan() {
 
     
     return (
-        <section className= "d-flex align-items-center justify-content-center">
-            <Magazine contentWrapper={contentView} />
+        <section className= "d-flex flex-column align-items-center justify-content-center">
+            <Magazine contentWrapper={contentView} prevPage ="/AgendaPenugasan" prevPrevPage="/" depth="three" prevPrev ="Beranda" prev="Agenda dan Penugasan" current="Panduan"/>
         </section>
     )
 }
