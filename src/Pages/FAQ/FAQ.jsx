@@ -142,7 +142,7 @@ function FAQ() {
                                     parentId="ListPertanyaanSOP"
                                     id = "Two"
                                     question = "Di mana mahasiswa baru dapat melihat pembagian kelompok?"
-                                    answer = {<p>Pembagian kelompok besar, sedang, dan kecil dapat dilihat pada tautan berikut : ipb.link/kelompok-mahardikacakrabinaya58</p>}
+                                    answer = {<p>Pembagian kelompok besar, sedang, dan kecil dapat diunduh <a href= {kelompokPDF} className="fw-bold" download>disini</a></p>}
                                 />
                                 <AccordionItem
                                     parentId="ListPertanyaanSOP"
