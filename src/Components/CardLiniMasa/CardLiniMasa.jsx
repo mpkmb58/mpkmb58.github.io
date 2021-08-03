@@ -41,7 +41,7 @@ export const CardLiniMasa = () => {
                                 number="1"
                                 title="Mentoring MPKMB"
                                 date="23 Juli 2021"
-                                time="08.00 WIB - 17.00 WIB"
+                                time="08.00 WIB - 16.00 WIB"
                                 modalID="mentoring" />
                         </div>
                         <div className="item mx-3">
@@ -49,7 +49,7 @@ export const CardLiniMasa = () => {
                                 number="2"
                                 title="Panduan MPKMB"
                                 date="29 Juli 2021"
-                                time="08.00 WIB - 17.00 WIB"
+                                time="08.00 WIB - 16.00 WIB"
                                 modalID="panduan" />
                         </div>
                         <div className="item mx-3">
@@ -57,7 +57,7 @@ export const CardLiniMasa = () => {
                                 number="3"
                                 title="Surat Keputusan Rektor"
                                 date="30 Juli 2021"
-                                time="08.00 WIB - 17.00 WIB"
+                                time="08.00 WIB - 16.00 WIB"
                                 modalID="sk" />
                         </div>
                         <div className="item mx-3">
@@ -65,7 +65,7 @@ export const CardLiniMasa = () => {
                                 number="4"
                                 title="Upacara Pembukaan MPKMB"
                                 date="9 Agustus 2021"
-                                time="08.00 WIB - 17.00 WIB"
+                                time="08.00 WIB - 16.00 WIB"
                                 modalID="opening" />
                         </div>
                         </OwlCarousel>
