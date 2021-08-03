@@ -23,9 +23,8 @@ const Footer = () => {
                                 <p className="text-grey">Jalan Lingkar Kampus IPB Darmaga, Babakan, Dramaga, Babakan, Kec. Dramaga, Bogor, Jawa
                                     Barat 16680</p>
                             </a>
-                            <p><strong>Jam kerja pukul 08.00 - 16.00 WIB</strong></p>
-                            <a rel="external" href="mailto:mpkmbipb@apps.ipb.ac.id" className="text-grey">mpkmbipb@apps.ipb.ac.id</a><br/>
-                            <a rel="external" href="mailto:helpcenter.ipb.ac.id" className="text-grey">helpcenter.ipb.ac.id</a>
+                            <a rel="external" href="mailto:mpkmbipb@apps.ipb.ac.id" className="text-grey"><strong>mpkmbipb@apps.ipb.ac.id</strong></a><br/>
+                            <a rel="external" href="mailto:helpcenter.ipb.ac.id" className="text-grey"><strong>helpcenter.ipb.ac.id</strong></a>
                         </div>
                         <br />
                     </div>
