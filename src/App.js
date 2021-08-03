@@ -24,7 +24,7 @@ const App = () => {
       <NavbarComponents />
       <Suspense fallback={<Loader></Loader>}>
         <Switch>
-            <Route path="/" exact component={Home} />
+              <Route path="/" exact component={Home} />
               <Route path="/About" component={About} />
               <Route path="/Panduan" component={Panduan} />
               <Route path="/Event" component={Event} />
