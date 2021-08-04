@@ -8,3 +8,9 @@ export const ContentBox = styled.div`
     justify-content: center;
 `
 
+export const ContentStyle = styled.div`
+    width: 100%;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+`

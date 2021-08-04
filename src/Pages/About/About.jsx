@@ -6,7 +6,7 @@ import logoMerah from '../../Assets/img/Logo_merah.svg';
 import logoHijau from '../../Assets/img/Logo_hijau.svg';
 import logoBiru from '../../Assets/img/Logo_biru.svg';
 import './About.css'
-import { ContentBox } from './About.style';
+import { ContentBox, ContentStyle } from './About.style';
 import Loader from '../../Components/Loader/Loader';
 
 
@@ -28,11 +28,11 @@ function About() {
         {
             key: 1,
             link: 'NAMA',
-            isi: <ContentBox className="flex-column">
+            isi: <ContentStyle className="flex-column">
                 <h2 className="fw-bold text-center mb-3">NAMA ANGKATAN</h2>
                 <p> Kata "Mahardika" dalam Kamus Besar Bahasa Indonesia (KBBI) memiliki makna <b>berilmu (cerdik, pandai, bijak); berbudi luhur; dan memiliki sifat bangsawan</b>. Kata Cakrabinaya adalah akronim dari cita-cita, kerja, dan kontribusi nyata. Menurut KBBI makna Cakra adalah roda. Segala sesuatu mengalir kembali ke hulu seperti lingkaran. Memungkinkan terjadinya pembaharuan, repetisi, dan regenerasi. Dimana lingkaran yang ada mendorong setiap diri untuk memikirkan secara mendalam setiap momentum yang dilalui, sehingga mahasiswa 58 dapat bertumbuhdan menjadi regenerasi putra-putri terbaik bangsa.</p>
 
-                <p>Dengan nama <b>Mahardika Cakrabinaya</b> diharapkan mahasiswa baru IPB University Angkatan 58 memiliki semangat dalam menjalankan setiap proses sebagai seorang mahasiswa hingga pada akhirnya mereka bisa menjadi insan berkualitas yang berilmu, berbudi luhur, memiliki rasa cinta terhadap tanah airnya, memiliki tekad bulat dalam mewujudkan cita- citanya dan pada akhirnya mampu berkontribusi nyata untuk negeri tercinta Indonesia.</p> </ContentBox>,
+                <p>Dengan nama <b>Mahardika Cakrabinaya</b> diharapkan mahasiswa baru IPB University Angkatan 58 memiliki semangat dalam menjalankan setiap proses sebagai seorang mahasiswa hingga pada akhirnya mereka bisa menjadi insan berkualitas yang berilmu, berbudi luhur, memiliki rasa cinta terhadap tanah airnya, memiliki tekad bulat dalam mewujudkan cita- citanya dan pada akhirnya mampu berkontribusi nyata untuk negeri tercinta Indonesia.</p> </ContentStyle>,
         },
         {
             key: 2,
@@ -71,7 +71,7 @@ function About() {
 
     return (
         // className="position-relative z-index-2 d-flex align-items-center justify-content-center" 
-        <section className="d-flex justify-content-center align-items-center z-index-2" >
+        <section className="d-flex justify-content-center align-items-start z-index-2" >
             <Suspense fallback={<Loader></Loader>}>
                 <Magazine contentWrapper={contentView} depth="two" prev="Beranda" current="About" prevPage="/"/>
             </Suspense>
