@@ -87,6 +87,10 @@
   cursor: pointer;
 }
 
+.magazine .container {
+  padding: 80px 0 !important;
+}
+
 .texture-left {
   position: absolute;
   top: 0;

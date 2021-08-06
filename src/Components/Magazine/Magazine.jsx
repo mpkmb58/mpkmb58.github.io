@@ -28,7 +28,7 @@ function Magazine(props) {
     
 
     return (
-        <div className="position-relative z-index-2" >
+        <div className="magazine position-relative z-index-2" >
             <div className="container pt-5">
                 <div className="row">
                     <div className="d-flex justify-content-between">

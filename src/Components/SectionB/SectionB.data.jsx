@@ -48,15 +48,12 @@ import logoWisata from '../../Assets/img/Logo Wisata Jangari Hills_preview_rev_1
                 <div className="borders-H mt-3 bg-grey d-lg-none d-block"></div>
             </div>
             <div className="col-lg-8 d-flex align-items-center py-3 px-xl-5 px-lg-3 px-4">
-                <div className="sponsor row d-flex d-flex flex-row align-items-center align-items-lg-start">
+                <div className="sponsor row d-flex d-flex flex-row align-items-center align-items-lg-start justify-content-center justify-content-lg-start">
                     <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center">
                         <img loading="lazy" className="scaled-up-one" src={logoIDX} alt="" srcset="" />
                     </div>
                     <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center d-sm-none d-block">
                         <img loading="lazy" className="scaled-up" src={logoFrisian} alt="" srcset="" />
-                    </div>
-                    <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center d-sm-block d-none">
-                        <img loading="lazy"  src={logoFrisian} alt="" srcset="" />
                     </div>
                     <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center">
                         <img loading="lazy" src={logoHimalaya} alt="" srcset="" />
@@ -64,7 +61,9 @@ import logoWisata from '../../Assets/img/Logo Wisata Jangari Hills_preview_rev_1
                     <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center">
                         <img loading="lazy" src={logoWardah} alt="" srcset="" />
                     </div>
-                    
+                    <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center d-sm-block d-none">
+                        <img loading="lazy"  src={logoFrisian} alt="" srcset="" />
+                    </div>
                     <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center">
                         <img loading="lazy" className="scaled-up" src={logoWisata} alt="" srcset="" />
                     </div>

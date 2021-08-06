@@ -6,7 +6,7 @@ export const Iframe = styled.iframe`
     border: 2px solid grey;
 
     @media screen and (max-width : 992px) {
-        width : 80%;
+        width : 100%;
         height: 50vh;
     }
 

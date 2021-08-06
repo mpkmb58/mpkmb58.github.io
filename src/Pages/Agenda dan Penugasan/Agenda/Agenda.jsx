@@ -60,10 +60,10 @@ function Agenda() {
         }
     ]
     return (
-        <section className="d-flex justify-content-center align-items-center">
-            <div class="container pt-5"> 
+        <section className="agenda d-flex justify-content-center align-items-center">
+            <div class="container"> 
                 <div className="row z-index-3 position-relative">
-                    <div className="d-flex justify-content-between">
+                    <div className="d-flex justify-content-sm-between">
                         <BackButton prevPage="/AgendaPenugasan"/>
                         <Breadcumb depth="three" prevPage="/AgendaPenugasan" prevPrevPage="/" prev="Agenda dan Penugasan" current="Agenda" prevPrev="Beranda"/>
                     </div>

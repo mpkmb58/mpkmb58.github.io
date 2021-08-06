@@ -2,15 +2,21 @@
     bottom: 0;
     right: 0;
     transform: translate(25%, 25%);
-    width: 300px;
-}
-.card-agenda-size{
-        margin: .2em;
-        aspect-ratio: 2/1;
+    width: 25vmax;
 }
 
-@media (min-width: 768px) {
-    
+.card-agenda-size{
+        margin: .2em;
+        min-height: 10rem;
+        max-width: 100%;
+        aspect-ratio: 3/1;
+}
+
+@media (min-width: 769px) {
+
+    .agenda-bg-wrapper{
+       width: 23vmax;
+    }
     .card-agenda-size{
         aspect-ratio: 3/4 !important;
     }

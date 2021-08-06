@@ -24,7 +24,7 @@ function Panduan() {
         },
         {
             key: 1,
-            link: 'PANDUAN PENUGASAN',
+            link: 'PENUGASAN',
             isi: 
             <div>
                 <h2 className="fw-bold text-center mb-4 mx-3">PENUGASAN</h2>
@@ -38,7 +38,7 @@ function Panduan() {
         },
         {
             key: 2,
-            link: 'PENGGUNAAN COURSE',
+            link: 'COURSE',
             isi: <div>
                 <h2 className="fw-bold text-center mb-4">PENGGUNAAN COURSE</h2>
                 <div className="d-flex flex-column align-items-center justify-content-center">
@@ -50,7 +50,7 @@ function Panduan() {
         },
         {
             key: 3,
-            link: 'PEMBAGIAN KELOMPOK',
+            link: 'KELOMPOK',
             isi: <div>
                 <h2 className="fw-bold text-center mb-4">INFORMASI PEMBAGIAN KELOMPOK</h2>
                 <div className="d-flex flex-column align-items-center justify-content-center">
