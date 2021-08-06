@@ -43,7 +43,7 @@
     transform: rotate(45deg);
 }
 .agenda-logo-wrapper{
-    width: 200px;
+    width: calc(100px + 8vmax);
     position: absolute;
     bottom: -20%;
     left: 0;
