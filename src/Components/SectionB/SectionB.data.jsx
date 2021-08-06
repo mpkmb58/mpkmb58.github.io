@@ -11,6 +11,10 @@ import logofaq from '../../Assets/img/VectorFAQ.svg'
 import logoInaco from '../../Assets/img/Sponsor-Inaco.svg'
 import logoHimalaya from '../../Assets/img/Sponsor-Himalaya.svg'
 import logoIDX from '../../Assets/img/sponsor-IDX.svg'
+import logoFrisian from '../../Assets/img/logo_FrisianFlag.svg'
+import logoWardah from '../../Assets/img/Logo-Wardah 1.svg'
+import logoKompas from '../../Assets/img/Logo Kompas.svg'
+import logoWisata from '../../Assets/img/Logo Wisata Jangari Hills_preview_rev_1 1.svg'
     
     export const logoLogo = <div className="about-bg-logo d-flex">
         <img className="mx-3" src={logo1} alt="logo-bg" />
@@ -38,21 +42,39 @@ import logoIDX from '../../Assets/img/sponsor-IDX.svg'
 
     export const sponsor = <div className="wrapper position-abolute container p-3">
         <div className="row py-4">
-            <div className="col-md-4 pe-4 d-flex flex-column flex-md-row align-items-center">
+            <div className="col-lg-4 pe-2 d-flex flex-column flex-lg-row align-items-center">
                 <h3 className="mb-1 mb-md-0 fw-bold text-grey text-lg-end text-center me-lg-1">Sponsor dan Media Partner</h3>
-                <div className="borders-V ms-5 bg-grey d-none d-md-block"></div>
-                <div className="borders-H mt-3 bg-grey d-md-none d-block"></div>
+                <div className="borders-V ms-xl-5 ms-lg-3 bg-grey d-none d-lg-block"></div>
+                <div className="borders-H mt-3 bg-grey d-lg-none d-block"></div>
             </div>
-            <div className="col-md-8 py-3 d-flex flex-column flex-md-row align-items-center align-items-lg-start">
-                <div className="box-sponsor bg-grey py-2 px-4 mx-2 d-flex align-items-center justify-content-center">
-                    <img loading="lazy" src={logoInaco} alt="" srcset="" />
-                </div>
-                <div className="box-sponsor bg-grey py-2 px-4 mx-2 d-flex align-items-center justify-content-center">
-                    <img loading="lazy" src={logoHimalaya} alt="" srcset="" />
-                </div>
-                <div className="box-sponsor bg-grey py-2 px-4 mx-2 d-flex align-items-center justify-content-center">
-                    <img loading="lazy" className="scaled-up" src={logoIDX} alt="" srcset="" />
-                </div>
+            <div className="col-lg-8 d-flex align-items-center py-3 px-xl-5 px-lg-3 px-4">
+                <div className="sponsor row d-flex d-flex flex-row align-items-center align-items-lg-start">
+                    <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center">
+                        <img loading="lazy" className="scaled-up-one" src={logoIDX} alt="" srcset="" />
+                    </div>
+                    <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center d-sm-none d-block">
+                        <img loading="lazy" className="scaled-up" src={logoFrisian} alt="" srcset="" />
+                    </div>
+                    <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center d-sm-block d-none">
+                        <img loading="lazy"  src={logoFrisian} alt="" srcset="" />
+                    </div>
+                    <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center">
+                        <img loading="lazy" src={logoHimalaya} alt="" srcset="" />
+                    </div>
+                    <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center">
+                        <img loading="lazy" src={logoWardah} alt="" srcset="" />
+                    </div>
+                    
+                    <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center">
+                        <img loading="lazy" className="scaled-up" src={logoWisata} alt="" srcset="" />
+                    </div>
+                    <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center">
+                        <img loading="lazy" className="scaled-up" src={logoInaco} alt="" srcset="" />
+                    </div>
+                    <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center">
+                        <img loading="lazy" src={logoKompas} alt="" srcset="" />
+                    </div>
+                </div>     
             </div>
         </div>
     </div>  

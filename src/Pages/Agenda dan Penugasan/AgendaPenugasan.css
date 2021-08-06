@@ -11,7 +11,7 @@
   aspect-ratio: 2/1;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .card-agenda-size {
     aspect-ratio: 3/4 !important;
   }
