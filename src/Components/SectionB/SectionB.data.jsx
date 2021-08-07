@@ -15,6 +15,7 @@ import logoFrisian from '../../Assets/img/logo_FrisianFlag.svg'
 import logoWardah from '../../Assets/img/Logo-Wardah 1.svg'
 import logoKompas from '../../Assets/img/Logo Kompas.svg'
 import logoWisata from '../../Assets/img/Logo Wisata Jangari Hills_preview_rev_1 1.svg'
+import logoOronamin from '../../Assets/img/Logo OronaminFix.svg'
     
     export const logoLogo = <div className="about-bg-logo d-flex">
         <img className="mx-3" src={logo1} alt="logo-bg" />
@@ -43,7 +44,7 @@ import logoWisata from '../../Assets/img/Logo Wisata Jangari Hills_preview_rev_1
     export const sponsor = <div className="wrapper position-abolute container p-3">
         <div className="row py-4">
             <div className="col-lg-4 pe-2 d-flex flex-column flex-lg-row align-items-center">
-                <h3 className="mb-1 mb-md-0 fw-bold text-grey text-lg-end text-center me-lg-1">Sponsor dan Media Partner</h3>
+                <h3 className="mb-1 mb-md-0 fw-bold text-grey text-lg-end text-center me-lg-1">Sponsorship dan Media Partner</h3>
                 <div className="borders-V ms-xl-5 ms-lg-3 bg-grey d-none d-lg-block"></div>
                 <div className="borders-H mt-3 bg-grey d-lg-none d-block"></div>
             </div>
@@ -72,6 +73,9 @@ import logoWisata from '../../Assets/img/Logo Wisata Jangari Hills_preview_rev_1
                     </div>
                     <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center">
                         <img loading="lazy" src={logoKompas} alt="" srcset="" />
+                    </div>
+                    <div className="box-sponsor bg-grey d-flex align-items-center justify-content-center scaled-down">
+                        <img loading="lazy" src={logoOronamin} alt="" srcset="" />
                     </div>
                 </div>     
             </div>

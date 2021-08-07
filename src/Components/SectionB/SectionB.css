@@ -103,6 +103,11 @@
           transform: scale(1.4);
 }
 
+.box-sponsor .scaled-down {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
 .box-sponsor img {
   width: 100%;
 }

@@ -33,6 +33,11 @@ function Magazine(props) {
                 <div className="row">
                     <div className="d-flex justify-content-between">
                         <BackButton prevPage={props.prevPage}/>
+                        <div className="d-sm-block d-none">
+                            <Breadcumb depth={props.depth} prevPage={props.prevPage} prevPrevPage={props.prevPrevPage} prev={props.prev} current={props.current} prevPrev={props.prevPrev}/>
+                        </div>
+                    </div>
+                    <div className="d-sm-none d-block pt-4">
                         <Breadcumb depth={props.depth} prevPage={props.prevPage} prevPrevPage={props.prevPrevPage} prev={props.prev} current={props.current} prevPrev={props.prevPrev}/>
                     </div>
                 </div>

@@ -29,31 +29,31 @@ function Agenda() {
     document.title = "MPKMB IPB 58 | Agenda";
     const contentEvent = [
         {
-            directTo: '/',
+            directTo:"//ipb.link/mpkmb58-h1",
             title: "Day 1 - Opening Ceremony",
             bgColors: "bg-blue",
             bgImages: bgEvent(bgCeremony)
         },
         {
-            directTo: '/',
+            directTo:"//ipb.link/mpkmb58-h2",
             title: "Day 2 - Faculty Tour",
             bgColors: "bg-blue",
             bgImages: bgEvent(bgFaculty)
         },
         {
-            directTo: '/',
+            directTo: "//ipb.link/mpkmb58-h3",
             title: "Day 3 - Creature",
             bgColors: "bg-red",
             bgImages: bgEvent(bgCreature)
         },
         {
-            directTo: '/',
+            directTo: "//ipb.link/mpkmb58-h4",
             title: "Day 4 - Young, Spirit, and Nationalism",
             bgColors: "bg-red",
             bgImages: bgEvent(bgYoung)
         },
         {
-            directTo: '/',
+            directTo: "//ipb.link/mpkmb58-h5",
             title: "Day 5 - Closing Ceremony",
             bgColors: "bg-orange",
             bgImages: bgEvent(bgClosing)
@@ -65,6 +65,11 @@ function Agenda() {
                 <div className="row z-index-3 position-relative">
                     <div className="d-flex justify-content-sm-between">
                         <BackButton prevPage="/AgendaPenugasan"/>
+                        <div className="d-sm-block d-none">
+                            <Breadcumb depth="three" prevPage="/AgendaPenugasan" prevPrevPage="/" prev="Agenda dan Penugasan" current="Agenda" prevPrev="Beranda"/>
+                        </div>
+                    </div>
+                    <div className="d-sm-none d-block pt-4">
                         <Breadcumb depth="three" prevPage="/AgendaPenugasan" prevPrevPage="/" prev="Agenda dan Penugasan" current="Agenda" prevPrev="Beranda"/>
                     </div>
                 </div>

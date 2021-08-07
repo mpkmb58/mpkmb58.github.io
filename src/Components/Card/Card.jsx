@@ -49,7 +49,6 @@ function Card(props) {
 
 
 Card.defaultProps = {
-    direcTo: './',
     color: 'bg-blue',
     customSize: 'card-wrapper-default',
     title: 'title here',

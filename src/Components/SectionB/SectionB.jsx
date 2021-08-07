@@ -5,6 +5,8 @@ import skRektorPDF from '../../Assets/documents/Surat Edaran - Penetapan Awal Ta
 import './SectionB.css'
 import Loader from '../Loader/Loader';
 import kelompokPDF from '../../Assets/documents/Enrollment Key Mahardika Cakrabinaya.pdf'
+import caption from  '../../Assets/documents/Caption Twibbon.docx'
+import twibbon from '../../Assets/documents/Twibbon Mahardika Cakrabinaya.mp4'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styled from 'styled-components'
@@ -83,6 +85,21 @@ function SectionB() {
                                 <Fragment>
                                     <ModalDoc loading="lazy" src="https://drive.google.com/file/d/1j7YX38amioVZ70wvJgo76BqY6jzXfGDV/preview" allow="autoplay" ></ModalDoc>
                                     <a href={skRektorPDF} className="mt-3 bg-blue py-1 px-3 rounded-pill text-grey" download="Surat Edaran - Penetapan Awal Tahun Akademik 2020_2021.pdf">Download PDF</a>
+                                </Fragment>
+                            }
+                            size="modal-lg"
+                        />
+                        <Modal
+                            id="twibbon"
+                            title="Twibbon Peserta MPKMB"
+                            content=
+                            {
+                                <Fragment>
+                                    <ModalDoc loading="lazy" src="https://drive.google.com/file/d/1s9B-SqP9jW-dbOtQLcSXqi6FYJq1dS0U/preview" allow="autoplay" ></ModalDoc>
+                                    <div className="d-flex justify-content-center align-items-center">
+                                        <a href={caption} className="text-center mt-3 mx-1 bg-blue py-1 px-3 rounded-pill text-grey" download="Caption Twibbon.docx">Download Caption</a>
+                                        <a href={twibbon} className="text-center mt-3 mx-1 bg-blue py-1 px-3 rounded-pill text-grey" download="Twibbon Mahardika Cakrabinaya.mp4">Download Twibbon</a>
+                                    </div>
                                 </Fragment>
                             }
                             size="modal-lg"

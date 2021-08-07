@@ -33,7 +33,7 @@ export const CardLiniMasa = () => {
     return (
         <Fragment>
             <div className="card-lini-masa card-component bg-grey p-md-5 p-3 d-flex flex-column justify-content-center align-items-center">
-                <h3 className="text-center text-blue fw-bold">LINI MASA</h3>
+                <h3 className="text-center text-blue fw-bold">Lini Masa</h3>
                 <Suspense fallback={<Loader></Loader>}>
                     <OwlCarousel className="mt-3" {...options}>
                         <div className="item mx-3">
@@ -42,7 +42,8 @@ export const CardLiniMasa = () => {
                                 title="Mentoring MPKMB"
                                 date="23 Juli 2021"
                                 time="08.00 WIB - 16.00 WIB"
-                                modalID="mentoring" />
+                                modalID="mentoring"
+                                />
                         </div>
                         <div className="item mx-3">
                             <Box color="bg-red"
@@ -50,7 +51,8 @@ export const CardLiniMasa = () => {
                                 title="Panduan MPKMB"
                                 date="29 Juli 2021"
                                 time="08.00 WIB - 16.00 WIB"
-                                modalID="panduan" />
+                                modalID="panduan"
+                                />
                         </div>
                         <div className="item mx-3">
                             <Box color="bg-orange"
@@ -58,11 +60,21 @@ export const CardLiniMasa = () => {
                                 title="Surat Keputusan Rektor"
                                 date="30 Juli 2021"
                                 time="08.00 WIB - 16.00 WIB"
-                                modalID="sk" />
+                                modalID="sk"
+                                />
                         </div>
                         <div className="item mx-3">
                             <Box color="bg-blue"
                                 number="4"
+                                title="Twibbon MPKMB"
+                                date="8 Agustus 2021"
+                                time="08.00 WIB - 16.00 WIB"
+                                modalID="twibbon"
+                                />
+                        </div>
+                        <div className="item mx-3">
+                            <Box color="bg-red"
+                                number="5"
                                 title="Upacara Pembukaan MPKMB"
                                 date="9 Agustus 2021"
                                 time="08.00 WIB - 16.00 WIB"
