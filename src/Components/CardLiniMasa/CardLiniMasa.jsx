@@ -80,6 +80,14 @@ export const CardLiniMasa = () => {
                                 time="08.00 WIB - 16.00 WIB"
                                 modalID="opening" />
                         </div>
+                        <div className="item mx-3">
+                            <Box color="bg-orange"
+                                number="6"
+                                title="Games Agriventure"
+                                date="13 Agustus 2021"
+                                time="08.00 WIB - 16.00 WIB"
+                                modalID="game" />
+                        </div>
                         </OwlCarousel>
                     </Suspense>
 

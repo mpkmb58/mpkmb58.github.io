@@ -14,7 +14,7 @@ function Event() {
     document.title = "MPKMB IPB 58 | Event MPKMB";
     const contentEvent = [
         {
-            directTo: '/',
+            directTo: '/Event',
             title: "Virtual Exhibition",
             bgColors: "bg-blue",
             bgImages: bgEvent(bgVirtual)
@@ -26,8 +26,8 @@ function Event() {
             bgImages: bgEvent(bgCampus)
         },
         {
-            directTo: '/',
-            title: "Agriventure",
+            directTo: '//ipb.link/agriventure-2-mpkmb',
+            title: "Agriventure 2",
             bgColors: "bg-orange",
             bgImages: bgEvent(bgAgriventure)
         }

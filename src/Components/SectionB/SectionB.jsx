@@ -7,6 +7,8 @@ import Loader from '../Loader/Loader';
 import kelompokPDF from '../../Assets/documents/Enrollment Key Mahardika Cakrabinaya.pdf'
 import caption from  '../../Assets/documents/Caption Twibbon.docx'
 import twibbon from '../../Assets/documents/Twibbon Mahardika Cakrabinaya.mp4'
+import game from '../../Assets/documents/Agriventure 2 (1).apk'
+import panduanGame from '../../Assets/documents/Guide Game Agriventure 2 _ The Dream Chaser (1).pdf'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styled from 'styled-components'
@@ -109,6 +111,22 @@ function SectionB() {
                             id="opening"
                             title="Opening MPKMB"
                             content={<p className="text-center text-blue">Upacara pembukaan Masa Pengenalan Kampus Mahasiswa Baru atau <span className="fw-bold">Opening Ceremony MPKMB</span> akan dilaksanakan pada tanggal <span className="fw-bold">9 Agustus 2021.</span></p>}
+                            size="modal-lg"
+                        />
+
+                        <Modal
+                            id="game"
+                            title="Agriventure 2 : The Dream Chaser"
+                            content=
+                            {
+                                <Fragment>
+                                    <ModalDoc loading="lazy" src="https://drive.google.com/file/d/1XeXTemNGD6cZr_kITZ_vvgrXDZJy0Lw0/preview" allow="autoplay" ></ModalDoc>
+                                    <div className="d-flex justify-content-center align-items-center">
+                                        <a href={panduanGame} className="text-center mt-3 mx-1 bg-blue py-1 px-3 rounded-pill text-grey" download="Guide Game Agriventure 2 : The Dream Chaser.pdf">Download Panduan</a>
+                                        <a href={game} className="text-center mt-3 mx-1 bg-blue py-1 px-3 rounded-pill text-grey" download="Agriventure 2.apk">Download APK</a>
+                                    </div>
+                                </Fragment>
+                            }
                             size="modal-lg"
                         />
 
