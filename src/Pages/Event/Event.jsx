@@ -20,8 +20,8 @@ function Event() {
             bgImages: bgEvent(bgVirtual)
         },
         {
-            directTo: '/',
-            title: "360 Campus Tour",
+            directTo: '//ipb.link/mpkmb-airlines',
+            title: "MPKMB Airlines",
             bgColors: "bg-red",
             bgImages: bgEvent(bgCampus)
         },
